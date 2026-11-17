@@ -20,14 +20,14 @@ Then open http://localhost:8080. A local server is needed because opening the fi
 
 | What | File |
 |---|---|
-| WhatsApp number, phone, email, domain | `assets/js/config.js` → `BUSINESS` |
-| **Prices (IDR only)** | `assets/js/config.js` → `PRICING` (`null` = "Price to be confirmed") |
-| **Airport transfer price per area (IDR)** | `assets/js/config.js` → `AIRPORT_ZONES` (the "From" price is the lowest area) |
-| What's included (fuel, parking, tolls…) | `assets/js/config.js` → `INCLUSIONS` |
-| Aris's photo, bio, languages, vehicle… | `assets/js/config.js` → `DRIVER` |
-| "What you can expect" promises | `assets/js/config.js` → `COMMITMENTS` (only `confirmed: true` items show) |
-| Genuine reviews | `assets/js/config.js` → `REVIEWS` |
-| Analytics IDs | `assets/js/config.js` → `ANALYTICS` |
+| WhatsApp number, phone, email, domain | `assets/scripts/config.js` → `BUSINESS` |
+| **Prices (IDR only)** | `assets/scripts/config.js` → `PRICING` (`null` = "Price to be confirmed") |
+| **Airport transfer price per area (IDR)** | `assets/scripts/config.js` → `AIRPORT_ZONES` (the "From" price is the lowest area) |
+| What's included (fuel, parking, tolls…) | `assets/scripts/config.js` → `INCLUSIONS` |
+| Aris's photo, bio, languages, vehicle… | `assets/scripts/config.js` → `DRIVER` |
+| "What you can expect" promises | `assets/scripts/config.js` → `COMMITMENTS` (only `confirmed: true` items show) |
+| Genuine reviews | `assets/scripts/config.js` → `REVIEWS` |
+| Analytics IDs | `assets/scripts/config.js` → `ANALYTICS` |
 | Text in each language | `locales/en.json`, `locales/zh-CN.json`, `locales/ru.json`, `locales/id.json` |
 | Page layout / English page text | `index.html`, `explore.html`, `services.html`, `about.html` |
 | Styles | `assets/css/styles.css` |
@@ -60,7 +60,7 @@ The first copies the English into `en.json`. The second lists any keys still mis
 
 ## Click tracking & analytics
 
-`assets/js/track.js` tracks every call-to-action on every page through one listener. Events are pushed to `window.dataLayer`, so they work with Google Tag Manager or GA4.
+`assets/scripts/track.js` tracks every call-to-action on every page through one listener. Events are pushed to `window.dataLayer`, so they work with Google Tag Manager or GA4.
 
 | Event | When |
 |---|---|

@@ -150,7 +150,7 @@ export const REVIEWS_PROFILE_URL = null;
 
 /* ---------- Analytics & click tracking ----------
    Every CTA, WhatsApp link, enquiry form, language and currency change
-   is tracked (see assets/js/track.js). Events are always pushed to
+   is tracked (see assets/scripts/track.js). Events are always pushed to
    window.dataLayer; add ONE OR MORE of the IDs below to send them on.
    Nothing third-party loads while these are null.                   */
 export const ANALYTICS = {

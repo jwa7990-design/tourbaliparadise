@@ -38,7 +38,7 @@ Before launch, it's worth re-checking each link below to confirm it's still unde
 Real photos from Aris (or guests, with written permission) are always better. They're more authentic,
 and better for trust and SEO.
 
-- **Photo of Aris:** save it as `assets/images/aris.jpg` and set `DRIVER.photo` in `assets/js/config.js`.
+- **Photo of Aris:** save it as `assets/images/aris.jpg` and set `DRIVER.photo` in `assets/scripts/config.js`.
 - **Other images:** replace the `images.unsplash.com/...` URLs in the HTML pages. Keep similar shapes
   (landscape for heroes, 4:5 portrait for experience sections) and update the `alt` text,
   plus the matching `img.*` entry in each `locales/*.json`.

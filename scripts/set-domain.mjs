@@ -8,7 +8,7 @@
      • hreflang alternates (en, zh-Hans, ru, id, x-default) using ?lang=
      • absolute URLs inside the JSON-LD structured data
    and generates sitemap.xml (with hreflang) and robots.txt,
-   and stores the domain in assets/js/config.js (BUSINESS.siteUrl).
+   and stores the domain in assets/scripts/config.js (BUSINESS.siteUrl).
 
    URLs are "clean" (/explore, not /explore.html), matching how
    Cloudflare Pages serves .html files.                              */
@@ -80,7 +80,7 @@ ${LANGS.map(([hl, q2]) => `    <xhtml:link rel="alternate" hreflang="${hl}" href
 writeFileSync(join(root, 'sitemap.xml'), sitemap);
 writeFileSync(join(root, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site}/sitemap.xml\n`);
 
-const cfg = join(root, 'assets/js/config.js');
+const cfg = join(root, 'assets/scripts/config.js');
 writeFileSync(cfg, readFileSync(cfg, 'utf8').replace(/siteUrl: '[^']*'/, `siteUrl: '${site}'`));
 
 console.log(`Done. Canonical, hreflang, og:url and JSON-LD now use ${site}.\nGenerated sitemap.xml (${PAGES.length * LANGS.length} URLs) and robots.txt.`);

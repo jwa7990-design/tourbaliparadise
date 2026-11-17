@@ -10,7 +10,7 @@
 
 # Scripts, styles and translations hold prices and text, so browsers re-check
 # them on every visit (cheap: unchanged files return "304 Not Modified").
-/assets/js/*
+/assets/scripts/*
   Cache-Control: public, max-age=0, must-revalidate
 
 /assets/css/*
