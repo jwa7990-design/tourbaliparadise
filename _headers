@@ -1,7 +1,7 @@
 # Cloudflare Pages headers (ignored when running locally)
+# PRE-LAUNCH: the X-Robots-Tag line below keeps search engines from listing the
+# site while it still has placeholder prices/photos. Delete it when you launch.
 /*
-  # PRE-LAUNCH: keeps search engines from listing the site while it still has
-  # placeholder prices/photos. Delete the next line when you launch.
   X-Robots-Tag: noindex, nofollow
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
