@@ -126,7 +126,21 @@ export const COMMITMENTS = [
   { key: 'honest',       icon: 'compass',  confirmed: true },
   { key: 'confirmation', icon: 'check',    confirmed: true },
   { key: 'noShopping',   icon: 'bag',      confirmed: true },  // confirmed 2026-11-17
+  { key: 'givesBack',    icon: 'heart',    confirmed: true },  // see GIVING
 ];
+
+/* Giving back: a set amount from every job goes to one local Bali cause.
+   Update totalDonatedIdr + lastUpdated each time a donation is made, and link
+   proof (receipt, charity thank-you, Instagram post) in updatesUrl.
+   Only publish a cause once the charity has agreed to be named.        */
+export const GIVING = {
+  perTransferIdr: 10000,   // every airport transfer
+  perTripIdr: 25000,       // every half/full-day hire or scooter tour
+  cause: null,             // e.g. { name: 'Sungai Watch', url: 'https://sungaiwatch.com' }
+  totalDonatedIdr: 0,
+  lastUpdated: null,       // 'YYYY-MM-DD'
+  updatesUrl: null,        // link to receipts / updates
+};
 
 /* Genuine reviews only. Each: { name, country, text, date, source }.
    Leave empty until real reviews (with permission) are available. */

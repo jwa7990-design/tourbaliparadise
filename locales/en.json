@@ -32,7 +32,8 @@
     "contact": "Contact",
     "enquire": "Send an enquiry",
     "disclaimer": "Bali Paradise provides private transport and local recommendations. Attractions and activities mentioned on this website are run by independent operators. Enquiries are not bookings: arrangements and prices are confirmed personally by Aris.",
-    "photos": "Photography by Unsplash contributors."
+    "photos": "Photography by Unsplash contributors.",
+    "promise": "Honest prices · No shopping stops · Every trip gives back"
   },
   "currency": {
     "note": "Prices are set in Indonesian Rupiah (IDR) and are indicative. Converted amounts are estimates only: exchange rates change, and your final price is always confirmed by Aris before you book. You won't be charged through this website.",
@@ -72,7 +73,9 @@
     "title": "Indicative pricing",
     "lead": "Prices are set in Indonesian Rupiah (IDR). Choose your currency at the top of the page to see an approximate conversion.",
     "includedTitle": "What's included",
-    "byArea": "See prices by area"
+    "byArea": "See prices by area",
+    "promiseLabel": "Price promise:",
+    "promise": "The price you see is the price you pay. Aris confirms your total on WhatsApp before you travel, and if anything extra comes up that you didn't agree to, you don't pay it."
   },
   "wa": {
     "general": "Hi Aris! I found Bali Paradise online and I'd like to ask about transport or an experience in Bali.",
@@ -162,7 +165,7 @@
     },
     "pricing": {
       "title": "Clear pricing before booking",
-      "text": "You'll know the price before anything is confirmed."
+      "text": "Prices are published, and Aris confirms your total before you travel. Nothing extra unless you agree."
     },
     "flexible": {
       "title": "Flexible arrangements",
@@ -179,6 +182,10 @@
     "noShopping": {
       "title": "No unwanted shopping stops",
       "text": "You only stop where you want to stop."
+    },
+    "givesBack": {
+      "title": "Every trip gives back",
+      "text": "Part of every booking supports a local Bali cause."
     }
   },
   "reviews": {
@@ -229,6 +236,11 @@
     },
     "expect": {
       "title": "What you can expect"
+    },
+    "giving": {
+      "overline": "Giving back",
+      "title": "Every trip gives back.",
+      "text": "A set amount from every trip goes to a local Bali cause. We publish the running total here, with receipts, so you can see exactly where it goes."
     }
   },
   "faq": {
@@ -517,6 +529,25 @@
       "family": "Family",
       "beaches": "Beaches",
       "culture": "Culture"
+    },
+    "promise": {
+      "overline": "Our promise",
+      "title": "Honest prices. No shopping stops. Every trip gives back.",
+      "p1": {
+        "title": "Honest prices",
+        "text": "Every price is on this website, with fuel, parking and tolls included. Aris confirms your total before you travel, and you never pay for anything you didn't agree to.",
+        "cta": "See prices"
+      },
+      "p2": {
+        "title": "No shopping stops",
+        "text": "Your day goes where you want it to. No detours to shops, factories or showrooms unless you ask.",
+        "cta": "Meet Aris"
+      },
+      "p3": {
+        "title": "Every trip gives back",
+        "text": "Part of every booking goes to a local Bali cause, and we publish the running total so you can see it.",
+        "cta": "How it works"
+      }
     }
   },
   "svc": {
@@ -620,5 +651,15 @@
     "amed": "Amed",
     "lovina": "Lovina",
     "other": "Somewhere else"
+  },
+  "giving": {
+    "totalLabel": "Donated so far",
+    "causeLabel": "Supporting",
+    "receipts": "See receipts and updates",
+    "ruleTransfer": "{amount} from every airport transfer",
+    "ruleTrip": "{amount} from every driver hire or scooter tour",
+    "totalStart": "Starts with the first booking",
+    "causeTbc": "Local cause to be announced soon",
+    "updated": "Last updated {date}"
   }
 }

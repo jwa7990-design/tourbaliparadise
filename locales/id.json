@@ -32,7 +32,8 @@
     "contact": "Kontak",
     "enquire": "Kirim pertanyaan",
     "disclaimer": "Bali Paradise menyediakan transportasi pribadi dan rekomendasi lokal. Tempat wisata dan aktivitas yang disebut di situs ini dikelola oleh pihak lain secara mandiri. Mengirim pertanyaan belum berarti memesan: rencana perjalanan dan harga dikonfirmasi langsung oleh Aris.",
-    "photos": "Foto oleh kontributor Unsplash."
+    "photos": "Foto oleh kontributor Unsplash.",
+    "promise": "Harga jujur · Tanpa mampir toko · Setiap perjalanan ikut berbagi"
   },
   "currency": {
     "note": "Harga ditetapkan dalam Rupiah (IDR) dan masih bersifat perkiraan. Konversi ke mata uang lain hanya perkiraan karena kurs bisa berubah, dan harga akhir selalu dikonfirmasi oleh Aris sebelum Anda memesan. Anda tidak membayar apa pun melalui situs ini.",
@@ -72,7 +73,9 @@
     "title": "Perkiraan harga",
     "lead": "Harga ditetapkan dalam Rupiah (IDR). Jika ingin melihat perkiraan dalam mata uang lain, pilih mata uang di bagian atas halaman.",
     "includedTitle": "Yang sudah termasuk",
-    "byArea": "Lihat harga per area"
+    "byArea": "Lihat harga per area",
+    "promiseLabel": "Janji harga:",
+    "promise": "harga yang Anda lihat adalah harga yang Anda bayar. Aris mengonfirmasi total biaya lewat WhatsApp sebelum perjalanan, dan jika ada biaya tambahan yang tidak Anda setujui, Anda tidak perlu membayarnya."
   },
   "wa": {
     "general": "Halo Pak Aris! Saya menemukan Bali Paradise di internet dan ingin bertanya soal transportasi atau kegiatan di Bali.",
@@ -162,7 +165,7 @@
     },
     "pricing": {
       "title": "Harga jelas sebelum memesan",
-      "text": "Anda sudah tahu harganya sebelum ada yang dikonfirmasi."
+      "text": "Harga tercantum terbuka, dan Aris mengonfirmasi total sebelum perjalanan. Tidak ada biaya tambahan tanpa persetujuan Anda."
     },
     "flexible": {
       "title": "Rencana yang fleksibel",
@@ -179,6 +182,10 @@
     "noShopping": {
       "title": "Tanpa mampir belanja yang tidak diminta",
       "text": "Anda hanya berhenti di tempat yang Anda inginkan."
+    },
+    "givesBack": {
+      "title": "Setiap perjalanan ikut berbagi",
+      "text": "Sebagian dari setiap pemesanan mendukung kegiatan sosial di Bali."
     }
   },
   "reviews": {
@@ -229,6 +236,11 @@
     },
     "expect": {
       "title": "Yang bisa Anda harapkan"
+    },
+    "giving": {
+      "overline": "Berbagi",
+      "title": "Setiap perjalanan ikut berbagi.",
+      "text": "Dari setiap perjalanan, sejumlah dana tetap disisihkan untuk kegiatan sosial di Bali. Total dan bukti donasinya kami umumkan di sini agar Anda bisa melihat ke mana dana itu disalurkan."
     }
   },
   "faq": {
@@ -517,6 +529,25 @@
       "family": "Keluarga",
       "beaches": "Pantai",
       "culture": "Budaya"
+    },
+    "promise": {
+      "overline": "Janji kami",
+      "title": "Harga jujur. Tanpa mampir toko. Setiap perjalanan ikut berbagi.",
+      "p1": {
+        "title": "Harga jujur",
+        "text": "Semua harga tercantum di situs ini, sudah termasuk bensin, parkir, dan tol. Aris mengonfirmasi total biaya sebelum perjalanan, dan Anda tidak membayar apa pun yang tidak Anda setujui.",
+        "cta": "Lihat harga"
+      },
+      "p2": {
+        "title": "Tanpa mampir toko",
+        "text": "Hari Anda berjalan sesuai keinginan Anda. Tidak ada mampir ke toko, pabrik, atau galeri kecuali Anda yang minta.",
+        "cta": "Kenali Aris"
+      },
+      "p3": {
+        "title": "Setiap perjalanan ikut berbagi",
+        "text": "Sebagian dari setiap pemesanan disumbangkan untuk kegiatan sosial di Bali, dan totalnya kami umumkan secara terbuka.",
+        "cta": "Cara kerjanya"
+      }
     }
   },
   "svc": {
@@ -620,5 +651,15 @@
     "amed": "Amed",
     "lovina": "Lovina",
     "other": "Area lain"
+  },
+  "giving": {
+    "ruleTransfer": "{amount} dari setiap antar jemput bandara",
+    "ruleTrip": "{amount} dari setiap sewa sopir atau tur skuter",
+    "totalStart": "Dimulai dari pemesanan pertama",
+    "causeTbc": "Penerima akan segera diumumkan",
+    "updated": "Diperbarui {date}",
+    "totalLabel": "Total donasi sejauh ini",
+    "causeLabel": "Disalurkan kepada",
+    "receipts": "Lihat bukti dan kabar terbaru"
   }
 }

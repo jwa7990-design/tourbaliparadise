@@ -1,5 +1,5 @@
 /* Shared layout (header, menu, footer) and data-driven components. */
-import { BUSINESS, LANGUAGES, CURRENCIES, PRICING, AIRPORT_ZONES, INCLUSIONS, DRIVER, COMMITMENTS, REVIEWS, REVIEWS_PROFILE_URL } from './config.js';
+import { BUSINESS, LANGUAGES, CURRENCIES, PRICING, AIRPORT_ZONES, GIVING, INCLUSIONS, DRIVER, COMMITMENTS, REVIEWS, REVIEWS_PROFILE_URL } from './config.js';
 import { t, pick, getLang } from './i18n.js';
 import { getCurrency, formatIDR, formatConverted, ratesInfo } from './currency.js';
 import { waUrl, refreshWaLinks } from './whatsapp.js';
@@ -134,6 +134,7 @@ export function renderFooter() {
         <div class="footer__brand">
           ${wordmark.replace('header_wordmark', 'footer_wordmark')}
           ${tx('brand.tagline', 'p', ' class="footer__tagline"')}
+          ${tx('footer.promise', 'p', ' class="footer__promise"')}
           ${tx('footer.about', 'p')}
         </div>
         <div>
@@ -220,6 +221,7 @@ export function renderPrices() {
     }
   }
   renderZoneCheck();
+  renderGiving();
 }
 
 /* ---------- Airport transfer: price by area ---------- */
@@ -342,8 +344,40 @@ export function renderContact() {
     <div><dt>${esc(t('contact.howTitle'))}</dt><dd>${esc(t('contact.howText'))}</dd></div>`;
 }
 
+/* ---------- Giving back ---------- */
+export function renderGiving() {
+  const host = document.querySelector('[data-giving]');
+  if (!host) return;
+  const rules = host.querySelector('[data-giving-rules]');
+  rules.innerHTML = [
+    ['giving.ruleTransfer', GIVING.perTransferIdr],
+    ['giving.ruleTrip', GIVING.perTripIdr],
+  ].filter(([, v]) => formatIDR(v)).map(([k, v]) => `<li>${esc(t(k, { amount: formatIDR(v) }))}</li>`).join('');
+
+  const total = host.querySelector('[data-giving-total]');
+  const totalNote = host.querySelector('[data-giving-total-note]');
+  if (formatIDR(GIVING.totalDonatedIdr)) {
+    total.textContent = formatIDR(GIVING.totalDonatedIdr);
+    const conv = formatConverted(GIVING.totalDonatedIdr);
+    totalNote.textContent = [conv ? `≈ ${conv}` : '', GIVING.lastUpdated ? t('giving.updated', {
+      date: new Intl.DateTimeFormat(getLang() === 'zh-CN' ? 'zh-CN' : getLang(), { dateStyle: 'medium' }).format(new Date(`${GIVING.lastUpdated}T00:00:00`)),
+    }) : ''].filter(Boolean).join(' · ');
+  } else {
+    total.textContent = 'Rp 0';
+    totalNote.textContent = t('giving.totalStart');
+  }
+
+  const cause = host.querySelector('[data-giving-cause]');
+  cause.innerHTML = GIVING.cause && GIVING.cause.name
+    ? (GIVING.cause.url ? `<a href="${esc(GIVING.cause.url)}" target="_blank" rel="noopener" data-track-label="giving_cause_link">${esc(GIVING.cause.name)}</a>` : esc(GIVING.cause.name))
+    : `<span class="placeholder-text">${esc(t('giving.causeTbc'))}</span>`;
+
+  const link = host.querySelector('[data-giving-updates]');
+  if (GIVING.updatesUrl) { link.href = GIVING.updatesUrl; link.hidden = false; } else { link.hidden = true; }
+}
+
 /* ---------- Gentle reveal on scroll (disabled for reduced motion) ---------- */
-const REVEAL = '.section-head, .editorial-item, .service-trio__item, .experience__grid, .service-row, .price-grid, .zone-check, .meet, .tile-grid li, .steps li, .expect, .faq, .contact, .trust__list li, .green-band__inner, .cta-band__inner, .intro__text, .included';
+const REVEAL = '.promise__list li, .giving, .price-promise, .section-head, .editorial-item, .service-trio__item, .experience__grid, .service-row, .price-grid, .zone-check, .meet, .tile-grid li, .steps li, .expect, .faq, .contact, .trust__list li, .green-band__inner, .cta-band__inner, .intro__text, .included';
 export function initReveal() {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
   document.documentElement.classList.add('reveal-on');
