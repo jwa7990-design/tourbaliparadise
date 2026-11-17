@@ -8,8 +8,16 @@
   Permissions-Policy: geolocation=(), camera=(), microphone=()
   X-Frame-Options: SAMEORIGIN
 
-/assets/*
-  Cache-Control: public, max-age=86400
+# Scripts, styles and translations hold prices and text, so browsers re-check
+# them on every visit (cheap: unchanged files return "304 Not Modified").
+/assets/js/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/css/*
+  Cache-Control: public, max-age=0, must-revalidate
 
 /locales/*
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/images/*
+  Cache-Control: public, max-age=86400
