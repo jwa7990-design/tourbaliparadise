@@ -39,8 +39,8 @@
   <link rel="preload" as="image" fetchpriority="high"
     imagesrcset="https://images.unsplash.com/photo-1748935554590-e594e5fb5348?auto=format&amp;fit=crop&amp;w=800&amp;q=74 800w, https://images.unsplash.com/photo-1748935554590-e594e5fb5348?auto=format&amp;fit=crop&amp;w=1400&amp;q=76 1400w, https://images.unsplash.com/photo-1748935554590-e594e5fb5348?auto=format&amp;fit=crop&amp;w=2200&amp;q=76 2200w"
     imagesizes="100vw">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;family=Oswald:wght@300;500;700&amp;display=swap">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20261117b">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;family=Oswald:wght@300;500;700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261118d">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -153,7 +153,7 @@
     </section>
 
     <!-- ============ GETTING AROUND ============ -->
-    <section class="section section--cream" aria-labelledby="around-title">
+    <section class="section section--paper" aria-labelledby="around-title">
       <div class="container">
         <header class="section-head section-head--split">
           <div>
@@ -162,63 +162,75 @@
           </div>
           <p class="section-head__lead" data-i18n="home.around.lead">Bali's best places are spread across the island. A private driver means no haggling, no waiting for rides and no getting lost. Just a comfortable day at your own pace.</p>
         </header>
-
-        <div class="service-trio">
-          <article class="service-trio__item">
-            <figure class="frame frame--wide"><img src="https://images.unsplash.com/photo-1527605158555-853f200063e9?auto=format&amp;fit=crop&amp;w=800&amp;q=78" loading="lazy" width="800" height="533" alt="An aircraft wing seen through a plane window" data-i18n-alt="img.plane"></figure>
-            <h3 class="h3" data-i18n="svc.airport.title">Airport Transfers</h3>
-            <p data-i18n="svc.airport.short">Arrive and depart with ease. Pickups from Ngurah Rai International Airport, plus hotel and villa transfers.</p>
-            <a class="link-arrow" href="services.html#airport-transfers" data-track="cta" data-track-label="home_around_airport"><span data-i18n="common.learnMore">Learn more</span> <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="service-trio__item">
-            <figure class="frame frame--wide"><img src="https://images.unsplash.com/photo-1475782944331-0ea8c9089a6a?auto=format&amp;fit=crop&amp;w=800&amp;q=78" loading="lazy" width="800" height="533" alt="View of a road and hills through a car windscreen" data-i18n-alt="img.carView"></figure>
-            <h3 class="h3" data-i18n="svc.driver.title">Private Driver Hire</h3>
-            <p data-i18n="svc.driver.short">A comfortable, flexible way to explore. Choose a half or full day with a route that suits your plans.</p>
-            <a class="link-arrow" href="services.html#private-driver" data-track="cta" data-track-label="home_around_driver"><span data-i18n="common.learnMore">Learn more</span> <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="service-trio__item">
-            <figure class="frame frame--wide"><img src="https://images.unsplash.com/photo-1551505256-4b04a993cf44?auto=format&amp;fit=crop&amp;w=800&amp;q=78" loading="lazy" width="800" height="533" alt="The split stone gates at Lempuyang Temple, Bali" data-i18n-alt="img.gates"></figure>
-            <h3 class="h3" data-i18n="svc.custom.title">Custom Day Trips</h3>
-            <p data-i18n="svc.custom.short">Tell Aris what you'd like to see and do. Get local suggestions and a flexible plan for your day.</p>
-            <a class="link-arrow" href="services.html#custom-day-trips" data-track="cta" data-track-label="home_around_custom"><span data-i18n="common.learnMore">Learn more</span> <span aria-hidden="true">→</span></a>
-          </article>
-          <article class="service-trio__item">
-            <figure class="frame frame--wide"><img src="https://images.unsplash.com/photo-1722019690151-51d6f93b9fb3?auto=format&amp;fit=crop&amp;w=800&amp;q=78" loading="lazy" width="800" height="533" alt="A scooter rider on a quiet road beside green forest" data-i18n-alt="img.scooter"></figure>
-            <h3 class="h3" data-i18n="svc.scooter.title">1:1 Scooter Tours</h3>
-            <p data-i18n="svc.scooter.short">Travelling solo? Ride on the back of Aris's scooter for a one-to-one tour. Helmet provided.</p>
-            <a class="link-arrow" href="services.html#scooter-tours" data-track="cta" data-track-label="home_around_scooter"><span data-i18n="common.learnMore">Learn more</span> <span aria-hidden="true">→</span></a>
-          </article>
-        </div>
+        <ul class="ed-cards">
+          <li class="ed-card">
+            <a href="services.html#airport-transfers" data-track="cta" data-track-label="home_around_airport">
+              <figure class="ed-card__img"><img src="https://images.unsplash.com/photo-1527605158555-853f200063e9?auto=format&amp;fit=crop&amp;w=700&amp;h=930&amp;q=78" loading="lazy" width="700" height="930" alt="An aircraft wing seen through a plane window" data-i18n-alt="img.plane"></figure>
+              <span class="ed-card__num">01</span>
+              <h3 class="ed-card__title" data-i18n="svc.airport.title">Airport Transfers</h3>
+              <p class="ed-card__text" data-i18n="svc.airport.short">Arrive and depart with ease. Pickups from Ngurah Rai International Airport, plus hotel and villa transfers.</p>
+              <p class="ed-card__price" data-inline-price="airport_transfer"></p>
+            </a>
+          </li>
+          <li class="ed-card">
+            <a href="services.html#private-driver" data-track="cta" data-track-label="home_around_driver">
+              <figure class="ed-card__img"><img src="https://images.unsplash.com/photo-1475782944331-0ea8c9089a6a?auto=format&amp;fit=crop&amp;w=700&amp;h=930&amp;q=78" loading="lazy" width="700" height="930" alt="View of a road and hills through a car windscreen" data-i18n-alt="img.carView"></figure>
+              <span class="ed-card__num">02</span>
+              <h3 class="ed-card__title" data-i18n="svc.driver.title">Private Driver Hire</h3>
+              <p class="ed-card__text" data-i18n="svc.driver.short">A comfortable, flexible way to explore. Choose a half or full day with a route that suits your plans.</p>
+              <p class="ed-card__price" data-inline-price="full_day_driver"></p>
+            </a>
+          </li>
+          <li class="ed-card">
+            <a href="services.html#custom-day-trips" data-track="cta" data-track-label="home_around_custom">
+              <figure class="ed-card__img"><img src="https://images.unsplash.com/photo-1551505256-4b04a993cf44?auto=format&amp;fit=crop&amp;w=700&amp;h=930&amp;q=78" loading="lazy" width="700" height="930" alt="The split stone gates at Lempuyang Temple, Bali" data-i18n-alt="img.gates"></figure>
+              <span class="ed-card__num">03</span>
+              <h3 class="ed-card__title" data-i18n="svc.custom.title">Custom Day Trips</h3>
+              <p class="ed-card__text" data-i18n="svc.custom.short">Tell Aris what you'd like to see and do. Get local suggestions and a flexible plan for your day.</p>
+              <p class="ed-card__price" data-inline-price="custom_day_trip"></p>
+            </a>
+          </li>
+          <li class="ed-card">
+            <a href="services.html#scooter-tours" data-track="cta" data-track-label="home_around_scooter">
+              <figure class="ed-card__img"><img src="https://images.unsplash.com/photo-1722019690151-51d6f93b9fb3?auto=format&amp;fit=crop&amp;w=700&amp;h=930&amp;q=78" loading="lazy" width="700" height="930" alt="A scooter rider on a quiet road beside green forest" data-i18n-alt="img.scooter"></figure>
+              <span class="ed-card__num">04</span>
+              <h3 class="ed-card__title" data-i18n="svc.scooter.title">1:1 Scooter Tours</h3>
+              <p class="ed-card__text" data-i18n="svc.scooter.short">Travelling solo? Ride on the back of Aris's scooter for a one-to-one tour. Helmet provided.</p>
+              <p class="ed-card__price" data-inline-price="scooter_tour"></p>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- ============ OUR PROMISE (point of difference) ============ -->
-    <section class="section section--paper promise" aria-labelledby="promise-title">
+    <section class="statements" aria-labelledby="promise-title">
       <div class="container">
-        <header class="section-head section-head--center">
-          <p class="overline overline--dark" data-i18n="home.promise.overline">Our promise</p>
-          <h2 id="promise-title" class="h2" data-i18n="home.promise.title">Honest prices. No shopping stops. Every trip gives back.</h2>
-        </header>
-        <ul class="promise__list">
+        <p class="overline" data-i18n="home.promise.overline">Our promise</p>
+        <h2 id="promise-title" class="sr-only" data-i18n="home.promise.title">Honest prices. No shopping stops. Every trip gives back.</h2>
+        <ol class="statements__list">
           <li>
-            <span data-icon="tag"></span>
-            <h3 class="h3" data-i18n="home.promise.p1.title">Honest prices</h3>
-            <p data-i18n="home.promise.p1.text">Every price is on this website, with fuel, parking and tolls included. Aris confirms your total before you travel, and you never pay for anything you didn't agree to.</p>
-            <a class="link-arrow" href="services.html#pricing" data-track="cta" data-track-label="home_promise_prices"><span data-i18n="home.promise.p1.cta">See prices</span> <span aria-hidden="true">→</span></a>
+            <h3 class="statements__big" data-i18n="home.promise.p1.title">Honest prices</h3>
+            <div class="statements__body">
+              <p data-i18n="home.promise.p1.text">Every price is on this website, with fuel, parking and tolls included. Aris confirms your total before you travel, and you never pay for anything you didn't agree to.</p>
+              <a class="link-arrow link-arrow--light" href="services.html#pricing" data-track="cta" data-track-label="home_promise_prices"><span data-i18n="home.promise.p1.cta">See prices</span> <span aria-hidden="true">→</span></a>
+            </div>
           </li>
           <li>
-            <span data-icon="bag"></span>
-            <h3 class="h3" data-i18n="home.promise.p2.title">No shopping stops</h3>
-            <p data-i18n="home.promise.p2.text">Your day goes where you want it to. No detours to shops, factories or showrooms unless you ask.</p>
-            <a class="link-arrow" href="about.html" data-track="cta" data-track-label="home_promise_about"><span data-i18n="home.promise.p2.cta">Meet Aris</span> <span aria-hidden="true">→</span></a>
+            <h3 class="statements__big" data-i18n="home.promise.p2.title">No shopping stops</h3>
+            <div class="statements__body">
+              <p data-i18n="home.promise.p2.text">Your day goes where you want it to. No detours to shops, factories or showrooms unless you ask.</p>
+              <a class="link-arrow link-arrow--light" href="about.html" data-track="cta" data-track-label="home_promise_about"><span data-i18n="home.promise.p2.cta">Meet Aris</span> <span aria-hidden="true">→</span></a>
+            </div>
           </li>
           <li>
-            <span data-icon="heart"></span>
-            <h3 class="h3" data-i18n="home.promise.p3.title">Every trip gives back</h3>
-            <p data-i18n="home.promise.p3.text">Part of every booking goes to a local Bali cause, and we publish the running total so you can see it.</p>
-            <a class="link-arrow" href="giving.html" data-track="cta" data-track-label="home_promise_giving"><span data-i18n="home.promise.p3.cta">How it works</span> <span aria-hidden="true">→</span></a>
+            <h3 class="statements__big" data-i18n="home.promise.p3.title">Every trip gives back</h3>
+            <div class="statements__body">
+              <p data-i18n="home.promise.p3.text">Part of every booking goes to a local Bali cause, and we publish the running total so you can see it.</p>
+              <a class="link-arrow link-arrow--light" href="giving.html" data-track="cta" data-track-label="home_promise_giving"><span data-i18n="home.promise.p3.cta">How it works</span> <span aria-hidden="true">→</span></a>
+            </div>
           </li>
-        </ul>
+        </ol>
       </div>
     </section>
 

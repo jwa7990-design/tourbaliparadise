@@ -730,5 +730,17 @@
       "title": "Book a trip that gives back",
       "text": "Tell Aris what you'd like to do. Your day out helps Bali too."
     }
+  },
+  "ratecard": {
+    "hire": "Driver hire & tours",
+    "airport": "Airport transfers by area",
+    "airportSub": "One way, per car, between Ngurah Rai Airport and your hotel or villa.",
+    "notes": {
+      "half": "Up to 5 hours",
+      "full": "Up to 10 hours",
+      "scooter": "Half day, 1 guest, helmet provided",
+      "custom": "Planned around your day"
+    },
+    "ask": "Ask Aris on WhatsApp"
   }
 }

@@ -37,8 +37,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://open.er-api.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;family=Oswald:wght@300;500;700&amp;display=swap">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20261117b">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;family=Oswald:wght@300;500;700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261118d">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -210,54 +210,16 @@
           <p class="section-head__lead" data-i18n="pricing.lead">Prices are set in Indonesian Rupiah (IDR). Choose your currency at the top of the page to see an approximate conversion.</p>
         </header>
 
-        <ul class="price-grid">
-          <li class="price" data-price="airport_transfer">
-            <span class="price__icon" data-icon="plane"></span>
-            <h3 class="price__label" data-i18n="pricing.items.airport_transfer">Airport transfer</h3>
-            <span class="price__from" data-price-prefix></span>
-            <span class="price__idr" data-price-idr data-i18n="pricing.tbc">Price to be confirmed</span>
-            <span class="price__conv" data-price-conv></span>
-            <a class="price__link" href="#airport-prices" data-track="cta" data-track-label="pricing_airport_by_area" data-i18n="pricing.byArea">See prices by area</a>
-          </li>
-          <li class="price" data-price="half_day_driver">
-            <span class="price__icon" data-icon="car"></span>
-            <h3 class="price__label" data-i18n="pricing.items.half_day_driver">Half-day driver</h3>
-            <span class="price__from" data-price-prefix></span>
-            <span class="price__idr" data-price-idr data-i18n="pricing.tbc">Price to be confirmed</span>
-            <span class="price__conv" data-price-conv></span>
-          </li>
-          <li class="price" data-price="full_day_driver">
-            <span class="price__icon" data-icon="car"></span>
-            <h3 class="price__label" data-i18n="pricing.items.full_day_driver">Full-day driver</h3>
-            <span class="price__from" data-price-prefix></span>
-            <span class="price__idr" data-price-idr data-i18n="pricing.tbc">Price to be confirmed</span>
-            <span class="price__conv" data-price-conv></span>
-          </li>
-          <li class="price" data-price="custom_day_trip">
-            <span class="price__icon" data-icon="pin"></span>
-            <h3 class="price__label" data-i18n="pricing.items.custom_day_trip">Custom day trip</h3>
-            <span class="price__from" data-price-prefix></span>
-            <span class="price__idr" data-price-idr data-i18n="pricing.quoteOnRequest">Quote on request</span>
-            <span class="price__conv" data-price-conv></span>
-          </li>
-          <li class="price" data-price="scooter_tour">
-            <span class="price__icon" data-icon="scooter"></span>
-            <h3 class="price__label" data-i18n="pricing.items.scooter_tour">1:1 scooter tour</h3>
-            <span class="price__from" data-price-prefix></span>
-            <span class="price__idr" data-price-idr data-i18n="pricing.tbc">Price to be confirmed</span>
-            <span class="price__conv" data-price-conv></span>
-          </li>
-        </ul>
-
-        <div class="zone-check" id="airport-prices" data-zone-check>
-          <h3 class="h3" data-i18n="airportZones.title">Airport transfer price by area</h3>
-          <label for="zone-select" data-i18n="airportZones.label">Where are you staying?</label>
-          <div class="zone-check__row">
-            <select id="zone-select" class="zone-select" data-zone-select><option value="">Choose an area…</option></select>
-            <div class="zone-check__result" aria-live="polite"><span class="zone-check__idr" data-zone-idr></span><span class="zone-check__conv" data-zone-conv></span></div>
+        <div class="ratecard">
+          <div class="ratecard__col">
+            <h3 class="ratecard__title" data-i18n="ratecard.hire">Driver hire &amp; tours</h3>
+            <ul class="ratecard__list" data-ratecard="hire"></ul>
           </div>
-          <p class="zone-check__note" data-i18n="airportZones.note">Prices are for a transfer between the airport and your hotel or villa in that area. Aris confirms the final price before you book.</p>
-          <a class="btn btn--green btn--icon" href="https://wa.me/6285850019078" data-wa="airport" data-zone-wa data-track-label="pricing_airport_area_whatsapp" target="_blank" rel="noopener"><span data-icon="whatsapp"></span><span data-i18n="airportZones.cta">Enquire about an airport transfer</span></a>
+          <div class="ratecard__col" id="airport-prices">
+            <h3 class="ratecard__title" data-i18n="ratecard.airport">Airport transfers by area</h3>
+            <p class="ratecard__sub" data-i18n="ratecard.airportSub">One way, per car, between Ngurah Rai Airport and your hotel or villa.</p>
+            <ul class="ratecard__list" data-ratecard="airport"></ul>
+          </div>
         </div>
 
         <div class="price-note" role="note">

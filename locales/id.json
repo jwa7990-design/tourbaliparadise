@@ -730,5 +730,17 @@
       "title": "Pesan perjalanan yang ikut berbagi",
       "text": "Ceritakan kepada Aris apa yang ingin Anda lakukan. Hari jalan-jalan Anda juga ikut membantu Bali."
     }
+  },
+  "ratecard": {
+    "hire": "Sewa sopir & tur",
+    "airport": "Antar jemput bandara per area",
+    "airportSub": "Sekali jalan, per mobil, antara Bandara Ngurah Rai dan hotel atau vila Anda.",
+    "notes": {
+      "half": "Hingga 5 jam",
+      "full": "Hingga 10 jam",
+      "scooter": "Setengah hari, 1 tamu, helm disediakan",
+      "custom": "Disesuaikan dengan rencana Anda"
+    },
+    "ask": "Tanya Aris lewat WhatsApp"
   }
 }

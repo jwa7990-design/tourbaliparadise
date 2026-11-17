@@ -160,6 +160,7 @@ export function renderFooter() {
         ${tx('footer.photos', 'p')}
         <p>© ${new Date().getFullYear()} Bali Paradise.</p>
       </div>
+      <div class="footer__giant" aria-hidden="true">Bali Paradise</div>
     </div>`;
 }
 
@@ -223,7 +224,71 @@ export function renderPrices() {
     }
   }
   renderZoneCheck();
+  renderInlinePrices();
+  renderRateCard();
   renderGiving();
+}
+
+/* ---------- Inline "From" prices (home service cards) ---------- */
+function priceHtml(amount, quote) {
+  const idr = formatIDR(amount);
+  if (!idr) return `<b>${esc(t(quote ? 'pricing.quoteOnRequest' : 'pricing.tbc'))}</b>`;
+  const conv = formatConverted(amount);
+  return `<span class="from">${esc(t('pricing.from'))}</span> <b>${esc(idr)}</b>${conv ? ` <span class="conv">≈ ${esc(conv)}</span>` : ''}`;
+}
+export function renderInlinePrices() {
+  document.querySelectorAll('[data-inline-price]').forEach(el => {
+    const key = el.dataset.inlinePrice;
+    el.innerHTML = priceHtml(basePrice(key), PRICING[key]?.quoteOnRequest);
+  });
+}
+
+/* ---------- Rate card (services): every price, one list ---------- */
+const HIRE_ROWS = [
+  ['half_day_driver', 'ratecard.notes.half', 'driver'],
+  ['full_day_driver', 'ratecard.notes.full', 'driver'],
+  ['scooter_tour', 'ratecard.notes.scooter', 'scooter'],
+  ['custom_day_trip', 'ratecard.notes.custom', 'custom'],
+];
+function rateRow({ name, note, amount, quote, waAttrs, label }) {
+  const idr = formatIDR(amount);
+  const conv = idr ? formatConverted(amount) : null;
+  const price = idr
+    ? `<b>${esc(idr)}</b>${conv ? `<small>≈ ${esc(conv)}</small>` : ''}`
+    : `<b class="rc__quote">${esc(t(quote ? 'pricing.quoteOnRequest' : 'pricing.tbc'))}</b>`;
+  return `<li class="rc">
+    <span class="rc__name">${esc(name)}${note ? `<small>${esc(note)}</small>` : ''}</span>
+    <span class="rc__dots" aria-hidden="true"></span>
+    <span class="rc__price">${price}</span>
+    <a class="rc__ask" href="${waUrl()}" ${waAttrs} data-track-label="${label}" target="_blank" rel="noopener" aria-label="${esc(t('ratecard.ask'))}: ${esc(name)}">${icon('whatsapp')}</a>
+  </li>`;
+}
+export function renderRateCard() {
+  const hire = document.querySelector('[data-ratecard="hire"]');
+  if (hire) {
+    hire.innerHTML = HIRE_ROWS.map(([key, noteKey, ctx]) => rateRow({
+      name: t(`pricing.items.${key}`), note: t(noteKey), amount: basePrice(key), quote: PRICING[key]?.quoteOnRequest,
+      waAttrs: `data-wa="${ctx}" data-wa-price="${key}"`, label: `ratecard_${key}`,
+    })).join('');
+  }
+  const air = document.querySelector('[data-ratecard="airport"]');
+  if (air) {
+    air.innerHTML = AIRPORT_ZONES.map(z => rateRow({
+      name: t(`zones.${z.key}`), amount: z.price_idr, quote: z.quoteOnRequest,
+      waAttrs: `data-wa="airport" data-wa-zone="${z.key}"`, label: `ratecard_airport_${z.key}`,
+    })).join('');
+  }
+}
+
+/* ---------- Editorial section numbers (decorative) ---------- */
+export function numberSections() {
+  const sections = document.querySelectorAll('main > section.section, main > nav.section');
+  let n = 0;
+  sections.forEach(sec => {
+    if (sec.querySelector(':scope > .ed-num')) return;
+    n += 1;
+    sec.insertAdjacentHTML('afterbegin', `<span class="ed-num" aria-hidden="true">${String(n).padStart(2, '0')}</span>`);
+  });
 }
 
 /* ---------- Airport transfer: price by area ---------- */
@@ -406,7 +471,7 @@ export async function renderGiving() {
 }
 
 /* ---------- Gentle reveal on scroll (disabled for reduced motion) ---------- */
-const REVEAL = '.promise__list li, .giving, .price-promise, .section-head, .editorial-item, .service-trio__item, .experience__grid, .service-row, .price-grid, .zone-check, .meet, .tile-grid li, .steps li, .expect, .faq, .contact, .trust__list li, .green-band__inner, .cta-band__inner, .intro__text, .included';
+const REVEAL = '.ed-card, .statements__list li, .contents__list li, .ratecard__col, .promise__list li, .giving, .price-promise, .section-head, .editorial-item, .service-trio__item, .experience__grid, .service-row, .price-grid, .zone-check, .meet, .tile-grid li, .steps li, .expect, .faq, .contact, .trust__list li, .green-band__inner, .cta-band__inner, .intro__text, .included';
 export function initReveal() {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) return;
   document.documentElement.classList.add('reveal-on');

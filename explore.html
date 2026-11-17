@@ -36,8 +36,8 @@
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;family=Oswald:wght@300;500;700&amp;display=swap">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20261117b">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;family=Oswald:wght@300;500;700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261118d">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -107,38 +107,65 @@
       </div>
     </section>
 
-    <!-- Category index (mockup grid) -->
-    <nav class="section section--tight" aria-label="Experience categories" data-i18n-aria-label="explore.indexLabel">
+    <!-- Contents: an editorial index of the six sections -->
+    <nav class="section section--tight contents" aria-label="Experience categories" data-i18n-aria-label="explore.indexLabel">
       <div class="container">
-        <ul class="tile-grid">
-          <li><a class="tile" href="#explore-bali" data-track="cta" data-track-label="explore_index_explore_bali">
-            <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&amp;fit=crop&amp;w=800&amp;q=74" loading="lazy" width="800" height="500" alt="" >
-            <span class="tile__body"><span class="tile__title" data-i18n="cat.explore.title">Explore Bali</span><span class="tile__text" data-i18n="cat.explore.short">Rice terraces, waterfalls, temples and village life.</span></span><span class="tile__arrow" aria-hidden="true">→</span></a></li>
-          <li><a class="tile" href="#food-coffee" data-track="cta" data-track-label="explore_index_food_coffee">
-            <img src="https://images.unsplash.com/photo-1539755530862-00f623c00f52?auto=format&amp;fit=crop&amp;w=800&amp;q=74" loading="lazy" width="800" height="500" alt="">
-            <span class="tile__body"><span class="tile__title" data-i18n="cat.food.title">Food &amp; Coffee</span><span class="tile__text" data-i18n="cat.food.short">Local warungs, markets and coffee plantations.</span></span><span class="tile__arrow" aria-hidden="true">→</span></a></li>
-          <li><a class="tile" href="#adventure" data-track="cta" data-track-label="explore_index_adventure">
-            <img src="https://images.unsplash.com/photo-1582959746698-660400376dd6?auto=format&amp;fit=crop&amp;w=800&amp;q=74" loading="lazy" width="800" height="500" alt="">
-            <span class="tile__body"><span class="tile__title" data-i18n="cat.adventure.title">Adventure</span><span class="tile__text" data-i18n="cat.adventure.short">ATV rides, rafting, volcano treks and water sports.</span></span><span class="tile__arrow" aria-hidden="true">→</span></a></li>
-          <li><a class="tile" href="#family-fun" data-track="cta" data-track-label="explore_index_family_fun">
-            <img src="https://images.unsplash.com/photo-1628144940897-d09a8b217fc6?auto=format&amp;fit=crop&amp;w=800&amp;q=74" loading="lazy" width="800" height="500" alt="">
-            <span class="tile__body"><span class="tile__title" data-i18n="cat.family.title">Family Fun</span><span class="tile__text" data-i18n="cat.family.short">Water parks, gentle beaches and animal encounters.</span></span><span class="tile__arrow" aria-hidden="true">→</span></a></li>
-          <li><a class="tile" href="#beaches-sunsets" data-track="cta" data-track-label="explore_index_beaches_sunsets">
-            <img src="https://images.unsplash.com/photo-1566811851038-0580f1fb9082?auto=format&amp;fit=crop&amp;w=800&amp;q=74" loading="lazy" width="800" height="500" alt="">
-            <span class="tile__body"><span class="tile__title" data-i18n="cat.beaches.title">Beaches &amp; Sunsets</span><span class="tile__text" data-i18n="cat.beaches.short">Uluwatu cliffs, Jimbaran Bay and seaside dinners.</span></span><span class="tile__arrow" aria-hidden="true">→</span></a></li>
-          <li><a class="tile" href="#culture" data-track="cta" data-track-label="explore_index_culture">
-            <img src="https://images.unsplash.com/photo-1773555899937-229935a87166?auto=format&amp;fit=crop&amp;w=800&amp;q=74" loading="lazy" width="800" height="500" alt="">
-            <span class="tile__body"><span class="tile__title" data-i18n="cat.culture.title">Culture &amp; Local Life</span><span class="tile__text" data-i18n="cat.culture.short">Temples, ceremonies, crafts and village life.</span></span><span class="tile__arrow" aria-hidden="true">→</span></a></li>
-        </ul>
+        <ol class="contents__list">
+          <li><a href="#explore-bali" data-track="cta" data-track-label="explore_index_explore_bali">
+            <span class="contents__num">01</span>
+            <span class="contents__title" data-i18n="cat.explore.title">Explore Bali</span>
+            <span class="contents__text" data-i18n="cat.explore.short">Rice terraces, waterfalls, temples and village life.</span>
+            <img class="contents__thumb" src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&amp;fit=crop&amp;w=360&amp;h=480&amp;q=74" loading="lazy" width="360" height="480" alt="">
+            <span class="contents__arrow" aria-hidden="true">↓</span>
+          </a></li>
+          <li><a href="#food-coffee" data-track="cta" data-track-label="explore_index_food_coffee">
+            <span class="contents__num">02</span>
+            <span class="contents__title" data-i18n="cat.food.title">Food &amp; Coffee</span>
+            <span class="contents__text" data-i18n="cat.food.short">Local warungs, markets and coffee plantations.</span>
+            <img class="contents__thumb" src="https://images.unsplash.com/photo-1539755530862-00f623c00f52?auto=format&amp;fit=crop&amp;w=360&amp;h=480&amp;q=74" loading="lazy" width="360" height="480" alt="">
+            <span class="contents__arrow" aria-hidden="true">↓</span>
+          </a></li>
+          <li><a href="#adventure" data-track="cta" data-track-label="explore_index_adventure">
+            <span class="contents__num">03</span>
+            <span class="contents__title" data-i18n="cat.adventure.title">Adventure</span>
+            <span class="contents__text" data-i18n="cat.adventure.short">ATV rides, rafting, volcano treks and water sports.</span>
+            <img class="contents__thumb" src="https://images.unsplash.com/photo-1582959746698-660400376dd6?auto=format&amp;fit=crop&amp;w=360&amp;h=480&amp;q=74" loading="lazy" width="360" height="480" alt="">
+            <span class="contents__arrow" aria-hidden="true">↓</span>
+          </a></li>
+          <li><a href="#family-fun" data-track="cta" data-track-label="explore_index_family_fun">
+            <span class="contents__num">04</span>
+            <span class="contents__title" data-i18n="cat.family.title">Family Fun</span>
+            <span class="contents__text" data-i18n="cat.family.short">Water parks, gentle beaches and animal encounters.</span>
+            <img class="contents__thumb" src="https://images.unsplash.com/photo-1628144940897-d09a8b217fc6?auto=format&amp;fit=crop&amp;w=360&amp;h=480&amp;q=74" loading="lazy" width="360" height="480" alt="">
+            <span class="contents__arrow" aria-hidden="true">↓</span>
+          </a></li>
+          <li><a href="#beaches-sunsets" data-track="cta" data-track-label="explore_index_beaches_sunsets">
+            <span class="contents__num">05</span>
+            <span class="contents__title" data-i18n="cat.beaches.title">Beaches &amp; Sunsets</span>
+            <span class="contents__text" data-i18n="cat.beaches.short">Uluwatu cliffs, Jimbaran Bay and seaside dinners.</span>
+            <img class="contents__thumb" src="https://images.unsplash.com/photo-1566811851038-0580f1fb9082?auto=format&amp;fit=crop&amp;w=360&amp;h=480&amp;q=74" loading="lazy" width="360" height="480" alt="">
+            <span class="contents__arrow" aria-hidden="true">↓</span>
+          </a></li>
+          <li><a href="#culture" data-track="cta" data-track-label="explore_index_culture">
+            <span class="contents__num">06</span>
+            <span class="contents__title" data-i18n="cat.culture.title">Culture &amp; Local Life</span>
+            <span class="contents__text" data-i18n="cat.culture.short">Temples, ceremonies, crafts and village life.</span>
+            <img class="contents__thumb" src="https://images.unsplash.com/photo-1773555899937-229935a87166?auto=format&amp;fit=crop&amp;w=360&amp;h=480&amp;q=74" loading="lazy" width="360" height="480" alt="">
+            <span class="contents__arrow" aria-hidden="true">↓</span>
+          </a></li>
+        </ol>
       </div>
     </nav>
 
     <!-- ============ A. EXPLORE BALI ============ -->
     <section id="explore-bali" class="experience" aria-labelledby="exp-a">
       <div class="container experience__grid">
-        <figure class="experience__media frame frame--portrait">
+        <div class="experience__media">
+          <figure class="frame frame--portrait experience__main">
           <img src="https://images.unsplash.com/photo-1554931670-4ebfabf6e7a9?auto=format&amp;fit=crop&amp;w=1000&amp;q=78" srcset="https://images.unsplash.com/photo-1554931670-4ebfabf6e7a9?auto=format&amp;fit=crop&amp;w=600&amp;q=78 600w, https://images.unsplash.com/photo-1554931670-4ebfabf6e7a9?auto=format&amp;fit=crop&amp;w=1000&amp;q=78 1000w" sizes="(min-width: 900px) 45vw, 100vw" loading="lazy" width="1000" height="1250" alt="Several waterfalls cascading down a jungle cliff" data-i18n-alt="img.waterfall">
         </figure>
+          <figure class="frame experience__inset"><img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&amp;fit=crop&amp;w=420&amp;h=560&amp;q=74" loading="lazy" width="420" height="560" alt="" ></figure>
+        </div>
         <div class="experience__body">
           <span class="experience__num">01</span>
           <h2 id="exp-a" class="h2" data-i18n="cat.explore.title">Explore Bali</h2>
@@ -159,9 +186,12 @@
     <!-- ============ B. FOOD & COFFEE ============ -->
     <section id="food-coffee" class="experience experience--flip" aria-labelledby="exp-b">
       <div class="container experience__grid">
-        <figure class="experience__media frame frame--portrait">
+        <div class="experience__media">
+          <figure class="frame frame--portrait experience__main">
           <img src="https://images.unsplash.com/photo-1609773036433-e941b471a6b7?auto=format&amp;fit=crop&amp;w=1000&amp;q=78" srcset="https://images.unsplash.com/photo-1609773036433-e941b471a6b7?auto=format&amp;fit=crop&amp;w=600&amp;q=78 600w, https://images.unsplash.com/photo-1609773036433-e941b471a6b7?auto=format&amp;fit=crop&amp;w=1000&amp;q=78 1000w" sizes="(min-width: 900px) 45vw, 100vw" loading="lazy" width="1000" height="1250" alt="Stallholders and shoppers at a busy traditional market in Bali" data-i18n-alt="img.market">
         </figure>
+          <figure class="frame experience__inset"><img src="https://images.unsplash.com/photo-1539755530862-00f623c00f52?auto=format&amp;fit=crop&amp;w=420&amp;h=560&amp;q=74" loading="lazy" width="420" height="560" alt="" ></figure>
+        </div>
         <div class="experience__body">
           <span class="experience__num">02</span>
           <h2 id="exp-b" class="h2" data-i18n="cat.food.title">Food &amp; Coffee</h2>
@@ -182,9 +212,12 @@
     <!-- ============ C. ADVENTURE ============ -->
     <section id="adventure" class="experience" aria-labelledby="exp-c">
       <div class="container experience__grid">
-        <figure class="experience__media frame frame--portrait">
+        <div class="experience__media">
+          <figure class="frame frame--portrait experience__main">
           <img src="https://images.unsplash.com/photo-1624935957394-428a5f633c14?auto=format&amp;fit=crop&amp;w=1000&amp;q=78" srcset="https://images.unsplash.com/photo-1624935957394-428a5f633c14?auto=format&amp;fit=crop&amp;w=600&amp;q=78 600w, https://images.unsplash.com/photo-1624935957394-428a5f633c14?auto=format&amp;fit=crop&amp;w=1000&amp;q=78 1000w" sizes="(min-width: 900px) 45vw, 100vw" loading="lazy" width="1000" height="1250" alt="Aerial view of a river winding through dense green jungle" data-i18n-alt="img.river">
         </figure>
+          <figure class="frame experience__inset"><img src="https://images.unsplash.com/photo-1582959746698-660400376dd6?auto=format&amp;fit=crop&amp;w=420&amp;h=560&amp;q=74" loading="lazy" width="420" height="560" alt="" ></figure>
+        </div>
         <div class="experience__body">
           <span class="experience__num">03</span>
           <h2 id="exp-c" class="h2" data-i18n="cat.adventure.title">Adventure</h2>
@@ -205,9 +238,12 @@
     <!-- ============ D. FAMILY FUN ============ -->
     <section id="family-fun" class="experience experience--flip" aria-labelledby="exp-d">
       <div class="container experience__grid">
-        <figure class="experience__media frame frame--portrait">
+        <div class="experience__media">
+          <figure class="frame frame--portrait experience__main">
           <img src="https://images.unsplash.com/photo-1539606249016-c9d3f9bea580?auto=format&amp;fit=crop&amp;w=1000&amp;q=78" srcset="https://images.unsplash.com/photo-1539606249016-c9d3f9bea580?auto=format&amp;fit=crop&amp;w=600&amp;q=78 600w, https://images.unsplash.com/photo-1539606249016-c9d3f9bea580?auto=format&amp;fit=crop&amp;w=1000&amp;q=78 1000w" sizes="(min-width: 900px) 45vw, 100vw" loading="lazy" width="1000" height="1250" alt="A long-tailed macaque sitting on a moss-covered stone wall" data-i18n-alt="img.monkey">
         </figure>
+          <figure class="frame experience__inset"><img src="https://images.unsplash.com/photo-1628144940897-d09a8b217fc6?auto=format&amp;fit=crop&amp;w=420&amp;h=560&amp;q=74" loading="lazy" width="420" height="560" alt="" ></figure>
+        </div>
         <div class="experience__body">
           <span class="experience__num">04</span>
           <h2 id="exp-d" class="h2" data-i18n="cat.family.title">Family Fun</h2>
@@ -228,9 +264,12 @@
     <!-- ============ E. BEACHES & SUNSETS ============ -->
     <section id="beaches-sunsets" class="experience" aria-labelledby="exp-e">
       <div class="container experience__grid">
-        <figure class="experience__media frame frame--portrait">
+        <div class="experience__media">
+          <figure class="frame frame--portrait experience__main">
           <img src="https://images.unsplash.com/photo-1720728660013-4f3fc89b3eb2?auto=format&amp;fit=crop&amp;w=1000&amp;q=78" srcset="https://images.unsplash.com/photo-1720728660013-4f3fc89b3eb2?auto=format&amp;fit=crop&amp;w=600&amp;q=78 600w, https://images.unsplash.com/photo-1720728660013-4f3fc89b3eb2?auto=format&amp;fit=crop&amp;w=1000&amp;q=78 1000w" sizes="(min-width: 900px) 45vw, 100vw" loading="lazy" width="1000" height="1250" alt="The sun setting over the ocean beside a dark sea cliff" data-i18n-alt="img.cliffSunset">
         </figure>
+          <figure class="frame experience__inset"><img src="https://images.unsplash.com/photo-1566811851038-0580f1fb9082?auto=format&amp;fit=crop&amp;w=420&amp;h=560&amp;q=74" loading="lazy" width="420" height="560" alt="" ></figure>
+        </div>
         <div class="experience__body">
           <span class="experience__num">05</span>
           <h2 id="exp-e" class="h2" data-i18n="cat.beaches.title">Beaches &amp; Sunsets</h2>
@@ -251,9 +290,12 @@
     <!-- ============ F. CULTURE & LOCAL LIFE ============ -->
     <section id="culture" class="experience experience--flip" aria-labelledby="exp-f">
       <div class="container experience__grid">
-        <figure class="experience__media frame frame--portrait">
+        <div class="experience__media">
+          <figure class="frame frame--portrait experience__main">
           <img src="https://images.unsplash.com/photo-1627974159699-b355b081460e?auto=format&amp;fit=crop&amp;w=1000&amp;q=78" srcset="https://images.unsplash.com/photo-1627974159699-b355b081460e?auto=format&amp;fit=crop&amp;w=600&amp;q=78 600w, https://images.unsplash.com/photo-1627974159699-b355b081460e?auto=format&amp;fit=crop&amp;w=1000&amp;q=78 1000w" sizes="(min-width: 900px) 45vw, 100vw" loading="lazy" width="1000" height="1250" alt="A Balinese woman praying with offerings at a temple" data-i18n-alt="img.prayer">
         </figure>
+          <figure class="frame experience__inset"><img src="https://images.unsplash.com/photo-1773555899937-229935a87166?auto=format&amp;fit=crop&amp;w=420&amp;h=560&amp;q=74" loading="lazy" width="420" height="560" alt="" ></figure>
+        </div>
         <div class="experience__body">
           <span class="experience__num">06</span>
           <h2 id="exp-f" class="h2" data-i18n="cat.culture.title">Culture &amp; Local Life</h2>
