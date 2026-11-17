@@ -102,6 +102,12 @@ node scripts/set-domain.mjs https://www.yourdomain.com
 
 This writes canonical, hreflang (en / zh-Hans / ru / id / x-default), og:url and absolute structured-data URLs into all four pages. It also generates `sitemap.xml` (16 URLs with hreflang) and updates `robots.txt`. It's safe to re-run.
 
+## Before launch: let search engines in
+
+While the site has placeholder prices and photos, `_headers` sends `X-Robots-Tag: noindex, nofollow`.
+The preview link still works for anyone you send it to, but Google won't list it.
+**At launch, delete that line from `_headers`,** run `scripts/set-domain.mjs`, then push.
+
 ## Deploying to Cloudflare Pages (when ready)
 
 1. Put this folder in a GitHub repository, or use `wrangler pages deploy .` directly.
