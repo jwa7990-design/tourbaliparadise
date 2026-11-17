@@ -1,0 +1,4 @@
+{
+  "_howToAdd": "Add one entry per donation, newest first. date = YYYY-MM-DD, amountIdr = whole rupiah (no dots or commas), to = who received it, note = short description, proofUrl = link to the receipt photo or post (or null). See GIVING-LOG.md.",
+  "donations": []
+}

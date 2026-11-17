@@ -5,6 +5,7 @@ import { getCurrency, formatIDR, formatConverted, ratesInfo } from './currency.j
 import { waUrl, refreshWaLinks } from './whatsapp.js';
 import { basePrice, getZone, setZone, findZone } from './pricing.js';
 import { track } from './track.js';
+import { loadGivingLog, givingTotals } from './giving.js';
 
 /* ---------- Icons (simple line icons) ---------- */
 const P = {
@@ -141,6 +142,7 @@ export function renderFooter() {
           ${tx('footer.pages', 'h2')}
           <ul class="footer__links">
             ${PAGES.map(p => `<li><a href="${p.href}" data-track-label="footer_${p.id}" data-i18n="${p.key}">${esc(t(p.key))}</a></li>`).join('')}
+            <li><a href="giving.html" data-track-label="footer_giving" data-i18n="footer.giving">${esc(t('footer.giving'))}</a></li>
           </ul>
         </div>
         <div>
@@ -344,36 +346,63 @@ export function renderContact() {
     <div><dt>${esc(t('contact.howTitle'))}</dt><dd>${esc(t('contact.howText'))}</dd></div>`;
 }
 
-/* ---------- Giving back ---------- */
-export function renderGiving() {
-  const host = document.querySelector('[data-giving]');
-  if (!host) return;
-  const rules = host.querySelector('[data-giving-rules]');
-  rules.innerHTML = [
-    ['giving.ruleTransfer', GIVING.perTransferIdr],
-    ['giving.ruleTrip', GIVING.perTripIdr],
-  ].filter(([, v]) => formatIDR(v)).map(([k, v]) => `<li>${esc(t(k, { amount: formatIDR(v) }))}</li>`).join('');
+/* ---------- Giving back (About section + Giving Back page) ---------- */
+const dateFmt = iso => new Intl.DateTimeFormat(getLang() === 'zh-CN' ? 'zh-CN' : getLang(), { dateStyle: 'medium' })
+  .format(new Date(`${iso}T00:00:00`));
 
-  const total = host.querySelector('[data-giving-total]');
-  const totalNote = host.querySelector('[data-giving-total-note]');
-  if (formatIDR(GIVING.totalDonatedIdr)) {
-    total.textContent = formatIDR(GIVING.totalDonatedIdr);
-    const conv = formatConverted(GIVING.totalDonatedIdr);
-    totalNote.textContent = [conv ? `≈ ${conv}` : '', GIVING.lastUpdated ? t('giving.updated', {
-      date: new Intl.DateTimeFormat(getLang() === 'zh-CN' ? 'zh-CN' : getLang(), { dateStyle: 'medium' }).format(new Date(`${GIVING.lastUpdated}T00:00:00`)),
-    }) : ''].filter(Boolean).join(' · ');
-  } else {
-    total.textContent = 'Rp 0';
-    totalNote.textContent = t('giving.totalStart');
+export async function renderGiving() {
+  const hosts = document.querySelectorAll('[data-giving]');
+  const logHost = document.querySelector('[data-giving-log]');
+  if (!hosts.length && !logHost) return;
+  const list = await loadGivingLog();
+  const { total, lastDate } = givingTotals(list);
+
+  hosts.forEach(host => {
+    const rules = host.querySelector('[data-giving-rules]');
+    if (rules) {
+      rules.innerHTML = [
+        ['giving.ruleTransfer', GIVING.perTransferIdr],
+        ['giving.ruleTrip', GIVING.perTripIdr],
+      ].filter(([, v]) => formatIDR(v)).map(([k, v]) => `<li>${esc(t(k, { amount: formatIDR(v) }))}</li>`).join('');
+    }
+    const totalEl = host.querySelector('[data-giving-total]');
+    const noteEl = host.querySelector('[data-giving-total-note]');
+    if (totalEl) {
+      if (total > 0) {
+        totalEl.textContent = formatIDR(total);
+        const conv = formatConverted(total);
+        noteEl.textContent = [conv ? `≈ ${conv}` : '', lastDate ? t('giving.updated', { date: dateFmt(lastDate) }) : ''].filter(Boolean).join(' · ');
+      } else {
+        totalEl.textContent = 'Rp 0';
+        noteEl.textContent = t('giving.totalStart');
+      }
+    }
+    const cause = host.querySelector('[data-giving-cause]');
+    if (cause) {
+      cause.innerHTML = GIVING.cause && GIVING.cause.name
+        ? (GIVING.cause.url ? `<a href="${esc(GIVING.cause.url)}" target="_blank" rel="noopener" data-track-label="giving_cause_link">${esc(GIVING.cause.name)}</a>` : esc(GIVING.cause.name))
+        : `<span class="placeholder-text">${esc(t('giving.causeTbc'))}</span>`;
+    }
+  });
+
+  if (logHost) {
+    if (!list.length) {
+      logHost.innerHTML = `<p class="giving-log__empty">${esc(t('giving.logEmpty'))}</p>`;
+    } else {
+      const cols = ['date', 'amount', 'to', 'note', 'proof'];
+      logHost.innerHTML = `<table class="giving-log"><thead><tr>${cols.map(c => `<th scope="col">${esc(t(`giving.col.${c}`))}</th>`).join('')}</tr></thead><tbody>${
+        list.map(d => {
+          const conv = formatConverted(d.amountIdr);
+          return `<tr>
+            <td data-label="${esc(t('giving.col.date'))}">${esc(dateFmt(d.date))}</td>
+            <td data-label="${esc(t('giving.col.amount'))}"><strong>${esc(formatIDR(d.amountIdr))}</strong>${conv ? `<span class="giving-log__conv">≈ ${esc(conv)}</span>` : ''}</td>
+            <td data-label="${esc(t('giving.col.to'))}">${esc(pick(d.to) || '')}</td>
+            <td data-label="${esc(t('giving.col.note'))}">${esc(pick(d.note) || '')}</td>
+            <td data-label="${esc(t('giving.col.proof'))}">${d.proofUrl ? `<a href="${esc(d.proofUrl)}" target="_blank" rel="noopener" data-track-label="giving_receipt">${esc(t('giving.viewProof'))}</a>` : '—'}</td>
+          </tr>`;
+        }).join('')}</tbody></table>`;
+    }
   }
-
-  const cause = host.querySelector('[data-giving-cause]');
-  cause.innerHTML = GIVING.cause && GIVING.cause.name
-    ? (GIVING.cause.url ? `<a href="${esc(GIVING.cause.url)}" target="_blank" rel="noopener" data-track-label="giving_cause_link">${esc(GIVING.cause.name)}</a>` : esc(GIVING.cause.name))
-    : `<span class="placeholder-text">${esc(t('giving.causeTbc'))}</span>`;
-
-  const link = host.querySelector('[data-giving-updates]');
-  if (GIVING.updatesUrl) { link.href = GIVING.updatesUrl; link.hidden = false; } else { link.hidden = true; }
 }
 
 /* ---------- Gentle reveal on scroll (disabled for reduced motion) ---------- */

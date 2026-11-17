@@ -33,7 +33,8 @@
     "enquire": "Kirim pertanyaan",
     "disclaimer": "Bali Paradise menyediakan transportasi pribadi dan rekomendasi lokal. Tempat wisata dan aktivitas yang disebut di situs ini dikelola oleh pihak lain secara mandiri. Mengirim pertanyaan belum berarti memesan: rencana perjalanan dan harga dikonfirmasi langsung oleh Aris.",
     "photos": "Foto oleh kontributor Unsplash.",
-    "promise": "Harga jujur · Tanpa mampir toko · Setiap perjalanan ikut berbagi"
+    "promise": "Harga jujur · Tanpa mampir toko · Setiap perjalanan ikut berbagi",
+    "giving": "Berbagi"
   },
   "currency": {
     "note": "Harga ditetapkan dalam Rupiah (IDR) dan masih bersifat perkiraan. Konversi ke mata uang lain hanya perkiraan karena kurs bisa berubah, dan harga akhir selalu dikonfirmasi oleh Aris sebelum Anda memesan. Anda tidak membayar apa pun melalui situs ini.",
@@ -222,6 +223,11 @@
       "title": "Antar Jemput Bandara & Sewa Sopir Bali | Bali Paradise",
       "description": "Jemput bandara, sewa mobil dengan sopir di Bali setengah hari atau seharian, dan trip sesuai keinginan. Harga dalam Rupiah. Tanya langsung lewat WhatsApp.",
       "ogTitle": "Keliling Bali: antar jemput bandara, sewa sopir, dan trip seharian"
+    },
+    "giving": {
+      "title": "Setiap Perjalanan Ikut Berbagi | Bali Paradise",
+      "description": "Sebagian dari setiap perjalanan Bali Paradise disumbangkan untuk kegiatan sosial di Bali. Lihat cara kerjanya, totalnya, dan setiap donasi beserta buktinya.",
+      "ogTitle": "Setiap perjalanan ikut berbagi: Bali Paradise"
     }
   },
   "about": {
@@ -660,6 +666,69 @@
     "updated": "Diperbarui {date}",
     "totalLabel": "Total donasi sejauh ini",
     "causeLabel": "Disalurkan kepada",
-    "receipts": "Lihat bukti dan kabar terbaru"
+    "receipts": "Lihat bukti dan kabar terbaru",
+    "col": {
+      "date": "Tanggal",
+      "amount": "Jumlah",
+      "to": "Disalurkan ke",
+      "note": "Keterangan",
+      "proof": "Bukti"
+    },
+    "viewProof": "Lihat bukti",
+    "logEmpty": "Donasi pertama akan tampil di sini beserta buktinya."
+  },
+  "givingPage": {
+    "hero": {
+      "overline": "Berbagi",
+      "title": "Setiap perjalanan ikut berbagi.",
+      "lead": "Bali adalah rumah Aris. Sejumlah dana tetap dari setiap perjalanan disumbangkan untuk kegiatan sosial di Bali, dan setiap donasi kami umumkan di sini beserta buktinya."
+    },
+    "strips": {
+      "how": "Cara kerja",
+      "log": "Donasi",
+      "questions": "Tanya jawab"
+    },
+    "how": {
+      "title": "Cara kerjanya",
+      "s1": {
+        "title": "Anda memesan perjalanan",
+        "text": "Antar jemput bandara, trip seharian, atau tur skuter. Harga Anda tetap sama persis."
+      },
+      "s2": {
+        "title": "Aris menyisihkan dana",
+        "text": "Jumlah tetap dari setiap perjalanan masuk ke dana berbagi."
+      },
+      "s3": {
+        "title": "Disalurkan untuk Bali",
+        "text": "Dana disumbangkan langsung ke satu kegiatan sosial di Bali yang dipilih Aris."
+      },
+      "s4": {
+        "title": "Kami umumkan buktinya",
+        "text": "Setiap donasi tercantum di bawah ini beserta tanggal, jumlah, dan buktinya."
+      }
+    },
+    "fund": {
+      "title": "Dari setiap perjalanan",
+      "text": "Jumlahnya sama berapa pun yang Anda bayar, dan diambil dari pendapatan Aris, bukan ditambahkan ke harga Anda."
+    },
+    "log": {
+      "title": "Catatan donasi",
+      "lead": "Semua donasi, mulai dari yang terbaru, dengan tautan ke buktinya."
+    },
+    "q": {
+      "title": "Tanya jawab",
+      "q1": "Apakah saya harus membayar lebih?",
+      "a1": "Tidak. Donasi diambil dari pendapatan Aris, jadi Anda cukup membayar harga yang tercantum, tidak lebih.",
+      "q2": "Bagaimana saya tahu uangnya benar-benar disumbangkan?",
+      "a2": "Setiap donasi tercantum di halaman ini beserta tanggal, jumlah, dan foto kuitansinya.",
+      "q3": "Kegiatan apa yang didukung?",
+      "a3": "Aris sedang memilih satu kegiatan sosial di Bali untuk didukung. Setelah organisasinya setuju, namanya akan dicantumkan di halaman ini.",
+      "q4": "Bisakah saya ikut berdonasi?",
+      "a4": "Bisa. Setelah penerimanya diumumkan di sini, Anda bisa berdonasi langsung lewat situs web mereka sendiri."
+    },
+    "cta": {
+      "title": "Pesan perjalanan yang ikut berbagi",
+      "text": "Ceritakan kepada Aris apa yang ingin Anda lakukan. Hari jalan-jalan Anda juga ikut membantu Bali."
+    }
   }
 }

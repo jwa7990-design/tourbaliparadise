@@ -658,3 +658,17 @@ body.is-scrolled .site-header:not(.site-header--overlay) { box-shadow: 0 10px 30
 @media (max-width: 860px) { .giving { grid-template-columns: 1fr; } }
 
 .footer__promise { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--beige); margin: 0 0 12px; }
+
+/* Giving log table (stacks into cards on phones) */
+.giving-log { width: 100%; border-collapse: collapse; background: var(--white); border: 1px solid var(--line); font-size: 14px; }
+.giving-log th { text-align: left; font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); padding: 14px 16px; border-bottom: 1px solid var(--line); }
+.giving-log td { padding: 14px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.giving-log__conv { display: block; font-size: 12px; color: var(--muted); }
+.giving-log__empty { text-align: center; padding: 32px 24px; border: 1px dashed var(--beige); border-radius: var(--radius); color: var(--muted); margin: 0; }
+@media (max-width: 640px) {
+  .giving-log thead { display: none; }
+  .giving-log tr { display: block; border-bottom: 1px solid var(--line); padding: 8px 0; }
+  .giving-log td { display: grid; grid-template-columns: 8.5em 1fr; gap: 10px; border: 0; padding: 6px 16px; }
+  .giving-log td::before { overflow-wrap: anywhere; }
+  .giving-log td::before { content: attr(data-label); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+}

@@ -19,5 +19,8 @@
 /locales/*
   Cache-Control: public, max-age=0, must-revalidate
 
+/assets/data/*
+  Cache-Control: public, max-age=0, must-revalidate
+
 /assets/images/*
   Cache-Control: public, max-age=86400

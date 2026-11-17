@@ -28,6 +28,7 @@ const PAGES = [
   { file: 'explore.html', path: '/explore', priority: '0.9' },
   { file: 'services.html', path: '/services', priority: '0.9' },
   { file: 'about.html', path: '/about', priority: '0.8' },
+  { file: 'giving.html', path: '/giving', priority: '0.6' },
 ];
 const LANGS = [['en', null], ['zh-Hans', 'zh-CN'], ['ru', 'ru'], ['id', 'id']];
 const urlFor = (path, lang) => site + path + (lang ? `?lang=${lang}` : '');
