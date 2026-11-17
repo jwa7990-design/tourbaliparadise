@@ -1,0 +1,622 @@
+{
+  "brand": {
+    "tagline": "Jelajahi Bali bersama orang lokal."
+  },
+  "nav": {
+    "skip": "Langsung ke konten",
+    "main": "Utama",
+    "home": "Beranda",
+    "explore": "Jelajahi Bali",
+    "services": "Layanan Kami",
+    "about": "Tentang Kami",
+    "menu": "Menu",
+    "close": "Tutup menu",
+    "language": "Bahasa",
+    "currency": "Mata uang",
+    "whatsapp": "WhatsApp Aris",
+    "onThisPage": "Di halaman ini"
+  },
+  "common": {
+    "chatWithAris": "Chat dengan Aris",
+    "learnMore": "Selengkapnya",
+    "askAboutThis": "Tanyakan ke Aris"
+  },
+  "langSuggest": {
+    "text": "Situs ini tersedia dalam Bahasa Indonesia. Mau beralih?",
+    "switch": "Ganti ke Bahasa Indonesia",
+    "dismiss": "Tidak, terima kasih"
+  },
+  "footer": {
+    "about": "Layanan sopir pribadi yang dijalankan warga lokal di Bali. Antar jemput bandara, sewa mobil dengan sopir, perjalanan seharian sesuai keinginan, dan rekomendasi lokal bersama Aris.",
+    "pages": "Halaman",
+    "contact": "Kontak",
+    "enquire": "Kirim pertanyaan",
+    "disclaimer": "Bali Paradise menyediakan transportasi pribadi dan rekomendasi lokal. Tempat wisata dan aktivitas yang disebut di situs ini dikelola oleh pihak lain secara mandiri. Mengirim pertanyaan belum berarti memesan: rencana perjalanan dan harga dikonfirmasi langsung oleh Aris.",
+    "photos": "Foto oleh kontributor Unsplash."
+  },
+  "currency": {
+    "note": "Harga ditetapkan dalam Rupiah (IDR) dan masih bersifat perkiraan. Konversi ke mata uang lain hanya perkiraan karena kurs bisa berubah, dan harga akhir selalu dikonfirmasi oleh Aris sebelum Anda memesan. Anda tidak membayar apa pun melalui situs ini.",
+    "ratesUpdated": "Konversi perkiraan memakai kurs per {date}.",
+    "ratesBy": "Kurs dari ExchangeRate-API",
+    "ratesUnavailable": "Konversi mata uang sedang tidak tersedia, jadi harga hanya ditampilkan dalam Rupiah (IDR).",
+    "unavailableShort": "Konversi tidak tersedia"
+  },
+  "pricing": {
+    "from": "Mulai",
+    "tbc": "Harga akan dikonfirmasi",
+    "quoteOnRequest": "Harga sesuai permintaan",
+    "items": {
+      "airport_transfer": "Antar jemput bandara",
+      "half_day_driver": "Sopir setengah hari",
+      "full_day_driver": "Sopir seharian",
+      "custom_day_trip": "Trip seharian sesuai keinginan",
+      "scooter_tour": "Tur skuter 1:1"
+    },
+    "inc": {
+      "fuel": "Bensin",
+      "parking": "Parkir",
+      "tolls": "Tol",
+      "driverHours": "Jam kerja sopir",
+      "waitingTime": "Waktu tunggu",
+      "capacity": "Penumpang & bagasi",
+      "attractionTickets": "Tiket tempat wisata",
+      "meals": "Makan"
+    },
+    "status": {
+      "included": "Termasuk",
+      "not_included": "Tidak termasuk, dibayar terpisah",
+      "tbc": "Akan dikonfirmasi. Silakan tanyakan ke Aris"
+    },
+    "title": "Perkiraan harga",
+    "lead": "Harga ditetapkan dalam Rupiah (IDR). Jika ingin melihat perkiraan dalam mata uang lain, pilih mata uang di bagian atas halaman.",
+    "includedTitle": "Yang sudah termasuk",
+    "byArea": "Lihat harga per area"
+  },
+  "wa": {
+    "general": "Halo Pak Aris! Saya menemukan Bali Paradise di internet dan ingin bertanya soal transportasi atau kegiatan di Bali.",
+    "airport": "Halo Pak Aris, saya ingin bertanya soal antar jemput bandara.",
+    "driver": "Halo Pak Aris, saya ingin bertanya soal sewa sopir pribadi.",
+    "custom": "Halo Pak Aris, saya ingin dibantu merencanakan perjalanan seharian di Bali.",
+    "explore": "Halo Pak Aris, saya mau liburan ke Bali dan ingin minta rekomendasi tempat-tempat yang seru untuk dikunjungi.",
+    "food": "Halo Pak Aris, saya ingin mencoba tempat makan dan kopi lokal di Bali.",
+    "adventure": "Halo Pak Aris, saya tertarik mencoba aktivitas petualangan di Bali dan butuh bantuan untuk ke sana.",
+    "family": "Halo Pak Aris, kami sekeluarga mau liburan ke Bali dan ingin minta rekomendasi kegiatan.",
+    "beaches": "Halo Pak Aris, saya ingin melihat pantai dan sunset di Bali. Bisa bantu sarankan rencananya?",
+    "culture": "Halo Pak Aris, saya tertarik dengan budaya Bali, pura, dan kehidupan desa. Bisa sarankan beberapa tempat?",
+    "feedback": "Halo Pak Aris, saya baru-baru ini jalan-jalan bersama Bapak dan ingin memberi masukan.",
+    "priceLine": "(Perkiraan harga di website: {price}.)",
+    "enquiry": {
+      "intro": "Halo Pak Aris! Saya ingin bertanya soal transportasi atau kegiatan di Bali.",
+      "name": "Nama",
+      "date": "Tanggal",
+      "passengers": "Jumlah penumpang",
+      "accommodation": "Penginapan",
+      "interest": "Tertarik dengan",
+      "notes": "Informasi tambahan",
+      "closing": "Boleh minta info pilihan yang tersedia beserta perkiraan harganya, Pak? Terima kasih.",
+      "area": "Area"
+    },
+    "scooter": "Halo Pak Aris, saya liburan sendirian dan ingin tanya soal tur skuter 1:1.",
+    "airportZone": "Halo Pak Aris, saya ingin tanya soal antar jemput bandara untuk area {area}."
+  },
+  "form": {
+    "name": "Nama Anda",
+    "date": "Tanggal perjalanan",
+    "passengers": "Jumlah penumpang",
+    "accommodation": "Lokasi hotel atau vila",
+    "accommodationPh": "mis. vila di Ubud",
+    "service": "Apa yang Anda minati?",
+    "notes": "Ada hal lain yang perlu Aris ketahui?",
+    "notesPh": "Nomor penerbangan, usia anak, tempat yang ingin dikunjungi…",
+    "optional": "(opsional)",
+    "choose": "Silakan pilih…",
+    "options": {
+      "airport": "Antar jemput bandara",
+      "half_day": "Sopir pribadi setengah hari",
+      "full_day": "Sopir pribadi seharian",
+      "custom": "Trip seharian sesuai keinginan",
+      "explore": "Wisata: sawah terasering, air terjun, pura",
+      "food": "Kuliner & kopi",
+      "adventure": "Aktivitas petualangan",
+      "family": "Aktivitas keluarga",
+      "beaches": "Pantai & sunset",
+      "culture": "Budaya & kehidupan lokal",
+      "other": "Lainnya",
+      "scooter": "Tur skuter 1:1 (pelancong solo)"
+    },
+    "submit": "Kirim pertanyaan lewat WhatsApp",
+    "note": "WhatsApp akan terbuka dengan data Anda yang sudah terisi, tinggal dikirim. Ini baru pertanyaan, belum pemesanan: Aris akan membalas langsung untuk mengecek ketersediaan, membahas rencana Anda, dan mengonfirmasi harga akhir.",
+    "errors": {
+      "required": "Mohon isi kolom ini.",
+      "nameShort": "Mohon masukkan nama Anda.",
+      "dateInvalid": "Mohon pilih tanggal yang valid.",
+      "datePast": "Mohon pilih tanggal hari ini atau setelahnya.",
+      "passengers": "Mohon masukkan angka 1 sampai 99.",
+      "service": "Mohon pilih salah satu.",
+      "summary": "Mohon periksa kolom yang ditandai."
+    },
+    "title": "Kirim pertanyaan ke Aris",
+    "intro": "Isi beberapa data singkat, lalu WhatsApp akan terbuka dengan pesan yang siap dikirim.",
+    "zone": "Area tempat menginap"
+  },
+  "driver": {
+    "photoPlaceholder": "Foto Aris segera hadir",
+    "introPlaceholder": "Perkenalan langsung dari Aris segera hadir.",
+    "tbc": "Info segera hadir",
+    "fields": {
+      "drivingExperience": "Pengalaman menyetir",
+      "languages": "Bahasa",
+      "vehicle": "Kendaraan",
+      "passengerCapacity": "Kapasitas penumpang",
+      "serviceAreas": "Area layanan",
+      "enjoysShowing": "Tempat favorit untuk ditunjukkan ke tamu"
+    },
+    "pronounce": "Nama Aris dibaca seperti “Ares”, dewa perang dalam mitologi Yunani."
+  },
+  "commitments": {
+    "direct": {
+      "title": "Komunikasi langsung",
+      "text": "Anda berbicara langsung dengan Aris, dari pesan pertama sampai perjalanan selesai."
+    },
+    "pricing": {
+      "title": "Harga jelas sebelum memesan",
+      "text": "Anda sudah tahu harganya sebelum ada yang dikonfirmasi."
+    },
+    "flexible": {
+      "title": "Rencana yang fleksibel",
+      "text": "Hari Anda disusun sesuai apa yang ingin Anda lakukan."
+    },
+    "honest": {
+      "title": "Rekomendasi lokal yang jujur",
+      "text": "Saran yang disesuaikan dengan selera Anda."
+    },
+    "confirmation": {
+      "title": "Dikonfirmasi sebelum berangkat",
+      "text": "Semua rencana dikonfirmasi dengan Anda terlebih dahulu."
+    },
+    "noShopping": {
+      "title": "Tanpa mampir belanja yang tidak diminta",
+      "text": "Anda hanya berhenti di tempat yang Anda inginkan."
+    }
+  },
+  "reviews": {
+    "empty": "Ulasan dari tamu akan segera tampil di sini. Kami hanya menampilkan ulasan asli yang dibagikan dengan izin.",
+    "cta": "Pernah jalan-jalan bersama Aris? Bagikan pengalaman Anda",
+    "profile": "Baca ulasan",
+    "title": "Kata para tamu"
+  },
+  "contact": {
+    "area": "Area layanan",
+    "areaValue": "Bali, Indonesia",
+    "howTitle": "Cara kerjanya",
+    "howText": "Kirim pertanyaan, dan Aris akan membalas langsung untuk mengonfirmasi ketersediaan dan harga.",
+    "title": "Hubungi kami",
+    "text": "Siap merencanakan liburan di Bali? Kirim pesan ke Aris lewat WhatsApp dan mari mulai."
+  },
+  "meta": {
+    "about": {
+      "title": "Tentang Aris, Sopir Lokal Anda di Bali | Bali Paradise",
+      "description": "Kenalan dengan Aris, sopir lokal di balik Bali Paradise. Komunikasi langsung lewat WhatsApp, jadwal fleksibel, rekomendasi lokal, dan jawaban pertanyaan umum.",
+      "ogTitle": "Teman lokal Anda di Bali: kenalan dengan Aris"
+    },
+    "explore": {
+      "title": "Tempat Wisata di Bali: Ide Trip Seharian | Bali Paradise",
+      "description": "Sawah terasering, air terjun, pura, kuliner lokal, kopi, pantai, dan wisata keluarga. Ide tempat wisata di Bali, plus sopir pribadi untuk mengantar Anda.",
+      "ogTitle": "Jelajahi Bali: ide untuk hari-hari Anda di pulau ini"
+    },
+    "home": {
+      "title": "Sopir Pribadi Bali & Antar Jemput Bandara | Bali Paradise",
+      "description": "Jelajahi Bali sesuai keinginan bersama Aris, sopir asli Bali. Antar jemput bandara, sewa mobil dengan sopir, dan trip seharian. Atur rencana lewat WhatsApp.",
+      "ogTitle": "Bali Paradise — Jelajahi Bali bersama orang lokal."
+    },
+    "services": {
+      "title": "Antar Jemput Bandara & Sewa Sopir Bali | Bali Paradise",
+      "description": "Jemput bandara, sewa mobil dengan sopir di Bali setengah hari atau seharian, dan trip sesuai keinginan. Harga dalam Rupiah. Tanya langsung lewat WhatsApp.",
+      "ogTitle": "Keliling Bali: antar jemput bandara, sewa sopir, dan trip seharian"
+    }
+  },
+  "about": {
+    "hero": {
+      "overline": "Tentang kami",
+      "title": "Teman lokal Anda di Bali."
+    },
+    "intro": "Kami percaya menjelajahi Bali seharusnya mudah, menyenangkan, dan terasa personal. Entah Anda sudah tahu mau ke mana atau masih butuh sedikit inspirasi, Aris siap membantu.",
+    "meet": {
+      "title": "Kenalan dengan Aris",
+      "sub": "Sopir lokal Anda di Bali."
+    },
+    "expect": {
+      "title": "Yang bisa Anda harapkan"
+    }
+  },
+  "faq": {
+    "title": "Pertanyaan umum",
+    "q1": "Bagaimana cara memesan sopir?",
+    "a1": "Kirim pesan ke Aris lewat WhatsApp atau isi formulir pertanyaan. Sertakan tanggal, lokasi penginapan, dan apa yang ingin Anda lakukan. Aris akan membalas langsung untuk mengecek ketersediaan dan membahas detailnya.",
+    "q2": "Apakah saya bisa mengatur sendiri rencana harian saya?",
+    "a2": "Bisa. Anda yang menentukan tujuan dan berapa lama di setiap tempat. Kalau butuh ide, Aris bisa menyarankan tempat, dan rencana bisa diubah di hari itu selama waktunya memungkinkan.",
+    "q3": "Berapa biaya sewa sopir pribadi?",
+    "q4": "Apakah Aris bisa menjemput kami di bandara?",
+    "a4": "Bisa. Antar jemput bandara adalah salah satu layanan utama. Sertakan detail penerbangan Anda saat bertanya.",
+    "q5": "Apakah Aris bisa merekomendasikan tempat untuk dikunjungi?",
+    "a5": "Bisa. Ceritakan apa yang Anda suka, misalnya kuliner, alam, budaya, atau pantai, dan Aris akan menyarankan tempat yang cocok untuk Anda.",
+    "q6": "Apakah tiket tempat wisata sudah termasuk?",
+    "a6": "Tidak. Tiket masuk, aktivitas, dan makan dibayar sendiri langsung di tempat. Bensin, parkir, dan tol sudah termasuk dalam harga Aris.",
+    "q7": "Apakah bisa untuk keluarga?",
+    "a7": "Bisa, keluarga sangat diterima. Beri tahu Aris berapa orang dewasa dan anak yang ikut, beserta usia anak-anak, supaya semuanya bisa disiapkan dengan tepat. Jika butuh kursi anak, sampaikan saat bertanya.",
+    "q8": "Bagaimana pemesanan saya dikonfirmasi?",
+    "a8": "Pemesanan Anda baru terkonfirmasi setelah Aris mengonfirmasinya langsung dengan Anda lewat WhatsApp, termasuk harga akhirnya. Mengirim pertanyaan melalui situs ini tidak membuat pemesanan dan tidak menarik pembayaran.",
+    "a3": "Tergantung berapa lama Anda membutuhkan sopir dan ke mana saja tujuan Anda. Lihat <a href=\"services.html#pricing\">perkiraan harga</a> di halaman Layanan Kami. Aris akan mengonfirmasi harga akhir sebelum Anda memesan."
+  },
+  "img": {
+    "statue": "Patung batu penjaga khas Bali di depan pura",
+    "ulunDanu": "Pura Ulun Danu Beratan di tepi Danau Beratan, dengan pegunungan di belakangnya",
+    "waterfall": "Beberapa air terjun mengalir di tebing hutan",
+    "market": "Pedagang dan pembeli di pasar tradisional Bali yang ramai",
+    "river": "Pemandangan udara sungai yang berkelok di tengah hutan hijau yang lebat",
+    "monkey": "Seekor monyet ekor panjang duduk di dinding batu berlumut",
+    "cliffSunset": "Matahari terbenam di atas laut di samping tebing laut yang gelap",
+    "prayer": "Seorang perempuan Bali bersembahyang dengan sesajen di pura",
+    "tegallalang": "Sawah terasering Tegallalang dengan pohon kelapa, Bali",
+    "food": "Meja berisi aneka hidangan Indonesia dalam mangkuk-mangkuk kecil",
+    "atv": "Dua pengendara ATV menerjang jalur berlumpur",
+    "familyBeach": "Siluet orang-orang di pantai basah saat matahari terbenam",
+    "beachSunset": "Matahari terbenam di atas laut di samping tanjung berbatu",
+    "ceremony": "Orang-orang berpakaian adat Bali membawa payung upacara",
+    "plane": "Sayap pesawat terlihat dari jendela pesawat",
+    "carView": "Pemandangan jalan dan perbukitan dari kaca depan mobil",
+    "gates": "Gerbang candi bentar di Pura Lempuyang, Bali",
+    "volcano": "Gunung berapi menjulang di atas lautan awan saat matahari terbit",
+    "road": "Jalan berhias bunga merah menuju gunung di Bali",
+    "scooter": "Pengendara skuter di jalan sepi di samping hutan hijau"
+  },
+  "explore": {
+    "hero": {
+      "overline": "Temukan · Rasakan · Jelajahi",
+      "title": "Jelajahi Bali"
+    },
+    "intro": "Ada banyak hal yang bisa ditemukan di Bali. Mulai dari kuliner dan kopi lokal, air terjun, pantai, petualangan, sampai kehidupan desa tradisional. Lihat-lihat dulu dan temukan yang menarik untuk Anda.",
+    "a": {
+      "desc": "Bagian tengah Bali dipenuhi sawah terasering, lembah hutan, danau kawah, dan pura. Sehari berkeliling biasanya berarti singgah santai di beberapa tempat, dengan waktu untuk jalan-jalan, berfoto, dan makan siang di perjalanan.",
+      "i1": {
+        "name": "Sawah Terasering Tegallalang",
+        "text": "Sawah berundak di sebuah lembah di utara Ubud."
+      },
+      "i2": {
+        "name": "Pura Ulun Danu Beratan",
+        "text": "Pura di tepi danau di dataran tinggi Bedugul yang sejuk."
+      },
+      "i3": {
+        "name": "Pura Uluwatu",
+        "text": "Pura di atas tebing di Semenanjung Bukit, ramai dikunjungi saat matahari terbenam."
+      },
+      "i4": {
+        "name": "Sidemen",
+        "text": "Lembah yang tenang di Bali Timur dengan sawah dan pemandangan gunung."
+      },
+      "i5": {
+        "name": "Kerta Gosa",
+        "text": "Balai pengadilan bersejarah di Klungkung, terkenal dengan lukisan di langit-langitnya."
+      },
+      "i6": {
+        "name": "Air Terjun",
+        "text": "Tegenungan, Tibumana, dan air terjun lain yang mudah dijangkau dari Ubud."
+      }
+    },
+    "b": {
+      "desc": "Beberapa makanan terenak di Bali justru ada di warung kecil milik keluarga. Cobalah nasi campur, sate lilit, atau babi guling, jalan-jalan di pasar pagi, atau mampir ke kebun kopi untuk melihat bagaimana kopi Bali ditanam dan disangrai.",
+      "i1": {
+        "name": "Warung lokal",
+        "text": "Tempat makan sederhana milik keluarga dengan masakan Bali dan Indonesia."
+      },
+      "i2": {
+        "name": "Kebun kopi",
+        "text": "Tempat mencicipi kopi di dataran tinggi Kintamani dan sekitar Ubud."
+      },
+      "i3": {
+        "name": "Pasar tradisional",
+        "text": "Hasil bumi segar, rempah, dan perlengkapan sesajen di pasar pagi setempat."
+      },
+      "i4": {
+        "name": "Kelas memasak",
+        "text": "Belajar memasak hidangan Bali di sekolah masak independen."
+      },
+      "i5": {
+        "name": "Seafood Jimbaran",
+        "text": "Seafood bakar dengan meja di atas pasir Teluk Jimbaran."
+      },
+      "i6": {
+        "name": "Kafe",
+        "text": "Suasana kafe yang santai di Ubud, Canggu, dan Seminyak."
+      }
+    },
+    "c": {
+      "desc": "Untuk hari yang lebih aktif, Bali punya sungai untuk rafting, jalur hutan untuk dijelajahi, dan gunung berapi untuk didaki sebelum matahari terbit. Aktivitas ini dikelola oleh operator independen. Aris bisa membantu Anda memilih dan mengantar Anda ke sana.",
+      "i1": {
+        "name": "Naik ATV",
+        "text": "Jalur berlumpur melewati hutan dan sawah, kebanyakan di sekitar Ubud."
+      },
+      "i2": {
+        "name": "Arung jeram",
+        "text": "Di Sungai Ayung dekat Ubud atau Sungai Telaga Waja di Bali Timur."
+      },
+      "i3": {
+        "name": "Trekking sunrise Gunung Batur",
+        "text": "Pendakian dini hari bersama pemandu ke puncak gunung berapi aktif."
+      },
+      "i4": {
+        "name": "Olahraga air",
+        "text": "Jet ski, parasailing, dan lainnya di Tanjung Benoa."
+      },
+      "i5": {
+        "name": "Belajar selancar",
+        "text": "Ombak yang ramah pemula di Kuta dan Canggu."
+      },
+      "i6": {
+        "name": "Snorkeling & menyelam",
+        "text": "Air jernih di sekitar Amed, Padang Bai, dan Pulau Menjangan."
+      }
+    },
+    "d": {
+      "desc": "Liburan bersama anak-anak? Bali punya banyak pilihan yang bikin semua senang, dari seluncuran air sampai pantai yang tenang dan dangkal. Beri tahu Aris usia anak-anak Anda, dan dia bisa membantu merencanakan hari dengan waktu perjalanan yang tidak melelahkan.",
+      "i1": {
+        "name": "Waterbom Bali",
+        "text": "Taman air besar di Kuta dengan seluncuran untuk segala usia."
+      },
+      "i2": {
+        "name": "Bali Zoo",
+        "text": "Kebun Binatang Bali di Singapadu, selatan Ubud, tempat bertemu langsung dengan satwa."
+      },
+      "i3": {
+        "name": "Pantai Sanur",
+        "text": "Air tenang yang terlindung karang, cocok untuk anak-anak yang baru belajar berenang."
+      },
+      "i4": {
+        "name": "Monkey Forest Ubud",
+        "text": "Hutan suaka yang menjadi rumah bagi monyet ekor panjang. Pastikan tas selalu tertutup rapat!"
+      },
+      "i5": {
+        "name": "Konservasi penyu",
+        "text": "Turtle Conservation and Education Center di Pulau Serangan."
+      },
+      "i6": {
+        "name": "Nusa Dua",
+        "text": "Pantai yang tenang dan jalur pejalan kaki beraspal di tepi pantai."
+      }
+    },
+    "e": {
+      "desc": "Pantai barat Bali memang juaranya sunset. Saksikan langit berubah warna dari atas tebing di Uluwatu, makan malam dengan kaki di atas pasir di Jimbaran, atau cari pantai yang lebih sepi di selatan.",
+      "i1": {
+        "name": "Uluwatu",
+        "text": "Pemandangan dari atas tebing, pantai selancar, dan tari Kecak sore hari di pura."
+      },
+      "i2": {
+        "name": "Teluk Jimbaran",
+        "text": "Makan malam seafood di pantai sambil menikmati matahari terbenam."
+      },
+      "i3": {
+        "name": "Tanah Lot",
+        "text": "Pura laut di atas batu karang, paling indah dilihat saat matahari terbenam."
+      },
+      "i4": {
+        "name": "Pantai Melasti",
+        "text": "Pasir putih di bawah tebing kapur di Semenanjung Bukit."
+      },
+      "i5": {
+        "name": "Seminyak",
+        "text": "Beach club dan bar sunset di sepanjang pantai."
+      },
+      "i6": {
+        "name": "Sanur",
+        "text": "Sisi Bali untuk menikmati matahari terbit, dengan jalur panjang di tepi pantai."
+      }
+    },
+    "f": {
+      "desc": "Budaya Hindu Bali adalah bagian dari kehidupan sehari-hari di sini: sesajen di setiap pintu, upacara di pura desa, dan kerajinan yang diwariskan turun-temurun. Mohon berkunjung dengan sopan. Kain dan selendang wajib dipakai saat masuk pura.",
+      "i1": {
+        "name": "Pura Tirta Empul",
+        "text": "Pura dekat Tampaksiring, terkenal dengan mata air sucinya."
+      },
+      "i2": {
+        "name": "Pura Besakih",
+        "text": "Kompleks pura terbesar di Bali, di lereng Gunung Agung."
+      },
+      "i3": {
+        "name": "Penglipuran",
+        "text": "Desa adat di Bangli, terkenal dengan tata desanya yang rapi dan hutan bambunya."
+      },
+      "i4": {
+        "name": "Desa kerajinan",
+        "text": "Kerajinan perak di Celuk, ukiran kayu di Mas, dan lukisan di Batuan."
+      },
+      "i5": {
+        "name": "Tari tradisional",
+        "text": "Pertunjukan tari Legong dan Kecak di malam hari di Ubud dan Uluwatu."
+      },
+      "i6": {
+        "name": "Upacara",
+        "text": "Odalan dan arak-arakan berlangsung sepanjang tahun. Jika kebetulan menjumpainya, saksikan dengan tenang dari pinggir."
+      }
+    },
+    "disclaimer": "Tempat-tempat di atas adalah tempat wisata dan destinasi yang dikelola secara mandiri. Bali Paradise tidak mengelolanya dan tidak menjual tiketnya. Aris bisa mengantar Anda ke sana dan membantu merencanakan hari Anda. Jam buka dan harga tiket masuk ditentukan oleh masing-masing tempat.",
+    "else": {
+      "title": "Punya tujuan lain?",
+      "text": "Setiap orang punya cara sendiri menikmati Bali. Jika ada tempat tertentu yang ingin Anda kunjungi atau sesuatu yang ingin dicoba, cukup sampaikan ke Aris. Dia akan membantu mencari tahu apa yang memungkinkan.",
+      "cta": "Tanya Aris lewat WhatsApp"
+    },
+    "indexLabel": "Kategori pengalaman"
+  },
+  "cat": {
+    "explore": {
+      "title": "Jelajahi Bali",
+      "short": "Sawah terasering, air terjun, pura, dan kehidupan desa."
+    },
+    "food": {
+      "title": "Kuliner & Kopi",
+      "short": "Warung lokal, pasar, dan kebun kopi."
+    },
+    "adventure": {
+      "title": "Petualangan",
+      "short": "ATV, arung jeram, mendaki gunung berapi, dan olahraga air."
+    },
+    "family": {
+      "title": "Seru Bersama Keluarga",
+      "short": "Taman air, pantai yang tenang, dan bertemu satwa."
+    },
+    "beaches": {
+      "title": "Pantai & Sunset",
+      "short": "Tebing Uluwatu, Teluk Jimbaran, dan makan malam di tepi pantai."
+    },
+    "culture": {
+      "title": "Budaya & Kehidupan Lokal",
+      "short": "Pura, upacara, kerajinan, dan kehidupan desa."
+    }
+  },
+  "home": {
+    "hero": {
+      "overline": "Sopir pribadi & pengalaman lokal di Bali",
+      "title": "Jelajahi Bali bersama orang lokal.",
+      "lead": "Jelajahi Bali dengan santai sesuai ritme Anda. Ceritakan ke Aris apa yang Anda minati, dan dia akan membantu mengatur sisanya.",
+      "ctaExplore": "Jelajahi Bali",
+      "imgAlt": "Sawah terasering hijau dan pohon kelapa di bawah gunung berkabut di Bali saat fajar",
+      "scroll": "Gulir ke pengalaman"
+    },
+    "exp": {
+      "overline": "Ide untuk hari-hari Anda",
+      "title": "Pengalaman apa yang Anda inginkan?",
+      "lead": "Enam cara menghabiskan hari di Bali. Pilih satu, gabungkan beberapa, atau ceritakan ke Aris jika Anda punya ide yang sama sekali berbeda."
+    },
+    "around": {
+      "overline": "Transportasi · Fleksibel · Pengetahuan lokal",
+      "title": "Keliling Bali",
+      "lead": "Tempat-tempat terbaik di Bali tersebar di seluruh pulau. Dengan sopir pribadi, Anda tidak perlu tawar-menawar, menunggu kendaraan, atau tersesat. Cukup nikmati hari yang nyaman sesuai ritme Anda."
+    },
+    "aris": {
+      "overline": "Kenalan dengan Aris",
+      "title": "Teman lokal Anda di Bali.",
+      "quote": "Entah Anda sudah tahu persis mau ke mana atau masih mencari ide, Aris siap membantu Anda memanfaatkan waktu di Bali sebaik mungkin.",
+      "cta": "Lebih lanjut tentang Aris"
+    },
+    "cta": {
+      "title": "Yuk, rencanakan liburan Bali Anda.",
+      "text": "Ceritakan ke Aris apa yang Anda minati dan mulai rencanakan hari Anda."
+    },
+    "trust": {
+      "label": "Mengapa bersama Aris",
+      "t1": "Sopir lokal, pengalaman 5+ tahun",
+      "t2": "Melayani seluruh Bali",
+      "t3": "Sudah termasuk bensin, parkir, dan tol",
+      "t4": "Rencanakan langsung dengan Aris lewat WhatsApp"
+    },
+    "panels": {
+      "explore": "Jelajah",
+      "food": "Kuliner",
+      "adventure": "Seru",
+      "family": "Keluarga",
+      "beaches": "Pantai",
+      "culture": "Budaya"
+    }
+  },
+  "svc": {
+    "airport": {
+      "title": "Antar Jemput Bandara",
+      "short": "Tiba dan berangkat tanpa repot. Penjemputan dari Bandara Internasional I Gusti Ngurah Rai, serta antar ke hotel dan vila."
+    },
+    "driver": {
+      "title": "Sewa Sopir Pribadi",
+      "short": "Cara nyaman dan fleksibel untuk berkeliling. Pilih setengah hari atau seharian dengan rute sesuai rencana Anda."
+    },
+    "custom": {
+      "title": "Trip Seharian Sesuai Keinginan",
+      "short": "Ceritakan ke Aris apa yang ingin Anda lihat dan lakukan. Dapatkan saran lokal dan rencana yang fleksibel untuk hari Anda."
+    },
+    "scooter": {
+      "title": "Tur Skuter 1:1",
+      "short": "Liburan sendirian? Keliling Bali dibonceng Aris naik skuter, tur 1:1 khusus untuk Anda. Helm disediakan."
+    }
+  },
+  "services": {
+    "hero": {
+      "overline": "Layanan kami · Transportasi · Pengetahuan lokal",
+      "title": "Keliling Bali."
+    },
+    "intro": "Entah Anda butuh jemputan dari bandara, sopir seharian, atau bantuan merencanakan beberapa tempat singgah, Bali Paradise membuat perjalanan keliling Bali jadi mudah.",
+    "a": {
+      "desc": "Tiba dan berangkat tanpa repot. Aris bisa menjemput Anda di Bandara Internasional I Gusti Ngurah Rai (DPS) dan mengantar ke hotel atau vila, atau mengantar Anda kembali ke bandara tepat waktu untuk penerbangan Anda.",
+      "l1": "Penjemputan di bandara saat Anda mendarat",
+      "l2": "Antar ke hotel dan vila",
+      "l3": "Koordinasi kedatangan: kirim detail penerbangan Anda agar penjemputan bisa disesuaikan dengan jam kedatangan",
+      "l4": "Antar kembali ke bandara saat pulang",
+      "l5": "Bagasi: beri tahu Aris berapa banyak koper atau tas yang Anda bawa",
+      "cta": "Tanya soal antar jemput bandara",
+      "checkArea": "Cek harga untuk area Anda"
+    },
+    "b": {
+      "desc": "Cara nyaman dan fleksibel untuk menjelajahi Bali. Pilih setengah hari atau seharian, tentukan tempat singgah, dan ubah rencana kapan saja di perjalanan.",
+      "l1": "Sewa setengah hari",
+      "l2": "Sewa seharian",
+      "l3": "Rute fleksibel yang Anda tentukan sendiri",
+      "l4": "Singgah sebanyak yang memungkinkan dalam sehari",
+      "l5": "Rekomendasi lokal di sepanjang jalan",
+      "cta": "Tanya soal sopir pribadi"
+    },
+    "c": {
+      "desc": "Bingung mau mulai dari mana? Ceritakan ke Aris apa yang Anda suka dan dia akan menyarankan rencana perjalanan, atau bawa daftar tempat Anda sendiri. Apa pun pilihannya, hari Anda disusun sesuai keinginan Anda.",
+      "l1": "Tujuan pilihan Anda",
+      "l2": "Saran rencana perjalanan jika Anda butuh ide",
+      "l3": "Rekomendasi lokal",
+      "l4": "Waktu yang fleksibel",
+      "l5": "Transportasi sepanjang hari",
+      "cta": "Rencanakan hari Anda"
+    },
+    "d": {
+      "desc": "Liburan sendirian? Jelajahi Bali seperti banyak warga lokal, naik skuter. Aris yang menyetir, Anda cukup duduk di belakang dan menikmati pemandangan. Cara santai berkeliling secara 1:1, helm disediakan.",
+      "l1": "1:1, hanya Anda dan Aris",
+      "l2": "Anda dibonceng, Aris yang menyetir",
+      "l3": "Helm disediakan",
+      "l4": "Cocok untuk pelancong solo",
+      "l5": "Rute disesuaikan dengan tempat yang ingin Anda lihat",
+      "cta": "Tanya soal tur skuter"
+    }
+  },
+  "how": {
+    "title": "Cara memesan",
+    "s1": {
+      "title": "Kirim pertanyaan",
+      "text": "Kirim pesan ke Aris lewat WhatsApp atau gunakan formulir di bawah."
+    },
+    "s2": {
+      "title": "Diskusikan rencana",
+      "text": "Aris mengecek ketersediaannya dan membahas rencana Anda bersama Anda."
+    },
+    "s3": {
+      "title": "Dapatkan harga",
+      "text": "Aris mengonfirmasi rencana perjalanan dan memberikan harga akhir."
+    },
+    "s4": {
+      "title": "Pemesanan terkonfirmasi",
+      "text": "Pemesanan Anda baru terkonfirmasi setelah Aris mengonfirmasinya langsung dengan Anda."
+    }
+  },
+  "airportZones": {
+    "title": "Harga antar jemput bandara per area",
+    "label": "Anda menginap di mana?",
+    "note": "Harga berlaku untuk antar jemput antara bandara dan hotel atau vila Anda di area tersebut. Harga akhir dikonfirmasi Aris sebelum Anda memesan.",
+    "cta": "Tanya soal antar jemput bandara",
+    "choose": "Pilih area…"
+  },
+  "zones": {
+    "kuta": "Kuta / Legian",
+    "seminyak": "Seminyak",
+    "canggu": "Canggu",
+    "jimbaran": "Jimbaran",
+    "nusa_dua": "Nusa Dua / Tanjung Benoa",
+    "uluwatu": "Uluwatu / Bukit",
+    "sanur": "Sanur",
+    "denpasar": "Denpasar",
+    "ubud": "Ubud",
+    "amed": "Amed",
+    "lovina": "Lovina",
+    "other": "Area lain"
+  }
+}

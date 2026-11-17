@@ -1,0 +1,622 @@
+{
+  "brand": {
+    "tagline": "See Bali with a local."
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "main": "Main",
+    "home": "Home",
+    "explore": "Explore Bali",
+    "services": "Our Services",
+    "about": "About Us",
+    "menu": "Menu",
+    "close": "Close menu",
+    "language": "Language",
+    "currency": "Currency",
+    "whatsapp": "WhatsApp Aris",
+    "onThisPage": "On this page"
+  },
+  "common": {
+    "chatWithAris": "Chat with Aris",
+    "learnMore": "Learn more",
+    "askAboutThis": "Ask Aris about this"
+  },
+  "langSuggest": {
+    "text": "This website is also available in English.",
+    "switch": "Switch",
+    "dismiss": "No thanks"
+  },
+  "footer": {
+    "about": "A locally run private driver service in Bali. Airport transfers, driver hire, custom day trips and local recommendations with Aris.",
+    "pages": "Pages",
+    "contact": "Contact",
+    "enquire": "Send an enquiry",
+    "disclaimer": "Bali Paradise provides private transport and local recommendations. Attractions and activities mentioned on this website are run by independent operators. Enquiries are not bookings: arrangements and prices are confirmed personally by Aris.",
+    "photos": "Photography by Unsplash contributors."
+  },
+  "currency": {
+    "note": "Prices are set in Indonesian Rupiah (IDR) and are indicative. Converted amounts are estimates only: exchange rates change, and your final price is always confirmed by Aris before you book. You won't be charged through this website.",
+    "ratesUpdated": "Approximate conversions use exchange rates from {date}.",
+    "ratesBy": "Rates by ExchangeRate-API",
+    "ratesUnavailable": "Currency conversion isn't available right now, so prices are shown in IDR only.",
+    "unavailableShort": "Conversion unavailable"
+  },
+  "pricing": {
+    "from": "From",
+    "tbc": "Price to be confirmed",
+    "quoteOnRequest": "Quote on request",
+    "items": {
+      "airport_transfer": "Airport transfer",
+      "half_day_driver": "Half-day driver",
+      "full_day_driver": "Full-day driver",
+      "custom_day_trip": "Custom day trip",
+      "scooter_tour": "1:1 scooter tour"
+    },
+    "inc": {
+      "fuel": "Fuel",
+      "parking": "Parking",
+      "tolls": "Toll roads",
+      "driverHours": "Driver hours",
+      "waitingTime": "Waiting time",
+      "capacity": "Passengers & luggage",
+      "attractionTickets": "Attraction tickets",
+      "meals": "Meals"
+    },
+    "status": {
+      "included": "Included",
+      "not_included": "Not included, paid separately",
+      "tbc": "To be confirmed. Please ask Aris"
+    },
+    "title": "Indicative pricing",
+    "lead": "Prices are set in Indonesian Rupiah (IDR). Choose your currency at the top of the page to see an approximate conversion.",
+    "includedTitle": "What's included",
+    "byArea": "See prices by area"
+  },
+  "wa": {
+    "general": "Hi Aris! I found Bali Paradise online and I'd like to ask about transport or an experience in Bali.",
+    "airport": "Hi Aris, I'd like to enquire about an airport transfer.",
+    "driver": "Hi Aris, I'd like to enquire about hiring a private driver.",
+    "custom": "Hi Aris, I'd like some help planning a custom day in Bali.",
+    "explore": "Hi Aris, I'm visiting Bali and would love some recommendations about places to explore.",
+    "food": "Hi Aris, I'd love to discover some local food and coffee places in Bali.",
+    "adventure": "Hi Aris, I'm interested in an adventure activity in Bali and would like some help getting there.",
+    "family": "Hi Aris, we're visiting Bali as a family and would love some activity recommendations.",
+    "beaches": "Hi Aris, I'd love to see some of Bali's beaches and sunsets. Could you suggest a plan?",
+    "culture": "Hi Aris, I'm interested in Balinese culture, temples and village life. Could you suggest some places?",
+    "feedback": "Hi Aris, I travelled with you recently and wanted to share some feedback.",
+    "priceLine": "(Indicative price on your website: {price}.)",
+    "enquiry": {
+      "intro": "Hi Aris! I'd like to enquire about arranging transport or an experience in Bali.",
+      "name": "Name",
+      "date": "Date",
+      "passengers": "Passengers",
+      "accommodation": "Accommodation",
+      "interest": "Interested in",
+      "notes": "Additional information",
+      "closing": "Could you please let me know what options are available and provide an indicative price?",
+      "area": "Area"
+    },
+    "scooter": "Hi Aris, I'm travelling solo and I'd like to ask about a 1:1 scooter tour.",
+    "airportZone": "Hi Aris, I'd like to enquire about an airport transfer for {area}."
+  },
+  "form": {
+    "name": "Your name",
+    "date": "Travel date",
+    "passengers": "Number of passengers",
+    "accommodation": "Hotel or villa location",
+    "accommodationPh": "e.g. a villa in Ubud",
+    "service": "What are you interested in?",
+    "notes": "Anything else Aris should know?",
+    "notesPh": "Flight number, children's ages, places you'd like to visit…",
+    "optional": "(optional)",
+    "choose": "Please choose…",
+    "options": {
+      "airport": "Airport transfer",
+      "half_day": "Half-day private driver",
+      "full_day": "Full-day private driver",
+      "custom": "Custom day trip",
+      "explore": "Sightseeing: rice terraces, waterfalls, temples",
+      "food": "Food & coffee",
+      "adventure": "Adventure activities",
+      "family": "Family activities",
+      "beaches": "Beaches & sunsets",
+      "culture": "Culture & local life",
+      "other": "Something else",
+      "scooter": "1:1 scooter tour (solo travellers)"
+    },
+    "submit": "Send enquiry on WhatsApp",
+    "note": "This opens WhatsApp with your details filled in, ready for you to send. It's an enquiry, not a booking: Aris will reply personally to check availability, discuss your plans and confirm the final price.",
+    "errors": {
+      "required": "Please fill in this field.",
+      "nameShort": "Please enter your name.",
+      "dateInvalid": "Please choose a valid date.",
+      "datePast": "Please choose today or a future date.",
+      "passengers": "Please enter a number from 1 to 99.",
+      "service": "Please choose an option.",
+      "summary": "Please check the highlighted fields."
+    },
+    "title": "Send Aris an enquiry",
+    "intro": "Fill in a few details and WhatsApp will open with your message ready to send.",
+    "zone": "Area you're staying in"
+  },
+  "driver": {
+    "photoPlaceholder": "Photo of Aris coming soon",
+    "introPlaceholder": "A personal introduction from Aris is coming soon.",
+    "tbc": "Details coming soon",
+    "fields": {
+      "drivingExperience": "Driving experience",
+      "languages": "Languages",
+      "vehicle": "Vehicle",
+      "passengerCapacity": "Passenger capacity",
+      "serviceAreas": "Service areas",
+      "enjoysShowing": "Favourite things to show visitors"
+    },
+    "pronounce": "Aris is pronounced like “Ares”, the Greek god of war."
+  },
+  "commitments": {
+    "direct": {
+      "title": "Direct communication",
+      "text": "You talk to Aris himself, from your first message to the end of your trip."
+    },
+    "pricing": {
+      "title": "Clear pricing before booking",
+      "text": "You'll know the price before anything is confirmed."
+    },
+    "flexible": {
+      "title": "Flexible arrangements",
+      "text": "Your day is planned around what you want to do."
+    },
+    "honest": {
+      "title": "Honest local recommendations",
+      "text": "Suggestions based on what suits you."
+    },
+    "confirmation": {
+      "title": "Confirmed before you travel",
+      "text": "All arrangements are confirmed with you in advance."
+    },
+    "noShopping": {
+      "title": "No unwanted shopping stops",
+      "text": "You only stop where you want to stop."
+    }
+  },
+  "reviews": {
+    "empty": "Reviews from guests will appear here soon. We only publish genuine reviews, shared with permission.",
+    "cta": "Travelled with Aris? Share your feedback",
+    "profile": "Read reviews",
+    "title": "What guests say"
+  },
+  "contact": {
+    "area": "Service area",
+    "areaValue": "Bali, Indonesia",
+    "howTitle": "How it works",
+    "howText": "Send an enquiry and Aris will reply personally to confirm availability and price.",
+    "title": "Get in touch",
+    "text": "Ready to plan your Bali experience? Send Aris a message on WhatsApp and let's get started."
+  },
+  "meta": {
+    "about": {
+      "title": "About Aris, Your Local Bali Driver | Bali Paradise",
+      "description": "Meet Aris, the local driver behind Bali Paradise. Direct communication on WhatsApp, flexible days and local recommendations. Answers to common questions.",
+      "ogTitle": "A local connection to Bali: meet Aris"
+    },
+    "explore": {
+      "title": "Things to Do in Bali: Day Trip Ideas | Bali Paradise",
+      "description": "Rice terraces, waterfalls, temples, local food, coffee, beaches and family fun. Ideas for exploring Bali, plus a private driver to take you there.",
+      "ogTitle": "Explore Bali: ideas for your days on the island"
+    },
+    "home": {
+      "title": "Bali Private Driver & Airport Transfers | Bali Paradise",
+      "description": "Explore Bali your way with Aris, a local Balinese driver. Airport transfers, private driver hire and custom day trips. Plan your day on WhatsApp.",
+      "ogTitle": "Bali Paradise — See Bali with a local."
+    },
+    "services": {
+      "title": "Bali Airport Transfers & Private Driver Hire | Bali Paradise",
+      "description": "Airport pickups, half and full-day private driver hire and custom day trips around Bali. Prices in IDR with approximate conversions. Enquire on WhatsApp.",
+      "ogTitle": "Getting around Bali: airport transfers, driver hire and day trips"
+    }
+  },
+  "about": {
+    "hero": {
+      "overline": "About us",
+      "title": "A local connection to Bali."
+    },
+    "intro": "We believe exploring Bali should be simple, enjoyable and personal. Whether you already know where you want to go or need a little inspiration, Aris is happy to help.",
+    "meet": {
+      "title": "Meet Aris",
+      "sub": "Your local driver in Bali."
+    },
+    "expect": {
+      "title": "What you can expect"
+    }
+  },
+  "faq": {
+    "title": "FAQs",
+    "q1": "How do I arrange a driver?",
+    "a1": "Send Aris a message on WhatsApp, or fill in the enquiry form, with your dates, where you're staying and what you'd like to do. He'll reply personally to check availability and talk through the details.",
+    "q2": "Can I customise my day?",
+    "a2": "Yes. You choose where to go and how long to stay. Aris can suggest places if you'd like ideas, and plans can change on the day where time allows.",
+    "q3": "How much does a private driver cost?",
+    "q4": "Can Aris collect us from the airport?",
+    "a4": "Yes. Airport pickups and drop-offs are one of the main services. Include your flight details when you enquire.",
+    "q5": "Can he recommend places to visit?",
+    "a5": "Yes. Tell him what you enjoy, such as food, nature, culture or beaches, and he'll suggest places that suit you.",
+    "q6": "Are attraction tickets included?",
+    "a6": "No. Entry tickets, activities and meals aren't included, and you pay the venues directly. Fuel, parking and toll roads are included in Aris's price.",
+    "q7": "Can families book?",
+    "a7": "Yes, families are welcome. Let Aris know how many adults and children are travelling, and the children's ages, so the right arrangements can be made. If you need a child seat, ask when you enquire.",
+    "q8": "How is my booking confirmed?",
+    "a8": "Your booking is confirmed only when Aris confirms it with you personally on WhatsApp, including the final price. Sending an enquiry through this website doesn't create a booking or take payment.",
+    "a3": "It depends on how long you need a driver and where you'd like to go. See the <a href=\"services.html#pricing\">indicative prices</a> on the Our Services page. Aris confirms the final price before you book."
+  },
+  "img": {
+    "statue": "A carved Balinese stone guardian statue in front of a temple",
+    "ulunDanu": "Ulun Danu Beratan temple on the shore of Lake Beratan, with mountains behind",
+    "waterfall": "Several waterfalls cascading down a jungle cliff",
+    "market": "Stallholders and shoppers at a busy traditional market in Bali",
+    "river": "Aerial view of a river winding through dense green jungle",
+    "monkey": "A long-tailed macaque sitting on a moss-covered stone wall",
+    "cliffSunset": "The sun setting over the ocean beside a dark sea cliff",
+    "prayer": "A Balinese woman praying with offerings at a temple",
+    "tegallalang": "Tegallalang rice terraces with palm trees, Bali",
+    "food": "A table of Indonesian dishes served in small bowls",
+    "atv": "Two riders on an ATV splashing along a muddy trail",
+    "familyBeach": "People silhouetted on a wet beach at sunset",
+    "beachSunset": "Sunset over the ocean beside a rocky headland",
+    "ceremony": "People in traditional Balinese dress carrying ceremonial umbrellas",
+    "plane": "An aircraft wing seen through a plane window",
+    "carView": "View of a road and hills through a car windscreen",
+    "gates": "The split stone gates at Lempuyang Temple, Bali",
+    "volcano": "A volcano rising above a sea of clouds at sunrise",
+    "road": "A road lined with red flowers leading towards a mountain in Bali",
+    "scooter": "A scooter rider on a quiet road beside green forest"
+  },
+  "explore": {
+    "hero": {
+      "overline": "Discover · Experience · Explore",
+      "title": "Explore Bali"
+    },
+    "intro": "There's plenty to discover around Bali. From local food and coffee to waterfalls, beaches, adventure and traditional village life. Take a look around and find something that interests you.",
+    "a": {
+      "desc": "Bali's interior is a patchwork of rice terraces, jungle valleys, crater lakes and temples. A day of sightseeing usually means a few unhurried stops, with time to walk, take photos and have lunch along the way.",
+      "i1": {
+        "name": "Tegallalang Rice Terraces",
+        "text": "Terraced rice fields in a valley north of Ubud."
+      },
+      "i2": {
+        "name": "Ulun Danu Beratan",
+        "text": "A lakeside water temple in the cool Bedugul highlands."
+      },
+      "i3": {
+        "name": "Uluwatu Temple",
+        "text": "A clifftop temple on the Bukit Peninsula, popular at sunset."
+      },
+      "i4": {
+        "name": "Sidemen",
+        "text": "A quiet valley in East Bali with rice fields and mountain views."
+      },
+      "i5": {
+        "name": "Kerta Gosa",
+        "text": "The historic court pavilion in Klungkung, known for its painted ceilings."
+      },
+      "i6": {
+        "name": "Waterfalls",
+        "text": "Tegenungan, Tibumana and others within reach of Ubud."
+      }
+    },
+    "b": {
+      "desc": "Some of the best meals in Bali come from small, family-run warungs. Try nasi campur, sate lilit or babi guling, wander through a morning market, or visit a coffee plantation to see how Bali coffee is grown and roasted.",
+      "i1": {
+        "name": "Local warungs",
+        "text": "Simple, family-run eateries serving Balinese and Indonesian dishes."
+      },
+      "i2": {
+        "name": "Coffee plantations",
+        "text": "Tasting stops in the Kintamani highlands and around Ubud."
+      },
+      "i3": {
+        "name": "Traditional markets",
+        "text": "Fresh produce, spices and offerings at local morning markets."
+      },
+      "i4": {
+        "name": "Cooking classes",
+        "text": "Learn to cook Balinese dishes with an independent cooking school."
+      },
+      "i5": {
+        "name": "Jimbaran seafood",
+        "text": "Grilled seafood at tables on the sand at Jimbaran Bay."
+      },
+      "i6": {
+        "name": "Cafés",
+        "text": "Relaxed café culture in Ubud, Canggu and Seminyak."
+      }
+    },
+    "c": {
+      "desc": "For a more active day, Bali has rivers to raft, jungle trails to ride and a volcano to climb before sunrise. These activities are run by independent operators. Aris can help you choose one and get you there.",
+      "i1": {
+        "name": "ATV rides",
+        "text": "Muddy jungle and rice-field trails, mostly around Ubud."
+      },
+      "i2": {
+        "name": "White-water rafting",
+        "text": "On the Ayung River near Ubud or the Telaga Waja in East Bali."
+      },
+      "i3": {
+        "name": "Mount Batur sunrise trek",
+        "text": "A guided early-morning climb up an active volcano."
+      },
+      "i4": {
+        "name": "Water sports",
+        "text": "Jet skis, parasailing and more at Tanjung Benoa."
+      },
+      "i5": {
+        "name": "Surf lessons",
+        "text": "Beginner-friendly waves at Kuta and Canggu."
+      },
+      "i6": {
+        "name": "Snorkelling & diving",
+        "text": "Clear water around Amed, Padang Bai and Menjangan Island."
+      }
+    },
+    "d": {
+      "desc": "Travelling with children? Bali has plenty to keep everyone happy, from water slides to calm, shallow beaches. Let Aris know your children's ages and he can help you plan a day with sensible travel times.",
+      "i1": {
+        "name": "Waterbom Bali",
+        "text": "A large water park in Kuta with slides for all ages."
+      },
+      "i2": {
+        "name": "Bali Zoo",
+        "text": "Animal encounters in Singapadu, south of Ubud."
+      },
+      "i3": {
+        "name": "Sanur Beach",
+        "text": "Calm, reef-protected water that suits younger swimmers."
+      },
+      "i4": {
+        "name": "Ubud Monkey Forest",
+        "text": "A forest sanctuary home to long-tailed macaques. Keep bags zipped!"
+      },
+      "i5": {
+        "name": "Turtle conservation",
+        "text": "The Turtle Conservation and Education Center on Serangan Island."
+      },
+      "i6": {
+        "name": "Nusa Dua",
+        "text": "Calm beaches and a paved beachfront walkway."
+      }
+    },
+    "e": {
+      "desc": "Bali's west-facing coast is made for sunsets. Watch the sky change from a clifftop at Uluwatu, have dinner with your feet in the sand at Jimbaran, or find a quieter beach in the south.",
+      "i1": {
+        "name": "Uluwatu",
+        "text": "Clifftop views, surf beaches and the evening Kecak dance at the temple."
+      },
+      "i2": {
+        "name": "Jimbaran Bay",
+        "text": "Seafood dinners on the beach as the sun goes down."
+      },
+      "i3": {
+        "name": "Tanah Lot",
+        "text": "A sea temple on a rocky outcrop, best seen at sunset."
+      },
+      "i4": {
+        "name": "Melasti Beach",
+        "text": "White sand below limestone cliffs on the Bukit Peninsula."
+      },
+      "i5": {
+        "name": "Seminyak",
+        "text": "Beach clubs and sunset bars along the sand."
+      },
+      "i6": {
+        "name": "Sanur",
+        "text": "Bali's sunrise side, with a long beachfront path."
+      }
+    },
+    "f": {
+      "desc": "Balinese Hindu culture is part of everyday life here: offerings at every doorway, ceremonies in village temples and crafts passed down through families. Please visit respectfully. A sarong and sash are required at temples.",
+      "i1": {
+        "name": "Tirta Empul",
+        "text": "A water temple near Tampaksiring, known for its holy springs."
+      },
+      "i2": {
+        "name": "Besakih",
+        "text": "Bali's largest temple complex, on the slopes of Mount Agung."
+      },
+      "i3": {
+        "name": "Penglipuran",
+        "text": "A traditional village in Bangli, known for its neat layout and bamboo forest."
+      },
+      "i4": {
+        "name": "Craft villages",
+        "text": "Silverwork in Celuk, woodcarving in Mas and painting in Batuan."
+      },
+      "i5": {
+        "name": "Traditional dance",
+        "text": "Evening Legong and Kecak performances in Ubud and at Uluwatu."
+      },
+      "i6": {
+        "name": "Ceremonies",
+        "text": "Temple festivals and processions happen throughout the year. If you come across one, watch quietly from the side."
+      }
+    },
+    "disclaimer": "The places above are independent attractions and destinations. Bali Paradise doesn't operate them or sell their tickets. Aris can drive you there and help you plan your day. Opening hours and entry fees are set by each venue.",
+    "else": {
+      "title": "Have something else in mind?",
+      "text": "Everyone's Bali experience is different. If there's somewhere specific you'd like to visit or something you'd like to try, just tell Aris. He'll help you work out what's possible.",
+      "cta": "Ask Aris on WhatsApp"
+    },
+    "indexLabel": "Experience categories"
+  },
+  "cat": {
+    "explore": {
+      "title": "Explore Bali",
+      "short": "Rice terraces, waterfalls, temples and village life."
+    },
+    "food": {
+      "title": "Food & Coffee",
+      "short": "Local warungs, markets and coffee plantations."
+    },
+    "adventure": {
+      "title": "Adventure",
+      "short": "ATV rides, rafting, volcano treks and water sports."
+    },
+    "family": {
+      "title": "Family Fun",
+      "short": "Water parks, gentle beaches and animal encounters."
+    },
+    "beaches": {
+      "title": "Beaches & Sunsets",
+      "short": "Uluwatu cliffs, Jimbaran Bay and seaside dinners."
+    },
+    "culture": {
+      "title": "Culture & Local Life",
+      "short": "Temples, ceremonies, crafts and village life."
+    }
+  },
+  "home": {
+    "hero": {
+      "overline": "Private driver & local experiences in Bali",
+      "title": "See Bali with a local.",
+      "lead": "Explore Bali at your own pace. Tell Aris what you're interested in and he'll help you work out the rest.",
+      "ctaExplore": "Explore Bali",
+      "imgAlt": "Green rice terraces and palm trees below a misty mountain in Bali at dawn",
+      "scroll": "Scroll to experiences"
+    },
+    "exp": {
+      "overline": "Experiences",
+      "title": "What would you like to experience?",
+      "lead": "Six ways to spend a day in Bali. Pick one, mix a few together, or tell Aris about something completely different."
+    },
+    "around": {
+      "overline": "Transport · Flexibility · Local knowledge",
+      "title": "Getting around Bali",
+      "lead": "Bali's best places are spread across the island. A private driver means no haggling, no waiting for rides and no getting lost. Just a comfortable day at your own pace."
+    },
+    "aris": {
+      "overline": "Meet Aris",
+      "title": "Your local connection to Bali.",
+      "quote": "Whether you know exactly where you want to go or you're looking for a few ideas, Aris is here to help you make the most of your time in Bali.",
+      "cta": "More about Aris"
+    },
+    "cta": {
+      "title": "Let's plan your Bali experience.",
+      "text": "Tell Aris what you're interested in and start planning your day."
+    },
+    "trust": {
+      "label": "Why travel with Aris",
+      "t1": "Local driver, 5+ years",
+      "t2": "All of Bali covered",
+      "t3": "Fuel, parking & tolls included",
+      "t4": "Plan directly with Aris on WhatsApp"
+    },
+    "panels": {
+      "explore": "Explore",
+      "food": "Food",
+      "adventure": "Adventure",
+      "family": "Family",
+      "beaches": "Beaches",
+      "culture": "Culture"
+    }
+  },
+  "svc": {
+    "airport": {
+      "title": "Airport Transfers",
+      "short": "Arrive and depart with ease. Pickups from Ngurah Rai International Airport, plus hotel and villa transfers."
+    },
+    "driver": {
+      "title": "Private Driver Hire",
+      "short": "A comfortable, flexible way to explore. Choose a half or full day with a route that suits your plans."
+    },
+    "custom": {
+      "title": "Custom Day Trips",
+      "short": "Tell Aris what you'd like to see and do. Get local suggestions and a flexible plan for your day."
+    },
+    "scooter": {
+      "title": "1:1 Scooter Tours",
+      "short": "Travelling solo? Ride on the back of Aris's scooter for a one-to-one tour. Helmet provided."
+    }
+  },
+  "services": {
+    "hero": {
+      "overline": "Our services · Transport · Local knowledge",
+      "title": "Getting around Bali."
+    },
+    "intro": "Whether you need an airport pickup, a driver for the day or help planning a few stops along the way, Bali Paradise makes getting around simple.",
+    "a": {
+      "desc": "Arrive and depart with ease. Aris can meet you at Bali's I Gusti Ngurah Rai International Airport (DPS) and take you to your hotel or villa, or get you back to the airport in good time for your flight.",
+      "l1": "Airport pickups when you land",
+      "l2": "Hotel and villa transfers",
+      "l3": "Arrival coordination: share your flight details so pickup can be arranged around your arrival",
+      "l4": "Departure transfers back to the airport",
+      "l5": "Luggage arrangements: let Aris know how many bags you're bringing",
+      "cta": "Enquire about an airport transfer",
+      "checkArea": "Check the price for your area"
+    },
+    "b": {
+      "desc": "A comfortable, flexible way to explore Bali. Choose a half or full day, decide where you'd like to stop, and change your plans as you go.",
+      "l1": "Half-day hire",
+      "l2": "Full-day hire",
+      "l3": "A flexible itinerary that you choose",
+      "l4": "As many stops as your day allows",
+      "l5": "Local recommendations along the way",
+      "cta": "Enquire about a private driver"
+    },
+    "c": {
+      "desc": "Not sure where to start? Tell Aris what you enjoy and he'll suggest an itinerary, or bring your own list of places. Either way, the day is planned around you.",
+      "l1": "Destinations you choose",
+      "l2": "Suggested itineraries if you'd like ideas",
+      "l3": "Local recommendations",
+      "l4": "Flexible timing",
+      "l5": "Transport arranged for the whole day",
+      "cta": "Plan your day"
+    },
+    "d": {
+      "desc": "Travelling solo? See Bali the way many locals get around: on the back of a scooter. Aris rides and you sit behind him, so you can simply enjoy the views. It's a relaxed, one-to-one way to explore, with a helmet provided.",
+      "l1": "One-to-one: just you and Aris",
+      "l2": "You ride as a passenger, Aris rides",
+      "l3": "Helmet provided",
+      "l4": "Ideal for solo travellers",
+      "l5": "A route planned around what you'd like to see",
+      "cta": "Enquire about a scooter tour"
+    }
+  },
+  "how": {
+    "title": "How booking works",
+    "s1": {
+      "title": "Send an enquiry",
+      "text": "Message Aris on WhatsApp or use the form below."
+    },
+    "s2": {
+      "title": "Talk it through",
+      "text": "Aris checks his availability and discusses your plans with you."
+    },
+    "s3": {
+      "title": "Get your price",
+      "text": "He confirms the arrangements and gives you a final price."
+    },
+    "s4": {
+      "title": "Booking confirmed",
+      "text": "Your booking is only confirmed once Aris confirms it with you personally."
+    }
+  },
+  "airportZones": {
+    "title": "Airport transfer price by area",
+    "label": "Where are you staying?",
+    "note": "Prices are for a transfer between the airport and your hotel or villa in that area. Aris confirms the final price before you book.",
+    "cta": "Enquire about an airport transfer",
+    "choose": "Choose an area…"
+  },
+  "zones": {
+    "kuta": "Kuta / Legian",
+    "seminyak": "Seminyak",
+    "canggu": "Canggu",
+    "jimbaran": "Jimbaran",
+    "nusa_dua": "Nusa Dua / Tanjung Benoa",
+    "uluwatu": "Uluwatu / Bukit Peninsula",
+    "sanur": "Sanur",
+    "denpasar": "Denpasar",
+    "ubud": "Ubud",
+    "amed": "Amed",
+    "lovina": "Lovina",
+    "other": "Somewhere else"
+  }
+}
