@@ -1,0 +1,11 @@
+# Repository files that should not be published on the website
+.git
+.gitignore
+.assetsignore
+.claude
+wrangler.jsonc
+README.md
+IMAGE-CREDITS.md
+scripts
+node_modules
+.DS_Store

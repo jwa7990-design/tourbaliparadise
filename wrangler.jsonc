@@ -1,0 +1,9 @@
+// Cloudflare Workers config: this is a static site, served straight from the
+// repository folder. Files listed in .assetsignore are not published.
+{
+  "name": "tourbaliparadise",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "."
+  }
+}
