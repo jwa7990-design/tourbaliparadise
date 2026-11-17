@@ -15,7 +15,7 @@ export const BUSINESS = {
   serviceArea: 'Bali, Indonesia',
   // Set once a domain is live, e.g. 'https://www.baliparadise.com'
   // (used for canonical URLs). Leave empty until then.
-  siteUrl: '',
+  siteUrl: 'https://tourbaliparadise.com',
   // Optional business email — leave null until confirmed.
   email: null,
 };

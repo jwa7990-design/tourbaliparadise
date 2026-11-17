@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# The Sitemap line is added automatically when you run:
-#   node scripts/set-domain.mjs https://www.yourdomain.com
+Sitemap: https://tourbaliparadise.com/sitemap.xml
