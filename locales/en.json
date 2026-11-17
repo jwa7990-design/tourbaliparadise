@@ -60,7 +60,9 @@
       "waitingTime": "Waiting time",
       "capacity": "Passengers & luggage",
       "attractionTickets": "Attraction tickets",
-      "meals": "Meals"
+      "meals": "Meals",
+      "extraHours": "Extra hours",
+      "farTrips": "Far trips"
     },
     "status": {
       "included": "Included",

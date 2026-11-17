@@ -60,7 +60,9 @@
       "waitingTime": "Время ожидания",
       "capacity": "Пассажиры и багаж",
       "attractionTickets": "Билеты в достопримечательности",
-      "meals": "Питание"
+      "meals": "Питание",
+      "extraHours": "Дополнительные часы",
+      "farTrips": "Дальние поездки"
     },
     "status": {
       "included": "Включено",

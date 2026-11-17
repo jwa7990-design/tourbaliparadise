@@ -26,10 +26,10 @@ export const BUSINESS = {
    Do not enter estimates here: these are shown publicly.          */
 export const PRICING = {
   airport_transfer: { price_idr: null, from: true },
-  half_day_driver:  { price_idr: null, from: true },
-  full_day_driver:  { price_idr: null, from: true },
+  half_day_driver:  { price_idr: 650000, from: true },   // up to 5 hours
+  full_day_driver:  { price_idr: 900000, from: true },   // up to 10 hours
   custom_day_trip:  { price_idr: null, quoteOnRequest: true },
-  scooter_tour:     { price_idr: null, from: true },
+  scooter_tour:     { price_idr: 500000, from: true },   // half day, 1 guest
 };
 
 /* Airport transfer prices by area (IDR, one price per area).
@@ -39,17 +39,17 @@ export const PRICING = {
    null = "Price to be confirmed". 'other' is always quoted.
    To add an area: add a line here AND a "zones.<key>" name in each locales/*.json. */
 export const AIRPORT_ZONES = [
-  { key: 'kuta',     price_idr: null },  // Kuta / Legian
-  { key: 'seminyak', price_idr: null },
-  { key: 'canggu',   price_idr: null },
-  { key: 'jimbaran', price_idr: null },
-  { key: 'nusa_dua', price_idr: null },  // Nusa Dua / Tanjung Benoa
-  { key: 'uluwatu',  price_idr: null },  // Uluwatu / Bukit Peninsula
-  { key: 'sanur',    price_idr: null },
-  { key: 'denpasar', price_idr: null },
-  { key: 'ubud',     price_idr: null },
-  { key: 'amed',     price_idr: null },  // East Bali
-  { key: 'lovina',   price_idr: null },  // North Bali
+  { key: 'kuta',     price_idr: 300000 },  // Kuta / Legian
+  { key: 'seminyak', price_idr: 350000 },
+  { key: 'canggu',   price_idr: 400000 },
+  { key: 'jimbaran', price_idr: 300000 },
+  { key: 'nusa_dua', price_idr: 300000 },  // Nusa Dua / Tanjung Benoa
+  { key: 'uluwatu',  price_idr: 400000 },  // Uluwatu / Bukit Peninsula
+  { key: 'sanur',    price_idr: 300000 },
+  { key: 'denpasar', price_idr: 300000 },
+  { key: 'ubud',     price_idr: 500000 },
+  { key: 'amed',     price_idr: 850000 },  // East Bali
+  { key: 'lovina',   price_idr: 900000 },  // North Bali
   { key: 'other',    price_idr: null, quoteOnRequest: true },
 ];
 
@@ -63,6 +63,8 @@ export const INCLUSIONS = {
   driverHours: { en: 'Half day up to 5 hours, full day up to 10 hours', 'zh-CN': '半日最长 5 小时，全日最长 10 小时', ru: 'Полдня — до 5 часов, полный день — до 10 часов', id: 'Setengah hari maks. 5 jam, sehari penuh maks. 10 jam' },
   waitingTime: { en: 'Included within your hire hours', 'zh-CN': '包含在包车时长内', ru: 'Входит в часы аренды', id: 'Sudah termasuk dalam jam sewa' },
   capacity: { en: 'Up to 4 or 6 passengers, depending on the car arranged', 'zh-CN': '最多 4 人或 6 人，视安排的车型而定', ru: 'До 4 или 6 пассажиров, в зависимости от автомобиля', id: 'Hingga 4 atau 6 penumpang, tergantung mobil yang disiapkan' },
+  extraHours: { en: "Rp 100,000 per extra hour", 'zh-CN': "超时每小时 Rp 100,000", ru: "Rp 100 000 за каждый дополнительный час", id: "Rp 100.000 per jam tambahan" },
+  farTrips: { en: "+ Rp 200,000 for Amed, Lovina, Munduk and other far areas", 'zh-CN': "前往艾湄湾、罗威纳、蒙杜克等远程地区加收 Rp 200,000", ru: "+ Rp 200 000 за поездки в Амед, Ловину, Мундук и другие дальние районы", id: "+ Rp 200.000 untuk Amed, Lovina, Munduk, dan area jauh lainnya" },
   attractionTickets: 'not_included',
   meals: 'not_included',
 };

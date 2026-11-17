@@ -60,7 +60,9 @@
       "waitingTime": "Waktu tunggu",
       "capacity": "Penumpang & bagasi",
       "attractionTickets": "Tiket tempat wisata",
-      "meals": "Makan"
+      "meals": "Makan",
+      "extraHours": "Jam tambahan",
+      "farTrips": "Perjalanan jauh"
     },
     "status": {
       "included": "Termasuk",

@@ -60,7 +60,9 @@
       "waitingTime": "等候时间",
       "capacity": "乘客与行李",
       "attractionTickets": "景点门票",
-      "meals": "餐费"
+      "meals": "餐费",
+      "extraHours": "超时费用",
+      "farTrips": "远程行程"
     },
     "status": {
       "included": "已包含",
