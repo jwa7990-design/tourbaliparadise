@@ -1,8 +1,27 @@
 # Image credits
 
+## Aris's own photographs
+
+Supplied by Aris (November 2026) and stored in `assets/images/aris/`. They were cropped to fit each slot,
+with no other edits: the phone-screen bars and a date stamp were trimmed off, and nothing in the photos was altered.
+
+| File(s) | Photo | Used for |
+|---|---|---|
+| batur-tall, batur-34 | Batur Natural Hot Spring | Home hero "Explore" panel; Explore index thumb and Explore Bali inset; About filmstrip |
+| temple-tall, temple-34, temple-45 | Lempuyang temple staircase | Explore hero strip; Explore Bali main image; Home "Custom Day Trips" card; Services custom day trips |
+| cafe-tall, cafe-34, cafe-45 | Aris with guests at a café | Home hero "Food" panel; Explore hero strip, index thumb and Food & Coffee main image; About "FAQs" strip; About filmstrip |
+| coffee-34 | Coffee tasting | Explore Food & Coffee inset |
+| surf-tall, surf-34, surf-45 | Aris with surfers on the beach | Home hero "Adventure" panel; Explore index thumb and Adventure main image |
+| boat-34, boat-tall | Aris with visitors at the boat harbour | Explore Adventure inset; About "Get in touch" strip |
+| family-tall, family-34, family-45 | Aris with a family at a waterfall | Home hero "Family" panel; Explore index thumb and Family Fun main image; About filmstrip |
+| lake-34, lake-tall | Aris with two visitors by a lake | Home "Meet Aris" photo; About "Meet Aris" strip |
+| group-card, group-34, group-tall | Aris with a group beside the car | Home "Private Driver Hire" card; Services hero strip and private driver row; About "Meet Aris" photo |
+
+## Unsplash photographs
+
 All photographs are **real photographs** from [Unsplash](https://unsplash.com), used under the
 [Unsplash License](https://unsplash.com/license): free to use, attribution appreciated but not required.
-No AI-generated images are used. None of these photos show Aris, his vehicle, or imply that Bali Paradise
+No AI-generated images are used. None of the Unsplash photos show Aris, his vehicle, or imply that Bali Paradise
 operates or partners with any attraction pictured.
 
 Images are currently loaded from Unsplash's CDN (`images.unsplash.com`), as Unsplash recommends.

@@ -32,7 +32,7 @@
     "contact": "Contact",
     "enquire": "Send an enquiry",
     "disclaimer": "Bali Paradise provides private transport and local recommendations. Attractions and activities mentioned on this website are run by independent operators. Enquiries are not bookings: arrangements and prices are confirmed personally by Aris.",
-    "photos": "Photography by Unsplash contributors.",
+    "photos": "Photography by Aris and by Unsplash contributors.",
     "promise": "Honest prices · No shopping stops · Every trip gives back",
     "giving": "Giving back"
   },
@@ -288,7 +288,13 @@
     "gates": "The split stone gates at Lempuyang Temple, Bali",
     "volcano": "A volcano rising above a sea of clouds at sunrise",
     "road": "A road lined with red flowers leading towards a mountain in Bali",
-    "scooter": "A scooter rider on a quiet road beside green forest"
+    "scooter": "A scooter rider on a quiet road beside green forest",
+    "arisGroup": "Aris with a group of visitors beside the car",
+    "arisLake": "Aris with two visitors by a lake in Bali",
+    "lempuyang": "The temple staircase at Lempuyang, Bali",
+    "cafe": "Aris with guests at a café, with fresh coconuts on the table",
+    "surf": "Aris with two visitors and their surfboards on the beach",
+    "familyWaterfall": "Aris with a family in front of a waterfall"
   },
   "explore": {
     "hero": {

@@ -32,7 +32,7 @@
     "contact": "Kontak",
     "enquire": "Kirim pertanyaan",
     "disclaimer": "Bali Paradise menyediakan transportasi pribadi dan rekomendasi lokal. Tempat wisata dan aktivitas yang disebut di situs ini dikelola oleh pihak lain secara mandiri. Mengirim pertanyaan belum berarti memesan: rencana perjalanan dan harga dikonfirmasi langsung oleh Aris.",
-    "photos": "Foto oleh kontributor Unsplash.",
+    "photos": "Foto oleh Aris dan kontributor Unsplash.",
     "promise": "Harga jujur · Tanpa mampir toko · Setiap perjalanan ikut berbagi",
     "giving": "Berbagi"
   },
@@ -288,7 +288,13 @@
     "gates": "Gerbang candi bentar di Pura Lempuyang, Bali",
     "volcano": "Gunung berapi menjulang di atas lautan awan saat matahari terbit",
     "road": "Jalan berhias bunga merah menuju gunung di Bali",
-    "scooter": "Pengendara skuter di jalan sepi di samping hutan hijau"
+    "scooter": "Pengendara skuter di jalan sepi di samping hutan hijau",
+    "arisGroup": "Aris bersama rombongan tamu di samping mobil",
+    "arisLake": "Aris bersama dua tamu di tepi danau di Bali",
+    "lempuyang": "Tangga pura Lempuyang, Bali",
+    "cafe": "Aris bersama tamu di kafe, dengan kelapa muda di meja",
+    "surf": "Aris bersama dua tamu dan papan selancar mereka di pantai",
+    "familyWaterfall": "Aris bersama sebuah keluarga di depan air terjun"
   },
   "explore": {
     "hero": {
