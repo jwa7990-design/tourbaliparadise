@@ -9,7 +9,7 @@ with no other edits: the phone-screen bars and a date stamp were trimmed off, an
 |---|---|---|
 | batur-tall, batur-34 | Batur Natural Hot Spring | Home hero "Explore" panel; Explore index thumb and Explore Bali inset; About filmstrip |
 | temple-tall, temple-34, temple-45 | Lempuyang temple staircase | Explore hero strip; Explore Bali main image; Home "Custom Day Trips" card; Services custom day trips |
-| cafe-tall, cafe-34, cafe-45 | Aris with guests at a café | Home hero "Food" panel; Explore hero strip, index thumb and Food & Coffee main image; About "FAQs" strip; About filmstrip |
+| cafe-tall, cafe-34 | Aris with guests at a café | Explore hero strip and index thumb; About "FAQs" strip; About filmstrip |
 | coffee-34 | Coffee tasting | Explore Food & Coffee inset |
 | surf-tall, surf-34, surf-45 | Aris with surfers on the beach | Home hero "Adventure" panel; Explore index thumb and Adventure main image |
 | boat-34, boat-tall | Aris with visitors at the boat harbour | Explore Adventure inset; About "Get in touch" strip |
@@ -34,7 +34,7 @@ Before launch, it's worth re-checking each link below to confirm it's still unde
 | Explore Bali tile, About closing strip: Tegallalang | @treesoftheplanet (Niklas Weiss) | https://unsplash.com/photos/-2WlTWZLnRc |
 | Explore Bali section: waterfalls | @alexphotogram | https://unsplash.com/photos/wPBbPkZZu8E |
 | Food & Coffee tile: Indonesian dishes | @uyk | https://unsplash.com/photos/yvzzemH8-J0 |
-| Food & Coffee section: traditional market | @indiratjokorda | https://unsplash.com/photos/s8pobouxk8M |
+| Food & Coffee section: warung owner with bakso, Ubud | Spenser Sembrat | https://unsplash.com/photos/-zAyUidk9pg |
 | Adventure tile: ATV | @shibupavizha | https://unsplash.com/photos/zZeh-USTxeE |
 | Adventure section: jungle river | @eyestetix_studio | https://unsplash.com/photos/qRD9fAfVQcE |
 | Family Fun tile: beach at sunset | @eunoiakarsa_ | https://unsplash.com/photos/9KzEO-KoOL4 |
