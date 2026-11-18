@@ -33,7 +33,6 @@ export const PRICING = {
   // Concept branch: hosted experiences (per booking, 1–2 guests; proposed, not final)
   exp_local_eyes:   { price_idr: 1600000, from: true },
   exp_solo_half:    { price_idr: 700000, from: true },   // full day 1,100,000
-  exp_kintamani:    { price_idr: 1500000, from: true },
 };
 
 /* Airport transfer prices by area (IDR, one price per area).

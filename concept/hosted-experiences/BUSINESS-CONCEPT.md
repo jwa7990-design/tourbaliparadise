@@ -12,6 +12,12 @@ This is a proposal only. It does not change the live tourbaliparadise.com site, 
 
 Exchange rate used: A$1 = Rp 12,346 and US$1 = Rp 18,182 (open.er-api.com, 18 Nov 2026).
 
+> **Revision, 18 Nov 2026:** after review, the flagships are now **two**, not three:
+> - **Experience Bali as a Local:** the in-depth, educational full day.
+> - **Solo Traveller Companion.**
+>
+> Kintamani Coffee & Volcano is no longer a separate product. It becomes one of the ways to shape either day ("coffee and the volcano"), priced as the Local experience. The site fuses with the current one: Explore Bali and Our Services stay, airport transfers and driver hire become "Practical services", and the scooter tour becomes Solo Companion. The figures below still model three products; Kintamani bookings now count as Local bookings, which keeps the same averages.
+
 ---
 
 ## The answer first
