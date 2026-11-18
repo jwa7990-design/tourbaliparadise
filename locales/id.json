@@ -195,7 +195,7 @@
     "profile": "Baca semua ulasan di Google",
     "title": "Kata para tamu",
     "overline": "Ulasan tamu",
-    "write": "Pernah jalan bersama Aris? Tulis ulasan",
+    "write": "Tulis ulasan",
     "stars": "{n} dari 5 bintang",
     "fromGuests": "Dari tamu yang memesan layanan ini",
     "sampleLabel": "Contoh: pratinjau desain",
@@ -234,6 +234,10 @@
       "title": "Setiap Perjalanan Ikut Berbagi | Bali Paradise",
       "description": "Sebagian dari setiap perjalanan Bali Paradise disumbangkan untuk kegiatan sosial di Bali. Lihat cara kerjanya, totalnya, dan setiap donasi beserta buktinya.",
       "ogTitle": "Setiap perjalanan ikut berbagi: Bali Paradise"
+    },
+    "review": {
+      "title": "Tulis ulasan untuk Aris | Bali Paradise",
+      "description": "Pernah jalan bersama Aris? Bagikan pengalaman Anda agar wisatawan lain menemukan sopir lokal Bali yang bisa dipercaya."
     }
   },
   "about": {
@@ -756,5 +760,14 @@
       "custom": "Disesuaikan dengan rencana Anda"
     },
     "ask": "Tanya Aris lewat WhatsApp"
+  },
+  "reviewPage": {
+    "overline": "Terima kasih",
+    "title": "Bagaimana hari Anda bersama Aris?",
+    "lead": "Aris adalah sopir lokal yang membangun usahanya dari satu tamu ke tamu berikutnya. Beberapa kata tentang perjalanan Anda membantu wisatawan lain menemukannya, dan itu sangat berarti baginya.",
+    "google": "Tulis ulasan di Google",
+    "googleNote": "Google akan terbuka, lalu Anda tinggal memilih bintang dan menulis beberapa kata. Hanya sekitar satu menit.",
+    "whatsapp": "Kirim masukan ke Aris",
+    "whatsappNote": "Tidak ingin memakai Google? Kirim pesan langsung ke Aris lewat WhatsApp."
   }
 }

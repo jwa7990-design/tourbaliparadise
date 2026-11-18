@@ -195,7 +195,7 @@
     "profile": "在 Google 上查看全部评价",
     "title": "游客怎么说",
     "overline": "客人评价",
-    "write": "和 Aris 一起出行过？留下评价",
+    "write": "留下评价",
     "stars": "{n} 星（满分 5 星）",
     "fromGuests": "预订过此服务的客人说",
     "sampleLabel": "示例：设计预览",
@@ -234,6 +234,10 @@
       "title": "回馈巴厘岛：每趟行程都做公益 | Bali Paradise",
       "description": "每趟 Bali Paradise 行程都会拿出一部分捐给巴厘岛本地公益项目。来看看运作方式、累计金额，以及每一笔捐款和对应凭证。",
       "ogTitle": "每趟行程都回馈巴厘岛：Bali Paradise"
+    },
+    "review": {
+      "title": "为 Aris 留下评价 | Bali Paradise",
+      "description": "和 Aris 一起旅行过？分享您的体验，帮助其他旅行者找到值得信赖的巴厘岛本地司机。"
     }
   },
   "about": {
@@ -756,5 +760,14 @@
       "custom": "根据你的行程安排"
     },
     "ask": "通过 WhatsApp 咨询 Aris"
+  },
+  "reviewPage": {
+    "overline": "谢谢您",
+    "title": "和 Aris 一起的这一天怎么样？",
+    "lead": "Aris 是一位本地司机，正一位客人一位客人地经营自己的事业。您写下几句旅途感受，能帮助其他旅行者找到他，这对他意义重大。",
+    "google": "在 Google 上写评价",
+    "googleNote": "将打开 Google，您可以点选星级并写几句话，大约只需一分钟。",
+    "whatsapp": "把反馈发给 Aris",
+    "whatsappNote": "不想使用 Google？可以直接在 WhatsApp 上给 Aris 留言。"
   }
 }

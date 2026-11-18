@@ -428,11 +428,26 @@ function reviewCard(r, { withService = true, place = 'reviews' } = {}) {
 function reviewLinks(place) {
   const links = [];
   if (REVIEWS_PROFILE_URL) links.push(`<a class="link-arrow" href="${esc(REVIEWS_PROFILE_URL)}" target="_blank" rel="noopener" data-track-label="${place}_reviews_profile">${esc(t('reviews.profile'))} <span aria-hidden="true">→</span></a>`);
-  if (REVIEWS_WRITE_URL) links.push(`<a class="link-arrow" href="${esc(REVIEWS_WRITE_URL)}" target="_blank" rel="noopener" data-track-label="${place}_reviews_write">${esc(t('reviews.write'))} <span aria-hidden="true">→</span></a>`);
+  links.push(`<a class="link-arrow" href="review.html" data-track="cta" data-track-label="${place}_reviews_write">${esc(t('reviews.write'))} <span aria-hidden="true">→</span></a>`);
   return links.length ? `<p class="rv-links">${links.join('')}</p>` : '';
 }
 
+/* /review page (the short link and QR code point here). With the Google
+   "write a review" link set, the main button opens Google's review form;
+   until then, guests can send feedback on WhatsApp. */
+function renderReviewCta() {
+  const host = document.querySelector('[data-review-cta]');
+  if (!host) return;
+  const wa = `<a class="btn ${REVIEWS_WRITE_URL ? 'btn--outline' : 'btn--green'} btn--icon" href="${waUrl()}" data-wa="feedback" data-track-label="review_page_whatsapp" target="_blank" rel="noopener"><span data-icon="whatsapp"></span><span>${esc(t('reviewPage.whatsapp'))}</span></a>`;
+  host.innerHTML = REVIEWS_WRITE_URL
+    ? `<a class="btn btn--green review-cta__google" href="${esc(REVIEWS_WRITE_URL)}" data-track-label="review_page_google" rel="noopener"><span class="review-cta__g" aria-hidden="true">G</span><span>${esc(t('reviewPage.google'))}</span></a>
+       <p class="review-cta__note">${esc(t('reviewPage.googleNote'))}</p>
+       <div class="review-cta__alt">${wa}<p class="review-cta__note">${esc(t('reviewPage.whatsappNote'))}</p></div>`
+    : `${wa}`;
+}
+
 export function renderReviews() {
+  renderReviewCta();
   const list = reviewList || [];
   // About page: every review
   const host = document.querySelector('[data-reviews]');

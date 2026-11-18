@@ -195,7 +195,7 @@
     "profile": "Read all reviews on Google",
     "title": "What guests say",
     "overline": "Guest reviews",
-    "write": "Travelled with Aris? Leave a review",
+    "write": "Leave a review",
     "stars": "{n} out of 5 stars",
     "fromGuests": "From guests who booked this",
     "sampleLabel": "Sample: design preview",
@@ -234,6 +234,10 @@
       "title": "Giving Back: Every Trip Supports Bali | Bali Paradise",
       "description": "Part of every Bali Paradise trip goes to a local Bali cause. See how it works, the running total and every donation with its receipt.",
       "ogTitle": "Every trip gives back: Bali Paradise"
+    },
+    "review": {
+      "title": "Leave a review for Aris | Bali Paradise",
+      "description": "Travelled with Aris? Share your experience so other travellers can find a local Bali driver they can trust."
     }
   },
   "about": {
@@ -756,5 +760,14 @@
       "custom": "Planned around your day"
     },
     "ask": "Ask Aris on WhatsApp"
+  },
+  "reviewPage": {
+    "overline": "Thank you",
+    "title": "How was your day with Aris?",
+    "lead": "Aris is a local driver building his business one guest at a time. A few words about your trip helps other travellers find him, and it means a lot to him.",
+    "google": "Write a Google review",
+    "googleNote": "Opens Google, where you can tap the stars and add a few words. It takes about a minute.",
+    "whatsapp": "Send Aris your feedback",
+    "whatsappNote": "Prefer not to use Google? Message Aris directly on WhatsApp."
   }
 }
