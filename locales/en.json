@@ -198,7 +198,8 @@
     "write": "Travelled with Aris? Leave a review",
     "stars": "{n} out of 5 stars",
     "fromGuests": "From guests who booked this",
-    "sampleLabel": "Sample: design preview"
+    "sampleLabel": "Sample: design preview",
+    "readFull": "Read the full review"
   },
   "contact": {
     "area": "Service area",

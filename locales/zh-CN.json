@@ -198,7 +198,8 @@
     "write": "和 Aris 一起出行过？留下评价",
     "stars": "{n} 星（满分 5 星）",
     "fromGuests": "预订过此服务的客人说",
-    "sampleLabel": "示例：设计预览"
+    "sampleLabel": "示例：设计预览",
+    "readFull": "阅读完整评价"
   },
   "contact": {
     "area": "服务区域",

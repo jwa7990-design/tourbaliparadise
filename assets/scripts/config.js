@@ -153,7 +153,17 @@ export const GIVING = {
      featured: true,             // show in the homepage strip (max 3)
    }
    Nothing review-related shows on the live site while this is empty. */
-export const REVIEWS = [];
+export const REVIEWS = [
+  {
+    "name": "Jay",
+    "country": "Australia",
+    "date": "2026-11",
+    "service": "scooter",
+    "rating": 5,
+    "featured": true,
+    "text": "I had a fantastic day out with Aris on a 1:1 scooter trip and couldn't recommend him more highly.\n\nWe headed up to Kintamani for coffee overlooking the volcano, stopped for lunch in Tegallalang, and finished with a drop-off in Ubud. It was a brilliant way to see more of Bali.\n\nWhat made the day particularly special was getting to chat with Aris along the way. He was happy to share his knowledge of local culture and traditions, and I really enjoyed learning from him. He also listened to what I wanted to get out of the day and tailored the trip around that.\n\nAs a solo traveller, feeling safe and comfortable was really important to me. The scooter ride was smooth, and at no point did I feel worried or uncomfortable.\n\nIf you're travelling solo and want to explore Bali with someone knowledgeable, friendly and genuinely attentive to what you want to do, I'd highly recommend spending a day with Aris. An excellent experience!"
+  },
+];
 // Aris's Google reviews page ("Read all reviews on Google").
 export const REVIEWS_PROFILE_URL = null;
 // Google's "write a review" link from the Business Profile ("Leave a review").

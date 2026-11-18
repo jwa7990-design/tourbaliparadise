@@ -419,7 +419,8 @@ function reviewCard(r, { withService = true, place = 'reviews' } = {}) {
   return `<figure class="rv-card${r.sample ? ' rv-card--sample' : ''}">
     ${r.sample ? `<span class="rv-sample">${esc(t('reviews.sampleLabel'))}</span>` : ''}
     <div class="rv-card__top">${stars(r.rating)}${r.source ? `<span class="rv-source">${esc(r.source)}</span>` : ''}</div>
-    <blockquote class="rv-card__text"><p>${esc(pick(r.text))}</p></blockquote>
+    <blockquote class="rv-card__text">${String(pick(r.text) || '').split(/\n\s*\n/).map(para => `<p>${esc(para.trim())}</p>`).join('')}</blockquote>
+    ${place !== 'about' && String(pick(r.text) || '').length > 260 ? `<a class="rv-card__more" href="about.html#reviews" data-track="cta" data-track-label="${place}_review_read_full">${esc(t('reviews.readFull'))} <span aria-hidden="true">→</span></a>` : ''}
     <figcaption class="rv-card__who"><strong>${esc(r.name)}</strong>${meta ? `<span>${meta}</span>` : ''}</figcaption>
     ${withService && svc ? `<a class="rv-card__svc" href="${svc[0]}" data-track="cta" data-track-label="${place}_review_service_${esc(r.service)}"><span>${esc(t(svc[1]))}</span> <span aria-hidden="true">→</span></a>` : ''}
   </figure>`;
@@ -447,6 +448,7 @@ export function renderReviews() {
     const picks = (list.filter(r => r.featured).length ? list.filter(r => r.featured) : list).slice(0, 3);
     if (section) section.hidden = !picks.length;
     strip.innerHTML = picks.map(r => reviewCard(r, { place: 'home' })).join('');
+    strip.className = `rv-strip rv-strip--${Math.min(picks.length, 3)}`;
     const more = section && section.querySelector('[data-reviews-links]');
     if (more) more.innerHTML = reviewLinks('home');
   });

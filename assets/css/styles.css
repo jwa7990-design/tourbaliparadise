@@ -907,7 +907,10 @@ section[data-giving] .giving__note { margin-top: 6px; }
 .rv-source { font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
 .rv-card__text { margin: 0; flex: 1; }
 .rv-card__text p { margin: 0; font-size: 17px; line-height: 1.6; color: var(--charcoal); }
-.rv-card__text p::before { content: "“"; } .rv-card__text p::after { content: "”"; }
+.rv-card__text p + p { margin-top: 12px; }
+.rv-card__text p:first-child::before { content: "“"; } .rv-card__text p:last-child::after { content: "”"; }
+.rv-strip .rv-card__text, .rv-slot .rv-card__text { display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; }
+.rv-card__more { align-self: flex-start; font-size: 13px; font-weight: 600; color: var(--green); text-decoration: underline; text-underline-offset: 4px; }
 .rv-card__who { display: grid; gap: 2px; font-size: 14px; }
 .rv-card__who strong { font-family: 'Antonio', sans-serif; font-weight: 600; font-size: 19px; letter-spacing: .04em; text-transform: uppercase; }
 .rv-card__who span { color: var(--muted); }
@@ -920,4 +923,9 @@ section[data-giving] .giving__note { margin-top: 6px; }
 .rv-slot .rv-card__text p { font-size: 16px; }
 .rv-card--sample { outline: 2px dashed #C9902F; outline-offset: -2px; }
 .rv-sample { position: absolute; top: -12px; right: 16px; background: #C9902F; color: #fff; font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; padding: 4px 8px; }
+.rv-strip--1 { grid-template-columns: minmax(0, 820px); }
+.rv-strip--1 .rv-card__text { -webkit-line-clamp: 8; }
+.rv-strip--1 .rv-card__text p { font-size: 19px; }
+.rv-strip--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 900px) { .rv-strip { grid-template-columns: 1fr; } .rv-grid { grid-template-columns: 1fr; } }
+.rv-grid:has(> .rv-card:only-child) { grid-template-columns: minmax(0, 1fr); }

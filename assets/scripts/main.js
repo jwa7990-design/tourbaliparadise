@@ -36,6 +36,15 @@ async function init() {
   bindClickTracking();
   initReveal();
 
+  // The page is built by script after load, so the browser's own jump to a
+  // #section link can be lost. Re-apply it once everything is rendered.
+  if (location.hash.length > 1) {
+    const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    const jump = () => target && target.scrollIntoView({ block: 'start', behavior: 'instant' });
+    jump();
+    if (document.readyState !== 'complete') addEventListener('load', () => setTimeout(jump, 0), { once: true });
+  }
+
   // Preference selectors (header + mobile menu)
   document.addEventListener('change', async e => {
     const sel = e.target.closest('[data-pref]');

@@ -198,7 +198,8 @@
     "write": "Pernah jalan bersama Aris? Tulis ulasan",
     "stars": "{n} dari 5 bintang",
     "fromGuests": "Dari tamu yang memesan layanan ini",
-    "sampleLabel": "Contoh: pratinjau desain"
+    "sampleLabel": "Contoh: pratinjau desain",
+    "readFull": "Baca ulasan lengkap"
   },
   "contact": {
     "area": "Area layanan",
