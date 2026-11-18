@@ -131,7 +131,7 @@
       "scooter": "1:1 scooter tour (solo travellers)"
     },
     "submit": "Send enquiry on WhatsApp",
-    "note": "This opens WhatsApp with your details filled in, ready for you to send. It's an enquiry, not a booking: Aris will reply personally to check availability, discuss your plans and confirm the final price.",
+    "note": "On a phone this opens WhatsApp with your details filled in, ready to send. On a computer you'll get a QR code to scan with your phone. It's an enquiry, not a booking: Aris will reply personally to check availability, discuss your plans and confirm the final price.",
     "errors": {
       "required": "Please fill in this field.",
       "nameShort": "Please enter your name.",
@@ -769,5 +769,24 @@
     "googleNote": "Opens Google, where you can tap the stars and add a few words. It takes about a minute.",
     "whatsapp": "Send Aris your feedback",
     "whatsappNote": "Prefer not to use Google? Message Aris directly on WhatsApp."
+  },
+  "handoff": {
+    "title": "Your enquiry is ready",
+    "lead": "Scan this QR code with your phone's camera to continue in WhatsApp.",
+    "leadLong": "Your message is too long to fit in a QR code. Use WhatsApp Web or WhatsApp on this computer below, where it opens ready to send, or go back and shorten your notes.",
+    "step1": "Open your phone's camera and point it at the code.",
+    "step2": "Tap the WhatsApp link that appears.",
+    "step3": "Your message is already written. Just press Send.",
+    "step3Long": "Scanning opens a chat with Aris, but without your message, so you'd need to type it there.",
+    "notSent": "Nothing has been sent yet. Aris only receives your enquiry once you press Send in WhatsApp.",
+    "copy": "Copy message",
+    "copied": "Message copied. You can paste it into WhatsApp.",
+    "copyFailed": "Couldn't copy automatically. Select the message below and copy it.",
+    "web": "Open in WhatsApp Web",
+    "app": "Open WhatsApp on this computer",
+    "preview": "See your message",
+    "edit": "Edit your details",
+    "qrLabel": "QR code that opens WhatsApp with your enquiry to Aris",
+    "qrChatLabel": "QR code that opens a WhatsApp chat with Aris"
   }
 }

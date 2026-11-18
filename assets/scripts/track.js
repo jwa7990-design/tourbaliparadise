@@ -7,6 +7,12 @@
      whatsapp_click     any link that opens WhatsApp (key conversion)
      generate_lead      enquiry form submitted → WhatsApp opened (key conversion)
      form_error         enquiry form failed validation
+     wa_qr_shown        desktop: QR handoff shown (shown is not scanned)
+     wa_web_click       desktop: "Open in WhatsApp Web" chosen
+     wa_app_click       desktop: "Open WhatsApp on this computer" chosen
+     wa_message_copy    desktop: "Copy message" used (success true/false)
+     wa_handoff_edit    desktop: went back to edit the enquiry
+     None of these prove a message was sent; WhatsApp gives no confirmation.
      cta_click          any other call-to-action (internal links/buttons)
      nav_click          header / footer / mobile-menu navigation
      phone_click        tel: link

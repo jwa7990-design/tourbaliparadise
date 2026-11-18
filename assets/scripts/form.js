@@ -1,7 +1,8 @@
 /* Enquiry form → validated → pre-filled WhatsApp message.
    Creates an enquiry only; it never confirms a booking. */
 import { t, getLang } from './i18n.js';
-import { waUrl, enquiryMessage } from './whatsapp.js';
+import { enquiryLink } from './whatsapp.js';
+import { opensWhatsAppDirectly, showHandoff } from './wa-handoff.js';
 import { track } from './track.js';
 import { icon } from './ui.js';
 import { AIRPORT_ZONES } from './config.js';
@@ -116,7 +117,7 @@ export function renderForms() {
       const isAirport = v.service === 'airport' && v.zone;
       const dateText = new Intl.DateTimeFormat(getLang() === 'zh-CN' ? 'zh-CN' : getLang(), { weekday: 'short', day: 'numeric', month: 'long', year: 'numeric' })
         .format(new Date(`${v.date}T00:00:00`));
-      const text = enquiryMessage({
+      const link = enquiryLink({
         name: v.name.trim(),
         date: dateText,
         passengers: v.passengers,
@@ -126,12 +127,13 @@ export function renderForms() {
         area: isAirport ? t(`zones.${v.zone}`) : '',
         priceIdr: isAirport ? zonePrice(v.zone) : (priceKey ? basePrice(priceKey) : null),
       });
+      const direct = opensWhatsAppDirectly();
 
-      track('generate_lead', { form_location: location, service: v.service, zone: isAirport ? v.zone : undefined, passengers: Number(v.passengers), method: 'whatsapp' });
+      track('generate_lead', { form_location: location, service: v.service, zone: isAirport ? v.zone : undefined, passengers: Number(v.passengers), method: 'whatsapp', handoff: direct ? 'direct' : 'qr' });
 
-      const url = waUrl(text);
-      const w = window.open(url, '_blank');
-      if (w) w.opener = null; else window.location.href = url;
+      if (!direct) { showHandoff(form, link, location); return; }
+      const w = window.open(link.url, '_blank');
+      if (w) w.opener = null; else window.location.href = link.url;
     });
   });
 }

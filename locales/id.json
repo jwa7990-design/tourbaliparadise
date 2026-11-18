@@ -131,7 +131,7 @@
       "scooter": "Tur skuter 1:1 (pelancong solo)"
     },
     "submit": "Kirim pertanyaan lewat WhatsApp",
-    "note": "WhatsApp akan terbuka dengan data Anda yang sudah terisi, tinggal dikirim. Ini baru pertanyaan, belum pemesanan: Aris akan membalas langsung untuk mengecek ketersediaan, membahas rencana Anda, dan mengonfirmasi harga akhir.",
+    "note": "Di ponsel, WhatsApp akan terbuka dengan data Anda sudah terisi dan siap dikirim. Di komputer, akan muncul kode QR untuk dipindai dengan ponsel. Ini pertanyaan, bukan pemesanan: Aris akan membalas langsung untuk mengecek ketersediaan, membahas rencana Anda, dan mengonfirmasi harga akhir.",
     "errors": {
       "required": "Mohon isi kolom ini.",
       "nameShort": "Mohon masukkan nama Anda.",
@@ -769,5 +769,24 @@
     "googleNote": "Google akan terbuka, lalu Anda tinggal memilih bintang dan menulis beberapa kata. Hanya sekitar satu menit.",
     "whatsapp": "Kirim masukan ke Aris",
     "whatsappNote": "Tidak ingin memakai Google? Kirim pesan langsung ke Aris lewat WhatsApp."
+  },
+  "handoff": {
+    "title": "Pertanyaan Anda sudah siap",
+    "lead": "Pindai kode QR ini dengan kamera ponsel Anda untuk melanjutkan di WhatsApp.",
+    "leadLong": "Pesan Anda terlalu panjang untuk kode QR. Gunakan WhatsApp Web atau WhatsApp di komputer ini di bawah, pesannya sudah siap dikirim, atau kembali dan persingkat catatan Anda.",
+    "step1": "Buka kamera ponsel dan arahkan ke kode.",
+    "step2": "Ketuk tautan WhatsApp yang muncul.",
+    "step3": "Pesan Anda sudah tertulis. Tinggal tekan Kirim.",
+    "step3Long": "Memindai akan membuka chat dengan Aris, tetapi tanpa pesan Anda, jadi Anda perlu mengetiknya di sana.",
+    "notSent": "Belum ada yang terkirim. Aris baru menerima pertanyaan Anda setelah Anda menekan Kirim di WhatsApp.",
+    "copy": "Salin pesan",
+    "copied": "Pesan disalin. Anda bisa menempelkannya di WhatsApp.",
+    "copyFailed": "Tidak bisa menyalin otomatis. Pilih pesan di bawah lalu salin.",
+    "web": "Buka di WhatsApp Web",
+    "app": "Buka WhatsApp di komputer ini",
+    "preview": "Lihat pesan Anda",
+    "edit": "Ubah data Anda",
+    "qrLabel": "Kode QR yang membuka WhatsApp dengan pertanyaan Anda untuk Aris",
+    "qrChatLabel": "Kode QR yang membuka chat WhatsApp dengan Aris"
   }
 }

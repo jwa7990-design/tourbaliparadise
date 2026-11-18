@@ -7,6 +7,10 @@ import { formatIDR, formatConverted } from './currency.js';
 export const waUrl = (text = '') =>
   `https://wa.me/${BUSINESS.whatsappNumber}${text ? `?text=${encodeURIComponent(text)}` : ''}`;
 
+/** The same chat in WhatsApp Web (for desktop visitors who use it). */
+export const waWebUrl = (text = '') =>
+  `https://web.whatsapp.com/send?phone=${BUSINESS.whatsappNumber}${text ? `&text=${encodeURIComponent(text)}` : ''}`;
+
 /** "(Indicative price on your website: Rp 600,000 ≈ A$49 AUD.)" or ''. */
 export function priceLineFor(amountIdr) {
   const idr = formatIDR(amountIdr);
@@ -36,21 +40,28 @@ export function refreshWaLinks(root = document) {
   });
 }
 
-/** Full enquiry message from the form. */
+/** Full enquiry message from the form. Optional fields are left out when empty. */
 export function enquiryMessage(d) {
   const lines = [
     t('wa.enquiry.intro'),
     '',
     `${t('wa.enquiry.name')}: ${d.name}`,
+    `${t('wa.enquiry.interest')}: ${d.service}`,
+    ...(d.area ? [`${t('wa.enquiry.area')}: ${d.area}`] : []),
     `${t('wa.enquiry.date')}: ${d.date}`,
     `${t('wa.enquiry.passengers')}: ${d.passengers}`,
     `${t('wa.enquiry.accommodation')}: ${d.accommodation}`,
-    ...(d.area ? [`${t('wa.enquiry.area')}: ${d.area}`] : []),
-    `${t('wa.enquiry.interest')}: ${d.service}`,
   ];
-  if (d.notes) lines.push(`${t('wa.enquiry.notes')}: ${d.notes}`);
+  if (d.notes) lines.push('', `${t('wa.enquiry.notes')}:`, d.notes);
   const pl = priceLineFor(d.priceIdr);
   if (pl) lines.push('', pl);
   lines.push('', t('wa.enquiry.closing'));
   return lines.join('\n');
+}
+
+/** One place that turns a completed enquiry into the message and its links.
+    Phones open `url` directly; desktops show `url` as a QR code. */
+export function enquiryLink(d) {
+  const text = enquiryMessage(d);
+  return { text, url: waUrl(text), webUrl: waWebUrl(text) };
 }
