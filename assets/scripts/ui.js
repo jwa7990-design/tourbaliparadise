@@ -142,7 +142,6 @@ export function renderFooter() {
           ${tx('footer.pages', 'h2')}
           <ul class="footer__links">
             ${PAGES.map(p => `<li><a href="${p.href}" data-track-label="footer_${p.id}" data-i18n="${p.key}">${esc(t(p.key))}</a></li>`).join('')}
-            <li><a href="giving.html" data-track-label="footer_giving" data-i18n="footer.giving">${esc(t('footer.giving'))}</a></li>
           </ul>
         </div>
         <div>

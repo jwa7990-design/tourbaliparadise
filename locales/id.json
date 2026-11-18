@@ -33,7 +33,7 @@
     "enquire": "Kirim pertanyaan",
     "disclaimer": "Bali Paradise menyediakan transportasi pribadi dan rekomendasi lokal. Tempat wisata dan aktivitas yang disebut di situs ini dikelola oleh pihak lain secara mandiri. Mengirim pertanyaan belum berarti memesan: rencana perjalanan dan harga dikonfirmasi langsung oleh Aris.",
     "photos": "Foto oleh Aris dan kontributor Unsplash.",
-    "promise": "Harga jujur · Tanpa mampir toko · Setiap perjalanan ikut berbagi",
+    "promise": "Harga jujur · Tanpa mampir toko",
     "giving": "Berbagi"
   },
   "currency": {
@@ -544,7 +544,7 @@
     },
     "promise": {
       "overline": "Janji kami",
-      "title": "Harga jujur. Tanpa mampir toko. Setiap perjalanan ikut berbagi.",
+      "title": "Harga jujur. Tanpa mampir toko.",
       "p1": {
         "title": "Harga jujur",
         "text": "Semua harga tercantum di situs ini, sudah termasuk bensin, parkir, dan tol. Aris mengonfirmasi total biaya sebelum perjalanan, dan Anda tidak membayar apa pun yang tidak Anda setujui.",

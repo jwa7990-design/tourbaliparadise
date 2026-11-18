@@ -33,7 +33,7 @@
     "enquire": "Send an enquiry",
     "disclaimer": "Bali Paradise provides private transport and local recommendations. Attractions and activities mentioned on this website are run by independent operators. Enquiries are not bookings: arrangements and prices are confirmed personally by Aris.",
     "photos": "Photography by Aris and by Unsplash contributors.",
-    "promise": "Honest prices · No shopping stops · Every trip gives back",
+    "promise": "Honest prices · No shopping stops",
     "giving": "Giving back"
   },
   "currency": {
@@ -544,7 +544,7 @@
     },
     "promise": {
       "overline": "Our promise",
-      "title": "Honest prices. No shopping stops. Every trip gives back.",
+      "title": "Honest prices. No shopping stops.",
       "p1": {
         "title": "Honest prices",
         "text": "Every price is on this website, with fuel, parking and tolls included. Aris confirms your total before you travel, and you never pay for anything you didn't agree to.",

@@ -126,7 +126,7 @@ export const COMMITMENTS = [
   { key: 'honest',       icon: 'compass',  confirmed: true },
   { key: 'confirmation', icon: 'check',    confirmed: true },
   { key: 'noShopping',   icon: 'bag',      confirmed: true },  // confirmed 2026-11-17
-  { key: 'givesBack',    icon: 'heart',    confirmed: true },  // see GIVING
+  { key: 'givesBack',    icon: 'heart',    confirmed: false }, // paused 2026-11-18: giving back removed for now
 ];
 
 /* Giving back: a set amount from every job goes to one local Bali cause.
