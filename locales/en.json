@@ -14,7 +14,11 @@
     "language": "Language",
     "currency": "Currency",
     "whatsapp": "WhatsApp Aris",
-    "onThisPage": "On this page"
+    "onThisPage": "On this page",
+    "experiences": "Experiences",
+    "meetAris": "Meet Aris",
+    "reviews": "Reviews",
+    "plan": "Plan your day"
   },
   "common": {
     "chatWithAris": "Chat with Aris",

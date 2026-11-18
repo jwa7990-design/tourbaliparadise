@@ -40,10 +40,10 @@ const tx = (key, tag = 'span', attrs = '') => `<${tag} data-i18n="${key}"${attrs
 
 /* ---------- Header & mobile menu ---------- */
 const PAGES = [
-  { id: 'home', href: 'index.html', key: 'nav.home' },
-  { id: 'explore', href: 'explore.html', key: 'nav.explore' },
-  { id: 'services', href: 'services.html', key: 'nav.services' },
-  { id: 'about', href: 'about.html', key: 'nav.about' },
+  { id: 'experiences', href: 'index.html#experiences', key: 'nav.experiences' },
+  { id: 'about', href: 'about.html', key: 'nav.meetAris' },
+  { id: 'reviews', href: 'about.html#reviews', key: 'nav.reviews' },
+  { id: 'plan', href: 'index.html#plan', key: 'nav.plan' },
 ];
 const cur = id => (document.body.dataset.page === id ? ' aria-current="page"' : '');
 const navLink = p => `<a class="nav__link" href="${p.href}"${cur(p.id)} data-track-label="header_${p.id}" data-i18n="${p.key}">${esc(t(p.key))}</a>`;
