@@ -1,5 +1,5 @@
 /* Shared layout (header, menu, footer) and data-driven components. */
-import { BUSINESS, LANGUAGES, CURRENCIES, PRICING, AIRPORT_ZONES, GIVING, INCLUSIONS, DRIVER, COMMITMENTS, REVIEWS, REVIEWS_PROFILE_URL } from './config.js';
+import { BUSINESS, LANGUAGES, CURRENCIES, PRICING, AIRPORT_ZONES, GIVING, INCLUSIONS, DRIVER, COMMITMENTS, REVIEWS, REVIEWS_PROFILE_URL, REVIEWS_WRITE_URL } from './config.js';
 import { t, pick, getLang } from './i18n.js';
 import { getCurrency, formatIDR, formatConverted, ratesInfo } from './currency.js';
 import { waUrl, refreshWaLinks } from './whatsapp.js';
@@ -384,20 +384,80 @@ export function renderCommitments() {
       <p>${esc(t(`commitments.${c.key}.text`))}</p></li>`).join('');
 }
 
+/* ---------- Reviews ----------
+   Real reviews come from REVIEWS in config.js. For a design preview on a
+   local machine only, add ?reviews=sample to the URL: sample cards load from
+   assets/data/reviews.sample.json, which is never published (.assetsignore). */
+const SERVICE_LINK = {
+  airport: ['services.html#airport-transfers', 'svc.airport.title'],
+  driver:  ['services.html#private-driver',    'svc.driver.title'],
+  custom:  ['services.html#custom-day-trips',  'svc.custom.title'],
+  scooter: ['services.html#scooter-tours',     'svc.scooter.title'],
+};
+let reviewList = REVIEWS;
+let samplePending = false;
+const isLocal = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+if (!REVIEWS.length && isLocal && new URLSearchParams(location.search).get('reviews') === 'sample') {
+  samplePending = true;
+  fetch('assets/data/reviews.sample.json', { cache: 'no-cache' }).then(r => r.json()).then(list => {
+    reviewList = list; samplePending = false; renderReviews(); refreshWaLinks();
+  }).catch(() => { samplePending = false; });
+}
+
+const monthFmt = ym => {
+  const [y, m] = String(ym || '').split('-').map(Number);
+  if (!y || !m) return '';
+  return new Intl.DateTimeFormat(getLang() === 'zh-CN' ? 'zh-CN' : getLang(), { month: 'long', year: 'numeric' }).format(new Date(y, m - 1, 1));
+};
+const stars = n => {
+  const r = Math.max(0, Math.min(5, Math.round(n || 0)));
+  return r ? `<span class="rv-stars" role="img" aria-label="${esc(t('reviews.stars', { n: r }))}">${'★'.repeat(r)}<span class="rv-stars__off">${'★'.repeat(5 - r)}</span></span>` : '';
+};
+function reviewCard(r, { withService = true, place = 'reviews' } = {}) {
+  const svc = SERVICE_LINK[r.service];
+  const meta = [r.country, monthFmt(r.date)].filter(Boolean).map(esc).join(' · ');
+  return `<figure class="rv-card${r.sample ? ' rv-card--sample' : ''}">
+    ${r.sample ? `<span class="rv-sample">${esc(t('reviews.sampleLabel'))}</span>` : ''}
+    <div class="rv-card__top">${stars(r.rating)}${r.source ? `<span class="rv-source">${esc(r.source)}</span>` : ''}</div>
+    <blockquote class="rv-card__text"><p>${esc(pick(r.text))}</p></blockquote>
+    <figcaption class="rv-card__who"><strong>${esc(r.name)}</strong>${meta ? `<span>${meta}</span>` : ''}</figcaption>
+    ${withService && svc ? `<a class="rv-card__svc" href="${svc[0]}" data-track="cta" data-track-label="${place}_review_service_${esc(r.service)}"><span>${esc(t(svc[1]))}</span> <span aria-hidden="true">→</span></a>` : ''}
+  </figure>`;
+}
+function reviewLinks(place) {
+  const links = [];
+  if (REVIEWS_PROFILE_URL) links.push(`<a class="link-arrow" href="${esc(REVIEWS_PROFILE_URL)}" target="_blank" rel="noopener" data-track-label="${place}_reviews_profile">${esc(t('reviews.profile'))} <span aria-hidden="true">→</span></a>`);
+  if (REVIEWS_WRITE_URL) links.push(`<a class="link-arrow" href="${esc(REVIEWS_WRITE_URL)}" target="_blank" rel="noopener" data-track-label="${place}_reviews_write">${esc(t('reviews.write'))} <span aria-hidden="true">→</span></a>`);
+  return links.length ? `<p class="rv-links">${links.join('')}</p>` : '';
+}
+
 export function renderReviews() {
+  const list = reviewList || [];
+  // About page: every review
   const host = document.querySelector('[data-reviews]');
-  if (!host) return;
-  if (REVIEWS.length) {
-    host.innerHTML = `<div class="review-list">${REVIEWS.map(r => `
-      <blockquote class="review"><p>${esc(pick(r.text))}</p>
-      <footer>${esc(r.name)}${r.country ? `, ${esc(r.country)}` : ''}${r.source ? ` · ${esc(r.source)}` : ''}</footer></blockquote>`).join('')}</div>`;
-  } else {
-    host.innerHTML = `<div class="reviews-empty"><p>${esc(t('reviews.empty'))}</p>
-      <a class="link-arrow" href="${waUrl()}" data-wa="feedback" data-track-label="reviews_feedback_whatsapp" target="_blank" rel="noopener">${esc(t('reviews.cta'))}</a></div>`;
+  if (host && !samplePending) {
+    host.innerHTML = list.length
+      ? `<div class="rv-grid">${list.map(r => reviewCard(r, { place: 'about' })).join('')}</div>${reviewLinks('about')}`
+      : `<div class="reviews-empty"><p>${esc(t('reviews.empty'))}</p>
+      <a class="link-arrow" href="${waUrl()}" data-wa="feedback" data-track-label="reviews_feedback_whatsapp" target="_blank" rel="noopener">${esc(t('reviews.cta'))}</a></div>${reviewLinks('about')}`;
   }
-  if (REVIEWS_PROFILE_URL) {
-    host.insertAdjacentHTML('beforeend', `<p style="text-align:center;margin-top:16px"><a class="link-arrow" href="${esc(REVIEWS_PROFILE_URL)}" target="_blank" rel="noopener" data-track-label="reviews_profile">${esc(t('reviews.profile'))}</a></p>`);
-  }
+  // Homepage strip: featured reviews (or the newest), hidden when there are none
+  document.querySelectorAll('[data-reviews-strip]').forEach(strip => {
+    const section = strip.closest('section');
+    const picks = (list.filter(r => r.featured).length ? list.filter(r => r.featured) : list).slice(0, 3);
+    if (section) section.hidden = !picks.length;
+    strip.innerHTML = picks.map(r => reviewCard(r, { place: 'home' })).join('');
+    const more = section && section.querySelector('[data-reviews-links]');
+    if (more) more.innerHTML = reviewLinks('home');
+  });
+  // Services page: reviews for each service, inside that service's section
+  document.querySelectorAll('[data-service-reviews]').forEach(slot => {
+    const mine = list.filter(r => r.service === slot.dataset.serviceReviews).slice(0, 2);
+    slot.hidden = !mine.length;
+    slot.innerHTML = mine.length
+      ? `<p class="rv-slot__label">${esc(t('reviews.fromGuests'))}</p>${mine.map(r => reviewCard(r, { withService: false, place: 'services' })).join('')}`
+      : '';
+  });
 }
 
 export function renderContact() {

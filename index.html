@@ -42,7 +42,7 @@
     imagesrcset="https://images.unsplash.com/photo-1748935554590-e594e5fb5348?auto=format&amp;fit=crop&amp;w=800&amp;q=74 800w, https://images.unsplash.com/photo-1748935554590-e594e5fb5348?auto=format&amp;fit=crop&amp;w=1400&amp;q=76 1400w, https://images.unsplash.com/photo-1748935554590-e594e5fb5348?auto=format&amp;fit=crop&amp;w=2200&amp;q=76 2200w"
     imagesizes="100vw">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;family=Oswald:wght@300;500;700&amp;display=swap">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20261118d">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261118e">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -226,6 +226,18 @@
             </div>
           </li>
         </ol>
+      </div>
+    </section>
+
+    <!-- ============ GUEST REVIEWS (hidden until real reviews exist) ============ -->
+    <section class="rv-band" aria-labelledby="rv-title" hidden>
+      <div class="container">
+        <header class="rv-band__head">
+          <p class="overline overline--dark" data-i18n="reviews.overline">Guest reviews</p>
+          <h2 id="rv-title" class="h2" data-i18n="reviews.title">What guests say</h2>
+        </header>
+        <div class="rv-strip" data-reviews-strip></div>
+        <div data-reviews-links></div>
       </div>
     </section>
 

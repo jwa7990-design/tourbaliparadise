@@ -139,11 +139,25 @@ export const GIVING = {
   cause: null,             // e.g. { name: 'Sungai Watch', url: 'https://sungaiwatch.com' }
 };
 
-/* Genuine reviews only. Each: { name, country, text, date, source }.
-   Leave empty until real reviews (with permission) are available. */
+/* Genuine reviews only, copied word for word, first names only.
+   Each review is linked to the service the guest booked, so it shows on
+   that service on the Services page and links back to it elsewhere.
+   {
+     name: 'Emma',               // first name only
+     country: 'Australia',       // optional
+     date: '2026-11',            // year-month of the trip or review
+     service: 'airport',         // 'airport' | 'driver' | 'custom' | 'scooter'
+     rating: 5,                  // 1-5, as given on Google
+     text: 'Exactly as the guest wrote it…',
+     source: 'Google',
+     featured: true,             // show in the homepage strip (max 3)
+   }
+   Nothing review-related shows on the live site while this is empty. */
 export const REVIEWS = [];
-// Optional link to a real Google Business / TripAdvisor profile.
+// Aris's Google reviews page ("Read all reviews on Google").
 export const REVIEWS_PROFILE_URL = null;
+// Google's "write a review" link from the Business Profile ("Leave a review").
+export const REVIEWS_WRITE_URL = null;
 
 /* ---------- Analytics & click tracking ----------
    Every CTA, WhatsApp link, enquiry form, language and currency change

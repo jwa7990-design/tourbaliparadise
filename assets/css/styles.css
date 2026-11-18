@@ -892,3 +892,32 @@ section[data-giving] .giving__note { margin-top: 6px; }
 /* Long words (e.g. Russian) must never push headings off-screen */
 .display, .h2, .h3, .inner-hero__title, .statements__big, .contents__title, .ed-card__title, .ratecard__title { overflow-wrap: break-word; hyphens: auto; -webkit-hyphens: auto; }
 @media (max-width: 560px) { :lang(ru) .h2, :lang(ru) .statements__big { font-size: clamp(34px, 10vw, 48px); } }
+
+/* ============ REVIEWS (cards, homepage strip, per-service slots) ============ */
+[hidden] { display: none !important; }
+.rv-band { padding: clamp(64px, 8vw, 112px) 0; background: var(--cream); border-top: 1px solid var(--line); }
+.rv-band__head { margin-bottom: clamp(28px, 4vw, 48px); }
+.rv-band__head .h2 { margin: 0; }
+.rv-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(16px, 2.4vw, 32px); }
+.rv-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.rv-card { position: relative; margin: 0; display: flex; flex-direction: column; gap: 18px; padding: clamp(24px, 2.6vw, 34px); background: var(--paper); border-top: 3px solid var(--green); box-shadow: 0 1px 0 var(--line); }
+.rv-card__top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.rv-stars { color: #C9902F; font-size: 17px; letter-spacing: 3px; line-height: 1; }
+.rv-stars__off { color: var(--beige); }
+.rv-source { font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+.rv-card__text { margin: 0; flex: 1; }
+.rv-card__text p { margin: 0; font-size: 17px; line-height: 1.6; color: var(--charcoal); }
+.rv-card__text p::before { content: "“"; } .rv-card__text p::after { content: "”"; }
+.rv-card__who { display: grid; gap: 2px; font-size: 14px; }
+.rv-card__who strong { font-family: 'Antonio', sans-serif; font-weight: 600; font-size: 19px; letter-spacing: .04em; text-transform: uppercase; }
+.rv-card__who span { color: var(--muted); }
+.rv-card__svc { align-self: flex-start; display: inline-flex; gap: 8px; padding-top: 14px; border-top: 1px solid var(--line); width: 100%; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--olive); text-decoration: none; }
+.rv-card__svc:hover span:first-child { text-decoration: underline; text-underline-offset: 4px; }
+.rv-links { display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: center; margin: clamp(28px, 4vw, 40px) 0 0; }
+.rv-slot { margin-top: 32px; display: grid; gap: 14px; }
+.rv-slot__label { margin: 0; font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+.rv-slot .rv-card { background: var(--cream); padding: 22px 24px; gap: 14px; }
+.rv-slot .rv-card__text p { font-size: 16px; }
+.rv-card--sample { outline: 2px dashed #C9902F; outline-offset: -2px; }
+.rv-sample { position: absolute; top: -12px; right: 16px; background: #C9902F; color: #fff; font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; padding: 4px 8px; }
+@media (max-width: 900px) { .rv-strip { grid-template-columns: 1fr; } .rv-grid { grid-template-columns: 1fr; } }

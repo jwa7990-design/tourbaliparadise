@@ -60,3 +60,12 @@ and better for trust and SEO.
 - **Other images:** replace the `images.unsplash.com/...` URLs in the HTML pages. Keep similar shapes
   (landscape for heroes, 4:5 portrait for experience sections) and update the `alt` text,
   plus the matching `img.*` entry in each `locales/*.json`.
+
+### Added November 2026 (each page now uses every photo only once)
+
+| Used for | Photographer (Unsplash) | Photo page |
+|---|---|---|
+| Explore index thumb: Uluwatu beach | Niklas Weiss | https://unsplash.com/photos/vqdT2QPBGjs |
+| Explore index thumb: offerings outside a temple | Galih Jelih (@nixiesh) | https://unsplash.com/photos/wahxesjKzrw |
+| Services hero strip: plane taking off from Denpasar | Satwika Ananta (@agungsatwika) | https://unsplash.com/photos/iVmNrZrmD28 |
+| Services hero strip: jungle road with scooter (also the home hero road) | see "Home hero foreground" above | |

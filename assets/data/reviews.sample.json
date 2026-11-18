@@ -1,0 +1,45 @@
+[
+  {
+    "sample": true,
+    "name": "Guest name",
+    "country": "Country",
+    "date": "2026-11",
+    "service": "airport",
+    "rating": 5,
+    "source": "Google",
+    "featured": true,
+    "text": "Placeholder text. A real guest's review of their airport pickup will go here, copied word for word from Google."
+  },
+  {
+    "sample": true,
+    "name": "Guest name",
+    "country": "Country",
+    "date": "2026-10",
+    "service": "driver",
+    "rating": 5,
+    "source": "Google",
+    "featured": true,
+    "text": "Placeholder text. A real review of a full day with Aris as their driver will go here: where they went and how the day felt."
+  },
+  {
+    "sample": true,
+    "name": "Guest name",
+    "country": "Country",
+    "date": "2026-10",
+    "service": "scooter",
+    "rating": 5,
+    "source": "Google",
+    "featured": true,
+    "text": "Placeholder text. A real review of a one-to-one scooter tour will go here."
+  },
+  {
+    "sample": true,
+    "name": "Guest name",
+    "country": "Country",
+    "date": "2026-09",
+    "service": "custom",
+    "rating": 4,
+    "source": "Google",
+    "text": "Placeholder text. A real review of a custom day trip will go here."
+  }
+]

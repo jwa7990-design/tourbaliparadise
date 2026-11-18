@@ -192,8 +192,13 @@
   "reviews": {
     "empty": "Ulasan dari tamu akan segera tampil di sini. Kami hanya menampilkan ulasan asli yang dibagikan dengan izin.",
     "cta": "Pernah jalan-jalan bersama Aris? Bagikan pengalaman Anda",
-    "profile": "Baca ulasan",
-    "title": "Kata para tamu"
+    "profile": "Baca semua ulasan di Google",
+    "title": "Kata para tamu",
+    "overline": "Ulasan tamu",
+    "write": "Pernah jalan bersama Aris? Tulis ulasan",
+    "stars": "{n} dari 5 bintang",
+    "fromGuests": "Dari tamu yang memesan layanan ini",
+    "sampleLabel": "Contoh: pratinjau desain"
   },
   "contact": {
     "area": "Area layanan",

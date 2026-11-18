@@ -192,8 +192,13 @@
   "reviews": {
     "empty": "游客评价即将在这里展示。我们只发布经本人同意分享的真实评价。",
     "cta": "坐过 Aris 的车？欢迎分享你的感受",
-    "profile": "查看评价",
-    "title": "游客怎么说"
+    "profile": "在 Google 上查看全部评价",
+    "title": "游客怎么说",
+    "overline": "客人评价",
+    "write": "和 Aris 一起出行过？留下评价",
+    "stars": "{n} 星（满分 5 星）",
+    "fromGuests": "预订过此服务的客人说",
+    "sampleLabel": "示例：设计预览"
   },
   "contact": {
     "area": "服务区域",

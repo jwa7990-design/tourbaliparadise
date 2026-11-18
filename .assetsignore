@@ -10,3 +10,4 @@
 /node_modules
 /.DS_Store
 /GIVING-LOG.md
+/assets/data/reviews.sample.json

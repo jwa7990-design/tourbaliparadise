@@ -192,8 +192,13 @@
   "reviews": {
     "empty": "Reviews from guests will appear here soon. We only publish genuine reviews, shared with permission.",
     "cta": "Travelled with Aris? Share your feedback",
-    "profile": "Read reviews",
-    "title": "What guests say"
+    "profile": "Read all reviews on Google",
+    "title": "What guests say",
+    "overline": "Guest reviews",
+    "write": "Travelled with Aris? Leave a review",
+    "stars": "{n} out of 5 stars",
+    "fromGuests": "From guests who booked this",
+    "sampleLabel": "Sample: design preview"
   },
   "contact": {
     "area": "Service area",
