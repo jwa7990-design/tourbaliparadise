@@ -40,7 +40,7 @@ const tx = (key, tag = 'span', attrs = '') => `<${tag} data-i18n="${key}"${attrs
 
 /* ---------- Header & mobile menu ---------- */
 const PAGES = [
-  { id: 'home', href: 'index.html', key: 'nav.home' },
+  { id: 'experiences', href: 'index.html#experiences', key: 'nav.experiences' },
   { id: 'explore', href: 'explore.html', key: 'nav.explore' },
   { id: 'services', href: 'services.html', key: 'nav.services' },
   { id: 'about', href: 'about.html', key: 'nav.about' },
