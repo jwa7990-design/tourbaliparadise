@@ -107,7 +107,7 @@
       "passengers": "Jumlah penumpang",
       "accommodation": "Penginapan",
       "interest": "Tertarik dengan",
-      "notes": "Informasi tambahan",
+      "notes": "Sedikit tentang kami",
       "closing": "Boleh minta info pilihan yang tersedia beserta perkiraan harganya, Pak? Terima kasih.",
       "area": "Area"
     },
@@ -121,8 +121,8 @@
     "accommodation": "Lokasi hotel atau vila",
     "accommodationPh": "mis. vila di Ubud",
     "service": "Apa yang Anda minati?",
-    "notes": "Ada hal lain yang perlu Aris ketahui?",
-    "notesPh": "Nomor penerbangan, usia anak, tempat yang ingin dikunjungi…",
+    "notes": "Ceritakan sedikit tentang Anda kepada Aris",
+    "notesPh": "Siapa yang ikut, apa yang Anda sukai (kuliner, budaya, alam, foto, petualangan), ingin hari yang santai atau padat, dan hal yang perlu diperhatikan, seperti usia anak, kebutuhan mobilitas, atau nomor penerbangan.",
     "optional": "(opsional)",
     "choose": "Silakan pilih…",
     "options": {

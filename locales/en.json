@@ -107,7 +107,7 @@
       "passengers": "Passengers",
       "accommodation": "Accommodation",
       "interest": "Interested in",
-      "notes": "Additional information",
+      "notes": "A little about us",
       "closing": "Could you please let me know what options are available and provide an indicative price?",
       "area": "Area"
     },
@@ -121,8 +121,8 @@
     "accommodation": "Hotel or villa location",
     "accommodationPh": "e.g. a villa in Ubud",
     "service": "What are you interested in?",
-    "notes": "Anything else Aris should know?",
-    "notesPh": "Flight number, children's ages, places you'd like to visit…",
+    "notes": "Tell Aris a little about you",
+    "notesPh": "Who's travelling, what you love (food, culture, nature, photos, adventure), how relaxed or busy you like a day, and anything to plan around, such as kids' ages, mobility or your flight number.",
     "optional": "(optional)",
     "choose": "Please choose…",
     "options": {

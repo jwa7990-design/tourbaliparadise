@@ -107,7 +107,7 @@
       "passengers": "人数",
       "accommodation": "住宿地点",
       "interest": "感兴趣的项目",
-      "notes": "补充信息",
+      "notes": "关于我们",
       "closing": "麻烦告诉我有哪些可选方案，并给我一个参考价格，谢谢！",
       "area": "区域"
     },
@@ -121,8 +121,8 @@
     "accommodation": "酒店或别墅位置",
     "accommodationPh": "例如：乌布的一间别墅",
     "service": "你对什么感兴趣？",
-    "notes": "还有什么想告诉 Aris 的吗？",
-    "notesPh": "航班号、孩子的年龄、想去的地方……",
+    "notes": "向 Aris 简单介绍一下自己",
+    "notesPh": "同行的人、喜欢什么（美食、文化、自然、拍照、冒险）、喜欢轻松还是紧凑的行程，以及需要考虑的事项，例如孩子的年龄、行动是否方便或航班号。",
     "optional": "（选填）",
     "choose": "请选择……",
     "options": {
