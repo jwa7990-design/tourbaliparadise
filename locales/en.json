@@ -601,6 +601,18 @@
       "overline": "Practical services",
       "title": "Just need a ride?",
       "lead": "Airport pickups, a driver for the day, or a custom trip you plan yourself. The same honest prices, with fuel, parking and tolls included."
+    },
+    "entry": {
+      "overline": "Before you fly",
+      "title": "Visa, arrival card and tourist levy: get them from the official sites.",
+      "lead": "Copycat websites charge visitors extra for things that are cheap or even free. Here’s what most travellers need, with the official links.",
+      "i1t": "Visa on arrival",
+      "i1": "Apply online before you fly (e-VOA), or at the airport.",
+      "i2t": "All Indonesia arrival card",
+      "i2": "Customs and health form. Free, online, within 3 days of arriving.",
+      "i3t": "Bali tourist levy",
+      "i3": "Rp 150,000 per person, paid online or on arrival.",
+      "cta": "Entry requirements and official links"
     }
   },
   "svc": {
@@ -637,7 +649,8 @@
       "cta": "Enquire about an airport transfer",
       "checkArea": "Check the price for your area",
       "allAreas": "Prices and travel times for every area",
-      "l6": "When you land, connect to the airport Wi-Fi and message Aris: he'll send a photo of exactly where he's waiting and keep you updated"
+      "l6": "When you land, connect to the airport Wi-Fi and message Aris: he'll send a photo of exactly where he's waiting and keep you updated",
+      "entry": "Before you fly: visa, arrival card and levy"
     },
     "b": {
       "desc": "A comfortable, flexible way to explore Bali. Choose a half or full day, decide where you'd like to stop, and change your plans as you go.",

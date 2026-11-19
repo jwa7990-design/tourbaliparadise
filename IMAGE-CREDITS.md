@@ -69,3 +69,5 @@ and better for trust and SEO.
 | Explore index thumb: offerings outside a temple | Galih Jelih (@nixiesh) | https://unsplash.com/photos/wahxesjKzrw |
 | Services hero strip: plane taking off from Denpasar | Satwika Ananta (@agungsatwika) | https://unsplash.com/photos/iVmNrZrmD28 |
 | Services hero strip: jungle road with scooter (also the home hero road) | see "Home hero foreground" above | |
+| Entry requirements hero: passport with ink stamps | Henry Thong | https://unsplash.com/photos/htQznS-Rx7w |
+| Entry requirements hero: passport and boarding pass | CardMapr.nl | https://unsplash.com/photos/LVA3S6isNYQ |

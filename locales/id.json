@@ -601,6 +601,18 @@
       "overline": "Layanan praktis",
       "title": "Hanya butuh kendaraan?",
       "lead": "Jemputan bandara, sopir seharian, atau perjalanan yang Anda rencanakan sendiri. Harga jujur yang sama, sudah termasuk bensin, parkir, dan tol."
+    },
+    "entry": {
+      "overline": "Sebelum terbang",
+      "title": "Visa, kartu kedatangan, dan pungutan wisata: urus di situs resmi.",
+      "lead": "Situs tiruan menarik biaya tambahan dari wisatawan untuk hal yang murah atau bahkan gratis. Inilah yang dibutuhkan sebagian besar wisatawan, beserta tautan resminya.",
+      "i1t": "Visa on arrival",
+      "i1": "Ajukan online sebelum terbang (e-VOA), atau di bandara.",
+      "i2t": "Kartu kedatangan All Indonesia",
+      "i2": "Formulir bea cukai dan kesehatan. Gratis, online, dalam 3 hari sebelum tiba.",
+      "i3t": "Pungutan wisata Bali",
+      "i3": "Rp 150.000 per orang, dibayar online atau saat tiba.",
+      "cta": "Syarat masuk dan tautan resmi"
     }
   },
   "svc": {
@@ -637,7 +649,8 @@
       "cta": "Tanya soal antar jemput bandara",
       "checkArea": "Cek harga untuk area Anda",
       "allAreas": "Harga dan waktu tempuh untuk setiap area",
-      "l6": "Setelah mendarat, sambungkan ke Wi-Fi bandara dan kirim pesan ke Aris: ia akan mengirim foto tempat ia menunggu dan terus mengabari Anda"
+      "l6": "Setelah mendarat, sambungkan ke Wi-Fi bandara dan kirim pesan ke Aris: ia akan mengirim foto tempat ia menunggu dan terus mengabari Anda",
+      "entry": "Sebelum terbang: visa, kartu kedatangan, dan pungutan"
     },
     "b": {
       "desc": "Cara nyaman dan fleksibel untuk menjelajahi Bali. Pilih setengah hari atau seharian, tentukan tempat singgah, dan ubah rencana kapan saja di perjalanan.",
