@@ -43,7 +43,12 @@ const PAGES = [
 const LANGS = [['en', null], ['zh-Hans', 'zh-CN'], ['ru', 'ru'], ['id', 'id']];
 const urlFor = (path, lang) => site + path + (lang ? `?lang=${lang}` : '');
 // Pages written in English only list just the English version (no ?lang= copies).
-const langsFor = p => (p.enOnly ? LANGS.slice(0, 1) : LANGS);
+// The other languages are switched in the browser (?lang=) and are not separate
+// pages yet: their HTML is English with a canonical to the English URL. Listing
+// them as translations sent Google contradictory signals, so every page lists
+// only its English URL until real translated pages exist. Set to true then.
+const SEPARATE_LANGUAGE_PAGES = false;
+const langsFor = p => (p.enOnly || !SEPARATE_LANGUAGE_PAGES ? LANGS.slice(0, 1) : LANGS);
 const fileToPath = Object.fromEntries(PAGES.map(p => [p.file, p.path]));
 
 for (const p of PAGES) {
