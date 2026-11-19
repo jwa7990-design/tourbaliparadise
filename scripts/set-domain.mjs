@@ -30,9 +30,20 @@ const PAGES = [
   { file: 'about.html', path: '/about', priority: '0.8' },
   { file: 'experience-local.html', path: '/experience-local', priority: '0.9' },
   { file: 'experience-solo.html', path: '/experience-solo', priority: '0.9' },
+  { file: 'airport-transfers.html', path: '/airport-transfers', priority: '0.9', enOnly: true },
+  { file: 'airport-transfer-ubud.html', path: '/airport-transfer-ubud', priority: '0.8', enOnly: true },
+  { file: 'airport-transfer-canggu.html', path: '/airport-transfer-canggu', priority: '0.8', enOnly: true },
+  { file: 'airport-transfer-seminyak.html', path: '/airport-transfer-seminyak', priority: '0.8', enOnly: true },
+  { file: 'airport-transfer-uluwatu.html', path: '/airport-transfer-uluwatu', priority: '0.8', enOnly: true },
+  { file: 'kintamani-day-trip.html', path: '/kintamani-day-trip', priority: '0.8', enOnly: true },
+  { file: 'bali-solo-travel.html', path: '/bali-solo-travel', priority: '0.7', enOnly: true },
+  { file: 'bali-temple-etiquette.html', path: '/bali-temple-etiquette', priority: '0.7', enOnly: true },
+  { file: 'first-day-in-bali.html', path: '/first-day-in-bali', priority: '0.7', enOnly: true },
 ];
 const LANGS = [['en', null], ['zh-Hans', 'zh-CN'], ['ru', 'ru'], ['id', 'id']];
 const urlFor = (path, lang) => site + path + (lang ? `?lang=${lang}` : '');
+// Pages written in English only list just the English version (no ?lang= copies).
+const langsFor = p => (p.enOnly ? LANGS.slice(0, 1) : LANGS);
 const fileToPath = Object.fromEntries(PAGES.map(p => [p.file, p.path]));
 
 for (const p of PAGES) {
@@ -41,7 +52,7 @@ for (const p of PAGES) {
   const block = [
     `<!-- seo:urls -->`,
     `  <link rel="canonical" href="${urlFor(p.path)}">`,
-    ...LANGS.map(([hl, q]) => `  <link rel="alternate" hreflang="${hl}" href="${urlFor(p.path, q)}">`),
+    ...langsFor(p).map(([hl, q]) => `  <link rel="alternate" hreflang="${hl}" href="${urlFor(p.path, q)}">`),
     `  <link rel="alternate" hreflang="x-default" href="${urlFor(p.path)}">`,
     `  <meta property="og:url" content="${urlFor(p.path)}">`,
     `  <!-- /seo:urls -->`,
@@ -70,11 +81,11 @@ for (const p of PAGES) {
 const today = new Date().toISOString().slice(0, 10);
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${PAGES.flatMap(p => LANGS.map(([, q]) => `  <url>
+${PAGES.flatMap(p => langsFor(p).map(([, q]) => `  <url>
     <loc>${urlFor(p.path, q).replace(/&/g, '&amp;')}</loc>
     <lastmod>${today}</lastmod>
     <priority>${q ? (Number(p.priority) - 0.1).toFixed(1) : p.priority}</priority>
-${LANGS.map(([hl, q2]) => `    <xhtml:link rel="alternate" hreflang="${hl}" href="${urlFor(p.path, q2)}"/>`).join('\n')}
+${langsFor(p).map(([hl, q2]) => `    <xhtml:link rel="alternate" hreflang="${hl}" href="${urlFor(p.path, q2)}"/>`).join('\n')}
     <xhtml:link rel="alternate" hreflang="x-default" href="${urlFor(p.path)}"/>
   </url>`)).join('\n')}
 </urlset>

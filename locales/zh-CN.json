@@ -35,7 +35,15 @@
     "disclaimer": "Bali Paradise 提供私人交通和本地推荐。本网站提到的景点和活动均由独立商家经营。发送咨询不等于预订：具体安排和价格都由 Aris 本人与你确认。",
     "photos": "图片由 Aris 及 Unsplash 摄影师提供。",
     "promise": "价格透明 · 不进购物店",
-    "giving": "回馈当地"
+    "giving": "回馈当地",
+    "guides": "巴厘岛指南",
+    "g": {
+      "airport": "机场接送价格",
+      "kintamani": "京打马尼咖啡与火山",
+      "solo": "巴厘岛独自旅行",
+      "temples": "寺庙礼仪",
+      "firstday": "抵达巴厘岛第一天"
+    }
   },
   "currency": {
     "note": "价格以印尼盾（IDR）标示，仅供参考。换算金额只是估算：汇率会变动，最终价格以预订前 Aris 与你确认的为准。本网站不会向你收取任何费用。",
@@ -222,9 +230,9 @@
       "ogTitle": "探索巴厘岛：岛上每一天的游玩灵感"
     },
     "home": {
-      "title": "巴厘岛包车、私人司机、接送机与一日游 | Bali Paradise",
-      "description": "跟着巴厘岛本地司机 Aris，按自己的方式玩巴厘岛。提供接送机、半日或全日包车和定制一日游，WhatsApp 上就能规划行程。",
-      "ogTitle": "Bali Paradise：跟着本地人游巴厘岛。"
+      "title": "巴厘岛私人司机与本地体验 | Bali Paradise",
+      "description": "和本地向导兼司机 Aris 一起探索巴厘岛：像本地人一样体验巴厘岛的私人行程、独行旅伴、机场接送和包车服务。在 WhatsApp 上规划。",
+      "ogTitle": "Bali Paradise：巴厘岛，远离游客路线"
     },
     "services": {
       "title": "巴厘岛接送机与私人司机包车 | Bali Paradise",
@@ -239,6 +247,14 @@
     "review": {
       "title": "为 Aris 留下评价 | Bali Paradise",
       "description": "和 Aris 一起旅行过？分享您的体验，帮助其他旅行者找到值得信赖的巴厘岛本地司机。"
+    },
+    "xpLocal": {
+      "title": "像本地人一样体验巴厘岛：私人文化一日游 | Bali Paradise",
+      "description": "与本地向导共度私人一日：讲解供品、寺庙、村落生活、市场和美食。可围绕文化、美食或京打马尼咖啡与火山来安排。"
+    },
+    "xpSolo": {
+      "title": "独行旅伴：在巴厘岛与本地人共度私人一天 | Bali Paradise",
+      "description": "独自在巴厘岛旅行？和一位友好的本地向导共度半天或一天，按您的需要安排。摩托车或汽车，路线提前确认，安全接送。"
     }
   },
   "about": {
@@ -618,7 +634,8 @@
       "l4": "送机服务",
       "l5": "行李安排：请告诉 Aris 你带几件行李",
       "cta": "咨询接送机",
-      "checkArea": "查看你所在区域的价格"
+      "checkArea": "查看你所在区域的价格",
+      "allAreas": "各地区的价格和车程"
     },
     "b": {
       "desc": "舒适又灵活地游览巴厘岛。可选半日或全日，想在哪里停由你决定，途中也可以随时调整计划。",

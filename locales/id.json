@@ -35,7 +35,15 @@
     "disclaimer": "Bali Paradise menyediakan transportasi pribadi dan rekomendasi lokal. Tempat wisata dan aktivitas yang disebut di situs ini dikelola oleh pihak lain secara mandiri. Mengirim pertanyaan belum berarti memesan: rencana perjalanan dan harga dikonfirmasi langsung oleh Aris.",
     "photos": "Foto oleh Aris dan kontributor Unsplash.",
     "promise": "Harga jujur · Tanpa mampir toko",
-    "giving": "Berbagi"
+    "giving": "Berbagi",
+    "guides": "Panduan Bali",
+    "g": {
+      "airport": "Harga antar jemput bandara",
+      "kintamani": "Kopi & gunung Kintamani",
+      "solo": "Liburan solo di Bali",
+      "temples": "Etika di pura",
+      "firstday": "Hari pertama di Bali"
+    }
   },
   "currency": {
     "note": "Harga ditetapkan dalam Rupiah (IDR) dan masih bersifat perkiraan. Konversi ke mata uang lain hanya perkiraan karena kurs bisa berubah, dan harga akhir selalu dikonfirmasi oleh Aris sebelum Anda memesan. Anda tidak membayar apa pun melalui situs ini.",
@@ -222,9 +230,9 @@
       "ogTitle": "Jelajahi Bali: ide untuk hari-hari Anda di pulau ini"
     },
     "home": {
-      "title": "Sopir Pribadi Bali & Antar Jemput Bandara | Bali Paradise",
-      "description": "Jelajahi Bali sesuai keinginan bersama Aris, sopir asli Bali. Antar jemput bandara, sewa mobil dengan sopir, dan trip seharian. Atur rencana lewat WhatsApp.",
-      "ogTitle": "Bali Paradise — Jelajahi Bali bersama orang lokal."
+      "title": "Sopir Pribadi & Pengalaman Lokal di Bali | Bali Paradise",
+      "description": "Jelajahi Bali bersama Aris, pemandu sekaligus sopir lokal: hari pribadi merasakan Bali seperti warga lokal, hari untuk wisatawan solo, antar jemput bandara, dan sewa sopir. Rencanakan lewat WhatsApp.",
+      "ogTitle": "Bali Paradise: Bali di luar jalur turis"
     },
     "services": {
       "title": "Antar Jemput Bandara & Sewa Sopir Bali | Bali Paradise",
@@ -239,6 +247,14 @@
     "review": {
       "title": "Tulis ulasan untuk Aris | Bali Paradise",
       "description": "Pernah jalan bersama Aris? Bagikan pengalaman Anda agar wisatawan lain menemukan sopir lokal Bali yang bisa dipercaya."
+    },
+    "xpLocal": {
+      "title": "Rasakan Bali seperti Warga Lokal: Tur Budaya Pribadi Sehari | Bali Paradise",
+      "description": "Sehari pribadi bersama pemandu lokal: sesajen, pura, kehidupan desa, pasar, dan kuliner dijelaskan. Fokus pada budaya, kuliner, atau kopi Kintamani dan gunung berapi."
+    },
+    "xpSolo": {
+      "title": "Teman Perjalanan Solo: Sehari Pribadi bersama Warga Lokal di Bali | Bali Paradise",
+      "description": "Liburan sendiri di Bali? Habiskan setengah atau sehari penuh bersama pemandu lokal yang ramah dan merencanakan hari sesuai Anda. Dengan motor atau mobil, rute disepakati lebih dulu."
     }
   },
   "about": {
@@ -618,7 +634,8 @@
       "l4": "Antar kembali ke bandara saat pulang",
       "l5": "Bagasi: beri tahu Aris berapa banyak koper atau tas yang Anda bawa",
       "cta": "Tanya soal antar jemput bandara",
-      "checkArea": "Cek harga untuk area Anda"
+      "checkArea": "Cek harga untuk area Anda",
+      "allAreas": "Harga dan waktu tempuh untuk setiap area"
     },
     "b": {
       "desc": "Cara nyaman dan fleksibel untuk menjelajahi Bali. Pilih setengah hari atau seharian, tentukan tempat singgah, dan ubah rencana kapan saja di perjalanan.",

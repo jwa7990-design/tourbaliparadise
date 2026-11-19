@@ -35,7 +35,15 @@
     "disclaimer": "Bali Paradise provides private transport and local recommendations. Attractions and activities mentioned on this website are run by independent operators. Enquiries are not bookings: arrangements and prices are confirmed personally by Aris.",
     "photos": "Photography by Aris and by Unsplash contributors.",
     "promise": "Honest prices · No shopping stops",
-    "giving": "Giving back"
+    "giving": "Giving back",
+    "guides": "Bali guides",
+    "g": {
+      "airport": "Airport transfer prices",
+      "kintamani": "Kintamani coffee & volcano",
+      "solo": "Solo travel in Bali",
+      "temples": "Temple etiquette",
+      "firstday": "Your first day in Bali"
+    }
   },
   "currency": {
     "note": "Prices are set in Indonesian Rupiah (IDR) and are indicative. Converted amounts are estimates only: exchange rates change, and your final price is always confirmed by Aris before you book. You won't be charged through this website.",
@@ -222,9 +230,9 @@
       "ogTitle": "Explore Bali: ideas for your days on the island"
     },
     "home": {
-      "title": "Bali Private Driver & Airport Transfers | Bali Paradise",
-      "description": "Explore Bali your way with Aris, a local Balinese driver. Airport transfers, private driver hire and custom day trips. Plan your day on WhatsApp.",
-      "ogTitle": "Bali Paradise — See Bali with a local."
+      "title": "Bali Private Driver & Local Experiences | Bali Paradise",
+      "description": "Explore Bali with Aris, a local host and driver: private days experiencing Bali as a local, solo traveller days, airport transfers and driver hire. Plan it on WhatsApp.",
+      "ogTitle": "Bali Paradise: Bali, beyond the tourist trail"
     },
     "services": {
       "title": "Bali Airport Transfers & Private Driver Hire | Bali Paradise",
@@ -239,6 +247,14 @@
     "review": {
       "title": "Leave a review for Aris | Bali Paradise",
       "description": "Travelled with Aris? Share your experience so other travellers can find a local Bali driver they can trust."
+    },
+    "xpLocal": {
+      "title": "Experience Bali as a Local: Private Day Tour | Bali Paradise",
+      "description": "A private full day with a local host: offerings, temples, village life, markets and food explained. Shape it around culture, food, or Kintamani coffee and the volcano."
+    },
+    "xpSolo": {
+      "title": "Solo Traveller Companion: Bali with a Local | Bali Paradise",
+      "description": "Travelling alone in Bali? Spend a half or full day with a friendly local host who plans around you. By scooter or car, with agreed routes and safe pickups."
     }
   },
   "about": {
@@ -618,7 +634,8 @@
       "l4": "Departure transfers back to the airport",
       "l5": "Luggage arrangements: let Aris know how many bags you're bringing",
       "cta": "Enquire about an airport transfer",
-      "checkArea": "Check the price for your area"
+      "checkArea": "Check the price for your area",
+      "allAreas": "Prices and travel times for every area"
     },
     "b": {
       "desc": "A comfortable, flexible way to explore Bali. Choose a half or full day, decide where you'd like to stop, and change your plans as you go.",

@@ -240,4 +240,67 @@
     <xhtml:link rel="alternate" hreflang="id" href="https://tourbaliparadise.com/experience-solo?lang=id"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tourbaliparadise.com/experience-solo"/>
   </url>
+  <url>
+    <loc>https://tourbaliparadise.com/airport-transfers</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tourbaliparadise.com/airport-transfers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tourbaliparadise.com/airport-transfers"/>
+  </url>
+  <url>
+    <loc>https://tourbaliparadise.com/airport-transfer-ubud</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tourbaliparadise.com/airport-transfer-ubud"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tourbaliparadise.com/airport-transfer-ubud"/>
+  </url>
+  <url>
+    <loc>https://tourbaliparadise.com/airport-transfer-canggu</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tourbaliparadise.com/airport-transfer-canggu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tourbaliparadise.com/airport-transfer-canggu"/>
+  </url>
+  <url>
+    <loc>https://tourbaliparadise.com/airport-transfer-seminyak</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tourbaliparadise.com/airport-transfer-seminyak"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tourbaliparadise.com/airport-transfer-seminyak"/>
+  </url>
+  <url>
+    <loc>https://tourbaliparadise.com/airport-transfer-uluwatu</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tourbaliparadise.com/airport-transfer-uluwatu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tourbaliparadise.com/airport-transfer-uluwatu"/>
+  </url>
+  <url>
+    <loc>https://tourbaliparadise.com/kintamani-day-trip</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tourbaliparadise.com/kintamani-day-trip"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tourbaliparadise.com/kintamani-day-trip"/>
+  </url>
+  <url>
+    <loc>https://tourbaliparadise.com/bali-solo-travel</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tourbaliparadise.com/bali-solo-travel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tourbaliparadise.com/bali-solo-travel"/>
+  </url>
+  <url>
+    <loc>https://tourbaliparadise.com/bali-temple-etiquette</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tourbaliparadise.com/bali-temple-etiquette"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tourbaliparadise.com/bali-temple-etiquette"/>
+  </url>
+  <url>
+    <loc>https://tourbaliparadise.com/first-day-in-bali</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tourbaliparadise.com/first-day-in-bali"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tourbaliparadise.com/first-day-in-bali"/>
+  </url>
 </urlset>

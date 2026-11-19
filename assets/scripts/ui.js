@@ -3,7 +3,7 @@ import { BUSINESS, LANGUAGES, CURRENCIES, PRICING, AIRPORT_ZONES, GIVING, INCLUS
 import { t, pick, getLang } from './i18n.js';
 import { getCurrency, formatIDR, formatConverted, ratesInfo } from './currency.js';
 import { waUrl, refreshWaLinks } from './whatsapp.js';
-import { basePrice, getZone, setZone, findZone } from './pricing.js';
+import { basePrice, zonePrice, getZone, setZone, findZone } from './pricing.js';
 import { track } from './track.js';
 import { loadGivingLog, givingTotals } from './giving.js';
 
@@ -44,6 +44,14 @@ const PAGES = [
   { id: 'explore', href: 'explore.html', key: 'nav.explore' },
   { id: 'services', href: 'services.html', key: 'nav.services' },
   { id: 'about', href: 'about.html', key: 'nav.about' },
+];
+// Helpful pages linked from every footer (good for visitors and for Google).
+const GUIDES = [
+  { id: 'airport', href: 'airport-transfers.html', key: 'footer.g.airport' },
+  { id: 'kintamani', href: 'kintamani-day-trip.html', key: 'footer.g.kintamani' },
+  { id: 'solo', href: 'bali-solo-travel.html', key: 'footer.g.solo' },
+  { id: 'temples', href: 'bali-temple-etiquette.html', key: 'footer.g.temples' },
+  { id: 'firstday', href: 'first-day-in-bali.html', key: 'footer.g.firstday' },
 ];
 const cur = id => (document.body.dataset.page === id ? ' aria-current="page"' : '');
 const navLink = p => `<a class="nav__link" href="${p.href}"${cur(p.id)} data-track-label="header_${p.id}" data-i18n="${p.key}">${esc(t(p.key))}</a>`;
@@ -145,6 +153,12 @@ export function renderFooter() {
           </ul>
         </div>
         <div>
+          ${tx('footer.guides', 'h2')}
+          <ul class="footer__links">
+            ${GUIDES.map(g => `<li><a href="${g.href}" data-track-label="footer_guide_${g.id}" data-i18n="${g.key}">${esc(t(g.key))}</a></li>`).join('')}
+          </ul>
+        </div>
+        <div>
           ${tx('footer.contact', 'h2')}
           <ul class="footer__links">
             <li><a href="${waUrl()}" data-wa="general" data-track-label="footer_whatsapp" target="_blank" rel="noopener">WhatsApp: ${esc(BUSINESS.phoneDisplay)}</a></li>
@@ -235,7 +249,18 @@ function priceHtml(amount, quote) {
   const conv = formatConverted(amount);
   return `<span class="from">${esc(t('pricing.from'))}</span> <b>${esc(idr)}</b>${conv ? ` <span class="conv">≈ ${esc(conv)}</span>` : ''}`;
 }
+/* Exact airport-transfer price for one area, e.g. <span data-zone-price="ubud">. */
+function renderZonePrices() {
+  document.querySelectorAll('[data-zone-price]').forEach(el => {
+    const amount = zonePrice(el.dataset.zonePrice);
+    const idr = formatIDR(amount);
+    if (!idr) { el.innerHTML = `<b>${esc(t('pricing.quoteOnRequest'))}</b>`; return; }
+    const conv = formatConverted(amount);
+    el.innerHTML = `<b>${esc(idr)}</b>${conv ? ` <span class="conv">≈ ${esc(conv)}</span>` : ''}`;
+  });
+}
 export function renderInlinePrices() {
+  renderZonePrices();
   document.querySelectorAll('[data-inline-price]').forEach(el => {
     const key = el.dataset.inlinePrice;
     el.innerHTML = priceHtml(basePrice(key), PRICING[key]?.quoteOnRequest);

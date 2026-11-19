@@ -65,7 +65,7 @@ async function init() {
   document.addEventListener('bp:rateschange', () => { renderPrices(); refreshWaLinks(); });
 
   // Exchange rates: only needed on pages that show prices or price-bearing WhatsApp links.
-  if (document.querySelector('[data-price], [data-wa-price], [data-inline-price], [data-ratecard], [data-giving], [data-giving-log]')) loadRates();
+  if (document.querySelector('[data-price], [data-wa-price], [data-inline-price], [data-zone-price], [data-ratecard], [data-giving], [data-giving-log]')) loadRates();
 
   // Gentle language suggestion based on the browser language (no redirect).
   const s = suggestedLang();
