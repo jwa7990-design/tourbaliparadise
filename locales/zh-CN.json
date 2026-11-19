@@ -131,7 +131,7 @@
       "scooter": "一对一摩托车游（独自旅行）"
     },
     "submit": "通过 WhatsApp 发送咨询",
-    "note": "点击后会打开 WhatsApp，并自动填好你的信息，你确认后发送即可。这只是咨询，不是预订：Aris 会亲自回复你，确认档期、沟通行程并确定最终价格。",
+    "note": "在手机上会打开 WhatsApp，并已填好您的信息，随时可以发送。在电脑上会显示一个二维码，用手机扫描即可。这只是咨询，并非预订：Aris 会亲自回复，确认档期、沟通行程并确认最终价格。",
     "errors": {
       "required": "请填写此项。",
       "nameShort": "请输入你的姓名。",
@@ -769,5 +769,24 @@
     "googleNote": "将打开 Google，您可以点选星级并写几句话，大约只需一分钟。",
     "whatsapp": "把反馈发给 Aris",
     "whatsappNote": "不想使用 Google？可以直接在 WhatsApp 上给 Aris 留言。"
+  },
+  "handoff": {
+    "title": "您的咨询已准备好",
+    "lead": "用手机相机扫描此二维码，即可在 WhatsApp 中继续。",
+    "leadLong": "您的留言太长，无法放入二维码。请使用下方的 WhatsApp 网页版或此电脑上的 WhatsApp，留言会自动填好；也可以返回缩短备注。",
+    "step1": "打开手机相机，对准二维码。",
+    "step2": "点击出现的 WhatsApp 链接。",
+    "step3": "您的留言已经写好，只需点击发送。",
+    "step3Long": "扫描后会打开与 Aris 的对话，但不含您的留言，需要您在对话中输入。",
+    "notSent": "目前尚未发送任何内容。只有在您于 WhatsApp 中点击发送后，Aris 才会收到您的咨询。",
+    "copy": "复制留言",
+    "copied": "留言已复制，可以粘贴到 WhatsApp 中。",
+    "copyFailed": "无法自动复制。请选中下方的留言并复制。",
+    "web": "在 WhatsApp 网页版中打开",
+    "app": "在此电脑上打开 WhatsApp",
+    "preview": "查看您的留言",
+    "edit": "修改您的信息",
+    "qrLabel": "二维码：用 WhatsApp 打开您给 Aris 的咨询",
+    "qrChatLabel": "二维码：打开与 Aris 的 WhatsApp 对话"
   }
 }
