@@ -950,5 +950,12 @@
       "g2": "Your route is agreed before the day, and you’re welcome to share your live location with someone",
       "g3": "Prefer a car? Ask when you enquire"
     }
+  },
+  "consent": {
+    "label": "Cookie choice",
+    "text": "We use Google Analytics to see which pages help visitors plan their trip. Is that OK? No advertising cookies are used.",
+    "accept": "Allow analytics",
+    "decline": "No thanks",
+    "settings": "Cookie settings"
   }
 }

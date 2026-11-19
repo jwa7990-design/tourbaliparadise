@@ -950,5 +950,12 @@
       "g2": "Rute disepakati sebelumnya, dan Anda boleh berbagi lokasi langsung dengan orang terdekat",
       "g3": "Lebih suka mobil? Sampaikan saat bertanya"
     }
+  },
+  "consent": {
+    "label": "Pilihan cookie",
+    "text": "Kami memakai Google Analytics untuk melihat halaman mana yang membantu pengunjung merencanakan perjalanan. Boleh? Tidak ada cookie iklan yang dipakai.",
+    "accept": "Izinkan analitik",
+    "decline": "Tidak, terima kasih",
+    "settings": "Pengaturan cookie"
   }
 }

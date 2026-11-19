@@ -171,7 +171,7 @@ export function renderFooter() {
       <div class="footer__legal">
         ${tx('footer.disclaimer', 'p')}
         ${tx('footer.photos', 'p')}
-        <p>© ${new Date().getFullYear()} Bali Paradise.</p>
+        <p>© ${new Date().getFullYear()} Bali Paradise. <button type="button" class="footer__cookie" data-consent-settings data-i18n="consent.settings">${esc(t('consent.settings'))}</button></p>
       </div>
       <div class="footer__giant" aria-hidden="true">Bali Paradise</div>
     </div>`;

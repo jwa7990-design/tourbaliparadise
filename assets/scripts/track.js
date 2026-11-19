@@ -20,6 +20,7 @@
      language_change    language switched
      currency_change    currency switched
      scroll_depth       25 / 50 / 75 / 100 % of page scrolled              */
+import { applyConsentDefaults } from './consent.js';
 import { ANALYTICS } from './config.js';
 
 window.dataLayer = window.dataLayer || [];
@@ -52,6 +53,7 @@ function loadScript(src, attrs = {}) {
 /** Load whichever analytics providers are configured. */
 export function initAnalytics() {
   const a = ANALYTICS;
+  if (a.gtmContainerId || a.ga4MeasurementId) applyConsentDefaults();
   if (a.gtmContainerId) {
     window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
     loadScript(`https://www.googletagmanager.com/gtm.js?id=${encodeURIComponent(a.gtmContainerId)}`);

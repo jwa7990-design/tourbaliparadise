@@ -9,6 +9,8 @@ import {
   initReveal, numberSections, renderPrices, renderInclusions, renderDriver, renderCommitments, renderReviews, renderContact,
 } from './ui.js';
 import { renderForms } from './form.js';
+import { showConsentBanner, bindConsentSettings } from './consent.js';
+import { ANALYTICS } from './config.js';
 
 function renderDynamic() {
   renderPrices();
@@ -35,6 +37,7 @@ async function init() {
   applyTranslations();
   bindClickTracking();
   initReveal();
+  if (ANALYTICS.gtmContainerId || ANALYTICS.ga4MeasurementId) { showConsentBanner(); bindConsentSettings(); }
 
   // The page is built by script after load, so the browser's own jump to a
   // #section link can be lost. Re-apply it once everything is rendered.
@@ -60,7 +63,7 @@ async function init() {
     }
   });
 
-  document.addEventListener('bp:langchange', () => { renderDynamic(); syncSelects(); });
+  document.addEventListener('bp:langchange', () => { renderDynamic(); syncSelects(); if (document.querySelector('.consent')) showConsentBanner(true); });
   document.addEventListener('bp:currencychange', () => { renderPrices(); refreshWaLinks(); syncSelects(); });
   document.addEventListener('bp:rateschange', () => { renderPrices(); refreshWaLinks(); });
 

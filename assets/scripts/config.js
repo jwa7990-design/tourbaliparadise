@@ -179,7 +179,7 @@ export const REVIEWS_WRITE_URL = null;
    Nothing third-party loads while these are null.                   */
 export const ANALYTICS = {
   ga4MeasurementId: null,        // e.g. 'G-XXXXXXXXXX'  (Google Analytics 4)
-  gtmContainerId: null,          // e.g. 'GTM-XXXXXXX'   (Google Tag Manager)
+  gtmContainerId: 'GTM-M94B89ZK', // Google Tag Manager (GA4 is set up inside GTM)
   cloudflareBeaconToken: null,   // Cloudflare Web Analytics token (cookieless page views)
   plausibleDomain: null,         // e.g. 'baliparadise.com' (Plausible, cookieless)
   debug: false,                  // true = log every event to the console

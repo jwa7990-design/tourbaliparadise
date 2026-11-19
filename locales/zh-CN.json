@@ -950,5 +950,12 @@
       "g2": "路线会提前确认，欢迎您和家人朋友共享实时位置",
       "g3": "想坐汽车？咨询时告诉我们即可"
     }
+  },
+  "consent": {
+    "label": "Cookie 选择",
+    "text": "我们使用 Google Analytics 了解哪些页面对旅客规划行程有帮助。可以吗？我们不使用广告 Cookie。",
+    "accept": "允许分析",
+    "decline": "不用了",
+    "settings": "Cookie 设置"
   }
 }
