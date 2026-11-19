@@ -635,7 +635,8 @@
       "l5": "Bagasi: beri tahu Aris berapa banyak koper atau tas yang Anda bawa",
       "cta": "Tanya soal antar jemput bandara",
       "checkArea": "Cek harga untuk area Anda",
-      "allAreas": "Harga dan waktu tempuh untuk setiap area"
+      "allAreas": "Harga dan waktu tempuh untuk setiap area",
+      "l6": "Setelah mendarat, sambungkan ke Wi-Fi bandara dan kirim pesan ke Aris: ia akan mengirim foto tempat ia menunggu dan terus mengabari Anda"
     },
     "b": {
       "desc": "Cara nyaman dan fleksibel untuk menjelajahi Bali. Pilih setengah hari atau seharian, tentukan tempat singgah, dan ubah rencana kapan saja di perjalanan.",
@@ -951,7 +952,9 @@
       "x3": "Barang yang Anda beli",
       "g1": "Penjemputan dan pengantaran di resepsionis atau pintu masuk, tidak pernah di dalam kamar",
       "g2": "Rute disepakati sebelumnya, dan Anda boleh berbagi lokasi langsung dengan orang terdekat",
-      "g3": "Lebih suka mobil? Sampaikan saat bertanya"
+      "g3": "Lebih suka mobil? Sampaikan saat bertanya",
+      "g4": "Aris adalah pengendara berlisensi. Sebelum berangkat, pastikan asuransi perjalanan Anda menanggung naik motor sebagai penumpang",
+      "g5": "Meski Anda punya SIM internasional, Aris menyarankan dibonceng warga lokal: jalan dan aturan lalu lintas di Bali sangat berbeda"
     }
   },
   "consent": {

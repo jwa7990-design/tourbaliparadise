@@ -32,14 +32,16 @@
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" href="assets/images/favicon.svg?v=2" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="preload" as="image" href="assets/images/hero/road-1280.webp" imagesrcset="assets/images/hero/road-640.webp 640w, assets/images/hero/road-960.webp 960w, assets/images/hero/road-1280.webp 1280w, assets/images/hero/road-1920.webp 1920w" imagesizes="100vw" fetchpriority="high">
   <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" fetchpriority="high"
     imagesrcset="https://images.unsplash.com/photo-1748935554590-e594e5fb5348?auto=format&amp;fit=crop&amp;w=800&amp;q=74 800w, https://images.unsplash.com/photo-1748935554590-e594e5fb5348?auto=format&amp;fit=crop&amp;w=1400&amp;q=76 1400w, https://images.unsplash.com/photo-1748935554590-e594e5fb5348?auto=format&amp;fit=crop&amp;w=2200&amp;q=76 2200w"
     imagesizes="100vw">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;family=Oswald:wght@300;500;700&amp;display=swap">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20261119e">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap"></noscript>
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261120a">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -141,36 +143,34 @@
         <nav aria-label="Experiences" data-i18n-aria-label="home.exp.overline">
           <ul class="hero-panels__list">
             <li style="--offset:5%"><a class="panel" href="explore.html#explore-bali" data-track="cta" data-track-label="home_panel_explore_bali" aria-label="Explore Bali" data-i18n-aria-label="cat.explore.title">
-              <img src="assets/images/aris/batur-tall.jpg" alt="" width="600" height="1100" fetchpriority="high">
+              <img src="assets/images/hero/batur-600.webp" srcset="assets/images/hero/batur-300.webp 300w, assets/images/hero/batur-600.webp 600w" sizes="(max-width: 760px) 30vw, 200px" alt="" width="600" height="1100" decoding="async">
               <span class="panel__label" data-i18n="home.panels.explore">Explore</span>
             </a></li>
             <li style="--offset:0%"><a class="panel" href="explore.html#food-coffee" data-track="cta" data-track-label="home_panel_food_coffee" aria-label="Food &amp; Coffee" data-i18n-aria-label="cat.food.title">
-              <img src="https://images.unsplash.com/photo-1539755530862-00f623c00f52?auto=format&amp;fit=crop&amp;w=600&amp;h=1100&amp;q=74" alt="" width="600" height="1100" fetchpriority="high">
+              <img src="assets/images/hero/dishes-600.webp" srcset="assets/images/hero/dishes-300.webp 300w, assets/images/hero/dishes-600.webp 600w" sizes="(max-width: 760px) 30vw, 200px" alt="" width="600" height="1100" decoding="async">
               <span class="panel__label" data-i18n="home.panels.food">Food</span>
             </a></li>
             <li style="--offset:3%"><a class="panel" href="explore.html#adventure" data-track="cta" data-track-label="home_panel_adventure" aria-label="Adventure" data-i18n-aria-label="cat.adventure.title">
-              <img src="assets/images/aris/surf-tall.jpg" alt="" width="600" height="1100" fetchpriority="high">
+              <img src="assets/images/hero/surf-600.webp" srcset="assets/images/hero/surf-300.webp 300w, assets/images/hero/surf-600.webp 600w" sizes="(max-width: 760px) 30vw, 200px" alt="" width="600" height="1100" decoding="async">
               <span class="panel__label" data-i18n="home.panels.adventure">Adventure</span>
             </a></li>
             <li style="--offset:2%"><a class="panel" href="explore.html#family-fun" data-track="cta" data-track-label="home_panel_family_fun" aria-label="Family Fun" data-i18n-aria-label="cat.family.title">
-              <img src="assets/images/aris/family-tall.jpg" alt="" width="600" height="1100" fetchpriority="high">
+              <img src="assets/images/hero/family-600.webp" srcset="assets/images/hero/family-300.webp 300w, assets/images/hero/family-600.webp 600w" sizes="(max-width: 760px) 30vw, 200px" alt="" width="600" height="1100" decoding="async">
               <span class="panel__label" data-i18n="home.panels.family">Family</span>
             </a></li>
             <li style="--offset:4%"><a class="panel" href="explore.html#beaches-sunsets" data-track="cta" data-track-label="home_panel_beaches_sunsets" aria-label="Beaches &amp; Sunsets" data-i18n-aria-label="cat.beaches.title">
-              <img src="https://images.unsplash.com/photo-1566811851038-0580f1fb9082?auto=format&amp;fit=crop&amp;w=600&amp;h=1100&amp;q=74" alt="" width="600" height="1100" fetchpriority="high">
+              <img src="assets/images/hero/beach-600.webp" srcset="assets/images/hero/beach-300.webp 300w, assets/images/hero/beach-600.webp 600w" sizes="(max-width: 760px) 30vw, 200px" alt="" width="600" height="1100" decoding="async">
               <span class="panel__label" data-i18n="home.panels.beaches">Beaches</span>
             </a></li>
             <li style="--offset:1%"><a class="panel" href="explore.html#culture" data-track="cta" data-track-label="home_panel_culture" aria-label="Culture &amp; Local Life" data-i18n-aria-label="cat.culture.title">
-              <img src="https://images.unsplash.com/photo-1773555899937-229935a87166?auto=format&amp;fit=crop&amp;w=600&amp;h=1100&amp;q=74" alt="" width="600" height="1100" fetchpriority="high">
+              <img src="assets/images/hero/culture-600.webp" srcset="assets/images/hero/culture-300.webp 300w, assets/images/hero/culture-600.webp 600w" sizes="(max-width: 760px) 30vw, 200px" alt="" width="600" height="1100" decoding="async">
               <span class="panel__label" data-i18n="home.panels.culture">Culture</span>
             </a></li>
           </ul>
         </nav>
         <div class="hero-panels__word" aria-hidden="true">BALI</div>
         <div class="hero-panels__ground" aria-hidden="true">
-          <img src="https://images.unsplash.com/photo-1748935554590-e594e5fb5348?auto=format&amp;fit=crop&amp;w=1400&amp;q=78"
-            srcset="https://images.unsplash.com/photo-1748935554590-e594e5fb5348?auto=format&amp;fit=crop&amp;w=800&amp;q=74 800w, https://images.unsplash.com/photo-1748935554590-e594e5fb5348?auto=format&amp;fit=crop&amp;w=1400&amp;q=76 1400w, https://images.unsplash.com/photo-1748935554590-e594e5fb5348?auto=format&amp;fit=crop&amp;w=2200&amp;q=76 2200w"
-            sizes="100vw" alt="" width="2200" height="1467">
+          <img src="assets/images/hero/road-1280.webp" srcset="assets/images/hero/road-640.webp 640w, assets/images/hero/road-960.webp 960w, assets/images/hero/road-1280.webp 1280w, assets/images/hero/road-1920.webp 1920w" sizes="100vw" alt="" width="1920" height="768" fetchpriority="high">
         </div>
       </div>
       <div class="container hero-panels__intro">

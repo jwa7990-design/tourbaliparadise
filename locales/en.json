@@ -635,7 +635,8 @@
       "l5": "Luggage arrangements: let Aris know how many bags you're bringing",
       "cta": "Enquire about an airport transfer",
       "checkArea": "Check the price for your area",
-      "allAreas": "Prices and travel times for every area"
+      "allAreas": "Prices and travel times for every area",
+      "l6": "When you land, connect to the airport Wi-Fi and message Aris: he'll send a photo of exactly where he's waiting and keep you updated"
     },
     "b": {
       "desc": "A comfortable, flexible way to explore Bali. Choose a half or full day, decide where you'd like to stop, and change your plans as you go.",
@@ -951,7 +952,9 @@
       "x3": "Anything you choose to buy",
       "g1": "Pickup and drop-off at reception or the entrance, never inside rooms",
       "g2": "Your route is agreed before the day, and you’re welcome to share your live location with someone",
-      "g3": "Prefer a car? Ask when you enquire"
+      "g3": "Prefer a car? Ask when you enquire",
+      "g4": "Aris is a licensed rider. Before you travel, check your travel insurance covers riding a scooter as a passenger",
+      "g5": "Even if you hold an international licence, Aris recommends riding with a local: Balinese roads and traffic rules are very different"
     }
   },
   "consent": {
