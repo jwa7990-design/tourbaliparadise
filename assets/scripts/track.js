@@ -38,7 +38,11 @@ export function track(event, params = {}) {
   };
   window.dataLayer.push({ event, ...payload });
   window.bpEvents.push({ event, ...payload, ts: Date.now() });
-  if (typeof window.gtag === 'function' && ANALYTICS.ga4MeasurementId) window.gtag('event', event, payload);
+  if (typeof window.gtag === 'function' && ANALYTICS.ga4MeasurementId) {
+    // GA4 reserves page_path, language and currency, so send them under our own names.
+    const { page_path, language, currency, ...rest } = payload;
+    window.gtag('event', event, { ...rest, site_path: page_path, site_language: language, site_currency: currency });
+  }
   if (typeof window.plausible === 'function') window.plausible(event, { props: payload });
   if (ANALYTICS.debug) console.info('[track]', event, payload);
 }

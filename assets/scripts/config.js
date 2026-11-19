@@ -178,8 +178,8 @@ export const REVIEWS_WRITE_URL = null;
    window.dataLayer; add ONE OR MORE of the IDs below to send them on.
    Nothing third-party loads while these are null.                   */
 export const ANALYTICS = {
-  ga4MeasurementId: null,        // e.g. 'G-XXXXXXXXXX'  (Google Analytics 4)
-  gtmContainerId: 'GTM-M94B89ZK', // Google Tag Manager (GA4 is set up inside GTM)
+  ga4MeasurementId: 'G-YFMH6Y35EX', // Google Analytics 4 (events sent directly; don't add a GA4 tag in GTM too)
+  gtmContainerId: 'GTM-M94B89ZK', // Google Tag Manager (for future tags; GA4 runs directly above)
   cloudflareBeaconToken: null,   // Cloudflare Web Analytics token (cookieless page views)
   plausibleDomain: null,         // e.g. 'baliparadise.com' (Plausible, cookieless)
   debug: false,                  // true = log every event to the console
