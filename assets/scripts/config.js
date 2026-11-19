@@ -30,9 +30,9 @@ export const PRICING = {
   full_day_driver:  { price_idr: 900000, from: true },   // up to 10 hours
   custom_day_trip:  { price_idr: null, quoteOnRequest: true },
   scooter_tour:     { price_idr: 500000, from: true },   // half day, 1 guest
-  // Concept branch: hosted experiences (per booking, 1–2 guests; proposed, not final)
+  // Experience Bali as a Local (per booking, 1–2 guests). Solo Traveller
+  // Companion uses scooter_tour above, so both pages always show one price.
   exp_local_eyes:   { price_idr: 1600000, from: true },
-  exp_solo_half:    { price_idr: 700000, from: true },   // full day 1,100,000
 };
 
 /* Airport transfer prices by area (IDR, one price per area).
