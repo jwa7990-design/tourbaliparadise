@@ -47,6 +47,7 @@ const PAGES = [
 ];
 // Helpful pages linked from every footer (good for visitors and for Google).
 const GUIDES = [
+  { id: 'entry', href: 'bali-entry-requirements.html', key: 'footer.g.entry' },
   { id: 'airport', href: 'airport-transfers.html', key: 'footer.g.airport' },
   { id: 'kintamani', href: 'kintamani-day-trip.html', key: 'footer.g.kintamani' },
   { id: 'solo', href: 'bali-solo-travel.html', key: 'footer.g.solo' },

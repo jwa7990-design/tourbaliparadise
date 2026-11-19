@@ -39,6 +39,7 @@ const PAGES = [
   { file: 'bali-solo-travel.html', path: '/bali-solo-travel', priority: '0.7', enOnly: true },
   { file: 'bali-temple-etiquette.html', path: '/bali-temple-etiquette', priority: '0.7', enOnly: true },
   { file: 'first-day-in-bali.html', path: '/first-day-in-bali', priority: '0.7', enOnly: true },
+  { file: 'bali-entry-requirements.html', path: '/bali-entry-requirements', priority: '0.8', enOnly: true },
 ];
 const LANGS = [['en', null], ['zh-Hans', 'zh-CN'], ['ru', 'ru'], ['id', 'id']];
 const urlFor = (path, lang) => site + path + (lang ? `?lang=${lang}` : '');
