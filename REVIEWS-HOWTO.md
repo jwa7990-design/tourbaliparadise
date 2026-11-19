@@ -64,7 +64,20 @@ Aris
 
 ---
 
-## 4. Putting reviews on the website
+## 4. Reviews written on the website (no Google account needed)
+
+The /review page has a review form:
+- a star rating
+- what the guest booked
+- their first name, country (optional) and month (optional)
+- the review itself
+- a tick-box agreeing it can be published
+
+When the guest presses **Send my review**, WhatsApp opens with the whole review written out, addressed to Aris. On a computer, they get a QR code to scan with their phone instead.
+
+**Nothing appears on the site automatically.** Aris forwards the message to you, and you send it to Claude to add. Only add reviews where the guest ticked the consent box; the message says so in its last line.
+
+## 5. Putting reviews on the website
 
 Google reviews don't appear on the website by themselves. When a good one arrives:
 

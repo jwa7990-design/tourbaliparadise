@@ -797,7 +797,10 @@
     "google": "Tulis ulasan di Google",
     "googleNote": "Google akan terbuka, lalu Anda tinggal memilih bintang dan menulis beberapa kata. Hanya sekitar satu menit.",
     "whatsapp": "Kirim masukan ke Aris",
-    "whatsappNote": "Tidak ingin memakai Google? Kirim pesan langsung ke Aris lewat WhatsApp."
+    "whatsappNote": "Tidak ingin memakai Google? Kirim pesan langsung ke Aris lewat WhatsApp.",
+    "write": "Tulis ulasan",
+    "writeNote": "Tidak punya akun Google? Tulis ulasan Anda di sini.",
+    "writeNoteOnly": "Tidak perlu akun. Hanya sekitar satu menit."
   },
   "handoff": {
     "title": "Pertanyaan Anda sudah siap",
@@ -957,5 +960,39 @@
     "accept": "Izinkan analitik",
     "decline": "Tidak, terima kasih",
     "settings": "Pengaturan cookie"
+  },
+  "reviewForm": {
+    "overline": "Tulis ulasan",
+    "title": "Ceritakan hari Anda kepada wisatawan lain",
+    "lead": "Tidak perlu akun. Ulasan Anda dikirim ke Aris, dan ulasan asli tampil di situs setelah ia memeriksanya.",
+    "rating": "Penilaian Anda",
+    "service": "Apa yang Anda pesan?",
+    "name": "Nama depan Anda",
+    "country": "Dari mana Anda?",
+    "month": "Kapan Anda bepergian?",
+    "text": "Ulasan Anda",
+    "textPh": "Bagaimana harinya? Ke mana saja, dan apa yang paling berkesan?",
+    "consent": "Saya setuju Aris boleh menampilkan ulasan ini di situsnya dengan nama depan dan negara saya.",
+    "submit": "Kirim ulasan saya",
+    "note": "Ini membuka WhatsApp dengan ulasan Anda sudah tertulis, siap dikirim ke Aris. Tidak ada yang ditampilkan sebelum ia memeriksanya.",
+    "services": {
+      "local": "Rasakan Bali seperti warga lokal",
+      "solo": "Teman Perjalanan Solo",
+      "airport": "Antar jemput bandara",
+      "driver": "Sewa sopir pribadi",
+      "custom": "Perjalanan sehari khusus",
+      "other": "Lainnya"
+    },
+    "errors": {
+      "rating": "Silakan pilih jumlah bintang.",
+      "text": "Silakan tulis setidaknya beberapa kalimat.",
+      "consent": "Centang kotak ini agar Aris bisa menampilkan ulasan Anda."
+    },
+    "handoff": {
+      "title": "Ulasan Anda sudah siap",
+      "lead": "Pindai kode QR ini dengan ponsel untuk mengirim ulasan ke Aris lewat WhatsApp.",
+      "step3": "Ulasan Anda sudah tertulis. Tinggal tekan Kirim.",
+      "notSent": "Belum ada yang terkirim. Aris baru menerima ulasan Anda setelah Anda menekan Kirim di WhatsApp."
+    }
   }
 }

@@ -797,7 +797,10 @@
     "google": "Write a Google review",
     "googleNote": "Opens Google, where you can tap the stars and add a few words. It takes about a minute.",
     "whatsapp": "Send Aris your feedback",
-    "whatsappNote": "Prefer not to use Google? Message Aris directly on WhatsApp."
+    "whatsappNote": "Prefer not to use Google? Message Aris directly on WhatsApp.",
+    "write": "Write a review",
+    "writeNote": "No Google account? Write your review here instead.",
+    "writeNoteOnly": "No account needed. It takes about a minute."
   },
   "handoff": {
     "title": "Your enquiry is ready",
@@ -957,5 +960,39 @@
     "accept": "Allow analytics",
     "decline": "No thanks",
     "settings": "Cookie settings"
+  },
+  "reviewForm": {
+    "overline": "Write a review",
+    "title": "Tell other travellers about your day",
+    "lead": "No account needed. Your review is sent to Aris, and genuine reviews appear on the website once he has checked them.",
+    "rating": "Your rating",
+    "service": "What did you book?",
+    "name": "Your first name",
+    "country": "Where are you from?",
+    "month": "When did you travel?",
+    "text": "Your review",
+    "textPh": "What was the day like? Where did you go, and what stood out?",
+    "consent": "I agree Aris may publish this review on his website with my first name and country.",
+    "submit": "Send my review",
+    "note": "This opens WhatsApp with your review written out, ready to send to Aris. Nothing is published until he has checked it.",
+    "services": {
+      "local": "Experience Bali as a Local",
+      "solo": "Solo Traveller Companion",
+      "airport": "Airport transfer",
+      "driver": "Private driver hire",
+      "custom": "Custom day trip",
+      "other": "Something else"
+    },
+    "errors": {
+      "rating": "Please choose a star rating.",
+      "text": "Please write at least a couple of sentences.",
+      "consent": "Please tick the box so Aris can publish your review."
+    },
+    "handoff": {
+      "title": "Your review is ready",
+      "lead": "Scan this QR code with your phone to send your review to Aris on WhatsApp.",
+      "step3": "Your review is already written out. Just press Send.",
+      "notSent": "Nothing has been sent yet. Aris receives your review once you press Send in WhatsApp."
+    }
   }
 }

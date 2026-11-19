@@ -66,7 +66,9 @@ async function copyText(text) {
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 /** Replace the form with the QR handoff panel. The form keeps its values for editing. */
-export function showHandoff(form, link, formLocation) {
+export function showHandoff(form, link, formLocation, copy = {}) {
+  // `copy` swaps the wording for other uses (e.g. reviews): { title, lead, step3, notSent } translation keys.
+  const k = name => copy[name] || `handoff.${name}`;
   form.parentElement.querySelector('.wa-handoff')?.remove();
   const fullQr = qrSvg(link.url, t('handoff.qrLabel'));
   const qr = fullQr || qrSvg(waUrl(), t('handoff.qrChatLabel'));
@@ -79,14 +81,14 @@ export function showHandoff(form, link, formLocation) {
   panel.innerHTML = `
     <div class="wa-handoff__qr">${qr || ''}</div>
     <div class="wa-handoff__body">
-      <h3 id="${hid}-title" class="wa-handoff__title" tabindex="-1">${esc(t('handoff.title'))}</h3>
-      <p class="wa-handoff__lead">${esc(t(fullQr ? 'handoff.lead' : 'handoff.leadLong'))}</p>
+      <h3 id="${hid}-title" class="wa-handoff__title" tabindex="-1">${esc(t(k('title')))}</h3>
+      <p class="wa-handoff__lead">${esc(t(fullQr ? k('lead') : 'handoff.leadLong'))}</p>
       <ol class="wa-handoff__steps">
         <li>${esc(t('handoff.step1'))}</li>
         <li>${esc(t('handoff.step2'))}</li>
-        <li>${esc(t(fullQr ? 'handoff.step3' : 'handoff.step3Long'))}</li>
+        <li>${esc(t(fullQr ? k('step3') : 'handoff.step3Long'))}</li>
       </ol>
-      <p class="wa-handoff__notice">${esc(t('handoff.notSent'))}</p>
+      <p class="wa-handoff__notice">${esc(t(k('notSent')))}</p>
       <div class="wa-handoff__actions">
         <button type="button" class="btn btn--outline" data-handoff="copy">${esc(t('handoff.copy'))}</button>
         <a class="btn btn--outline" href="${esc(link.webUrl)}" target="_blank" rel="noopener" data-handoff="web" data-track-label="handoff_whatsapp_web">${esc(t('handoff.web'))}</a>

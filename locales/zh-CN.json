@@ -797,7 +797,10 @@
     "google": "在 Google 上写评价",
     "googleNote": "将打开 Google，您可以点选星级并写几句话，大约只需一分钟。",
     "whatsapp": "把反馈发给 Aris",
-    "whatsappNote": "不想使用 Google？可以直接在 WhatsApp 上给 Aris 留言。"
+    "whatsappNote": "不想使用 Google？可以直接在 WhatsApp 上给 Aris 留言。",
+    "write": "写评价",
+    "writeNote": "没有 Google 账号？可以在这里写评价。",
+    "writeNoteOnly": "无需账号，大约一分钟即可完成。"
   },
   "handoff": {
     "title": "您的咨询已准备好",
@@ -957,5 +960,39 @@
     "accept": "允许分析",
     "decline": "不用了",
     "settings": "Cookie 设置"
+  },
+  "reviewForm": {
+    "overline": "写评价",
+    "title": "向其他旅客讲讲您的这一天",
+    "lead": "无需账号。您的评价会发送给 Aris，经他确认后真实的评价会显示在网站上。",
+    "rating": "您的评分",
+    "service": "您预订了什么？",
+    "name": "您的名字",
+    "country": "您来自哪里？",
+    "month": "您什么时候旅行？",
+    "text": "您的评价",
+    "textPh": "这一天过得怎么样？去了哪里，有什么印象深刻的？",
+    "consent": "我同意 Aris 在网站上发布这条评价，并显示我的名字和国家。",
+    "submit": "发送评价",
+    "note": "将打开 WhatsApp 并已写好您的评价，可直接发送给 Aris。经他确认前不会发布。",
+    "services": {
+      "local": "像本地人一样体验巴厘岛",
+      "solo": "独行旅伴",
+      "airport": "机场接送",
+      "driver": "私人包车",
+      "custom": "定制一日游",
+      "other": "其他"
+    },
+    "errors": {
+      "rating": "请选择星级。",
+      "text": "请至少写几句话。",
+      "consent": "请勾选此项，以便 Aris 发布您的评价。"
+    },
+    "handoff": {
+      "title": "您的评价已准备好",
+      "lead": "用手机扫描此二维码，即可在 WhatsApp 上把评价发给 Aris。",
+      "step3": "评价已经写好，只需点击发送。",
+      "notSent": "目前尚未发送任何内容。您在 WhatsApp 中点击发送后，Aris 才会收到您的评价。"
+    }
   }
 }

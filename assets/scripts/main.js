@@ -9,6 +9,7 @@ import {
   initReveal, numberSections, renderPrices, renderInclusions, renderDriver, renderCommitments, renderReviews, renderContact,
 } from './ui.js';
 import { renderForms } from './form.js';
+import { renderReviewForms } from './review-form.js';
 import { showConsentBanner, bindConsentSettings } from './consent.js';
 import { ANALYTICS } from './config.js';
 
@@ -33,6 +34,7 @@ async function init() {
   renderFooter();
   numberSections();
   renderForms();
+  renderReviewForms();
   renderDynamic();
   applyTranslations();
   bindClickTracking();
