@@ -48,6 +48,7 @@ export function enquiryMessage(d) {
     `${t('wa.enquiry.name')}: ${d.name}`,
     `${t('wa.enquiry.interest')}: ${d.service}`,
     ...(d.area ? [`${t('wa.enquiry.area')}: ${d.area}`] : []),
+    ...(d.vehicle ? [`${t('form.vehicle')}: ${d.vehicle}`] : []),
     `${t('wa.enquiry.date')}: ${d.date}`,
     `${t('wa.enquiry.passengers')}: ${d.passengers}`,
     `${t('wa.enquiry.accommodation')}: ${d.accommodation}`,

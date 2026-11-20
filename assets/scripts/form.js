@@ -5,7 +5,7 @@ import { enquiryLink } from './whatsapp.js';
 import { opensWhatsAppDirectly, showHandoff } from './wa-handoff.js';
 import { track } from './track.js';
 import { icon } from './ui.js';
-import { AIRPORT_ZONES } from './config.js';
+import { AIRPORT_ZONES, VEHICLES } from './config.js';
 import { basePrice, zonePrice, getZone } from './pricing.js';
 
 const SERVICES = [
@@ -56,6 +56,9 @@ export function renderForms() {
             <option value="" data-i18n="airportZones.choose">${t('airportZones.choose')}</option>
             ${AIRPORT_ZONES.map(z => `<option value="${z.key}"${z.key === getZone() ? ' selected' : ''} data-i18n="zones.${z.key}">${t(`zones.${z.key}`)}</option>`).join('')}
           </select>`, { full: true })}
+        ${field(id('vehicle'), 'vehicle', `<select id="${id('vehicle')}" name="vehicle" aria-describedby="${id('vehicle')}-err ${id('vehicle')}-note">
+            ${VEHICLES.map(v => `<option value="${v.key}" data-i18n="vehicles.${v.key}">${t(`vehicles.${v.key}`)}</option>`).join('')}
+          </select><small class="field__note" id="${id('vehicle')}-note" data-i18n="form.vehicleNote">${t('form.vehicleNote')}</small>`, { full: true })}
         ${field(id('notes'), 'notes', `<textarea id="${id('notes')}" name="notes" maxlength="800" data-i18n-placeholder="form.notesPh" placeholder="${t('form.notesPh')}"></textarea>`, { full: true, optional: true })}
         <div class="enquiry__foot">
           <p class="enquiry__summary" role="alert"></p>
@@ -67,7 +70,8 @@ export function renderForms() {
     const form = host.querySelector('form');
     // The area field only appears for airport transfers.
     const zoneField = form.elements.zone.closest('.field');
-    const toggleZone = () => { zoneField.hidden = form.elements.service.value !== 'airport'; };
+    const vehicleField = form.elements.vehicle.closest('.field');
+    const toggleZone = () => { const air = form.elements.service.value !== 'airport'; zoneField.hidden = air; vehicleField.hidden = air; };
     toggleZone();
     form.elements.service.addEventListener('change', toggleZone);
     const setError = (name, key) => {
@@ -125,11 +129,12 @@ export function renderForms() {
         service: t(`form.options.${v.service}`),
         notes: (v.notes || '').trim(),
         area: isAirport ? t(`zones.${v.zone}`) : '',
-        priceIdr: isAirport ? zonePrice(v.zone) : (priceKey ? basePrice(priceKey) : null),
+        vehicle: isAirport ? t(`vehicles.${v.vehicle || 'innova'}`) : '',
+        priceIdr: isAirport ? zonePrice(v.zone, v.vehicle || 'innova') : (priceKey ? basePrice(priceKey) : null),
       });
       const direct = opensWhatsAppDirectly();
 
-      track('generate_lead', { form_location: location, service: v.service, zone: isAirport ? v.zone : undefined, passengers: Number(v.passengers), method: 'whatsapp', handoff: direct ? 'direct' : 'qr' });
+      track('generate_lead', { form_location: location, service: v.service, zone: isAirport ? v.zone : undefined, vehicle: isAirport ? (v.vehicle || 'innova') : undefined, passengers: Number(v.passengers), method: 'whatsapp', handoff: direct ? 'direct' : 'qr' });
 
       if (!direct) { showHandoff(form, link, location); return; }
       const w = window.open(link.url, '_blank');

@@ -153,7 +153,9 @@
     },
     "title": "给 Aris 发送咨询",
     "intro": "填写几项简单信息，WhatsApp 就会打开，消息已经帮你写好，直接发送即可。",
-    "zone": "入住区域"
+    "zone": "入住区域",
+    "vehicle": "车型",
+    "vehicleNote": "8 人及以上需选 14 座 Hiace。"
   },
   "driver": {
     "photoPlaceholder": "Aris 的照片即将上线",
@@ -718,6 +720,10 @@
     "ubud": "乌布",
     "amed": "艾湄湾 (Amed)",
     "lovina": "罗威纳 (Lovina)",
+    "tanah_lot": "海神庙（Tanah Lot）",
+    "padang_bai": "八丹拜（Padang Bai）",
+    "sidemen": "斯德门（Sidemen）",
+    "kintamani": "京打马尼（Kintamani）",
     "other": "其他地区"
   },
   "giving": {
@@ -796,7 +802,7 @@
   "ratecard": {
     "hire": "包车与游览",
     "airport": "按地区接送机",
-    "airportSub": "单程，按车计价，往返巴厘岛机场（DPS）与你的酒店或别墅之间。",
+    "airportSub": "单程，往返伍拉·赖机场与您的酒店或别墅。按车辆计价：丰田 Innova 最多载 7 人，团体可选 14 座 Hiace。",
     "notes": {
       "half": "最长 5 小时",
       "full": "最长 10 小时",
@@ -1011,5 +1017,13 @@
       "step3": "评价已经写好，只需点击发送。",
       "notSent": "目前尚未发送任何内容。您在 WhatsApp 中点击发送后，Aris 才会收到您的评价。"
     }
+  },
+  "vehicles": {
+    "innova": "丰田 Innova（最多 7 人）",
+    "commuter": "丰田 Hiace Commuter（14 座）",
+    "premio": "丰田 Hiace Premio（14 座，高级）",
+    "commuterShort": "Commuter",
+    "premioShort": "Premio",
+    "vanLine": "14 座 Hiace：{prices}"
   }
 }

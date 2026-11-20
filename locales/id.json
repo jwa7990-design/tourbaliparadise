@@ -153,7 +153,9 @@
     },
     "title": "Kirim pertanyaan ke Aris",
     "intro": "Isi beberapa data singkat, lalu WhatsApp akan terbuka dengan pesan yang siap dikirim.",
-    "zone": "Area tempat menginap"
+    "zone": "Area tempat menginap",
+    "vehicle": "Kendaraan",
+    "vehicleNote": "Rombongan 8 orang atau lebih perlu Hiace 14 kursi."
   },
   "driver": {
     "photoPlaceholder": "Foto Aris segera hadir",
@@ -718,6 +720,10 @@
     "ubud": "Ubud",
     "amed": "Amed",
     "lovina": "Lovina",
+    "tanah_lot": "Tanah Lot",
+    "padang_bai": "Padang Bai",
+    "sidemen": "Sidemen",
+    "kintamani": "Kintamani",
     "other": "Area lain"
   },
   "giving": {
@@ -796,7 +802,7 @@
   "ratecard": {
     "hire": "Sewa sopir & tur",
     "airport": "Antar jemput bandara per area",
-    "airportSub": "Sekali jalan, per mobil, antara Bandara Ngurah Rai dan hotel atau vila Anda.",
+    "airportSub": "Sekali jalan, antara Bandara Ngurah Rai dan hotel atau vila Anda. Harga per kendaraan: Toyota Innova untuk hingga 7 penumpang, atau Hiace 14 kursi untuk rombongan.",
     "notes": {
       "half": "Hingga 5 jam",
       "full": "Hingga 10 jam",
@@ -1011,5 +1017,13 @@
       "step3": "Ulasan Anda sudah tertulis. Tinggal tekan Kirim.",
       "notSent": "Belum ada yang terkirim. Aris baru menerima ulasan Anda setelah Anda menekan Kirim di WhatsApp."
     }
+  },
+  "vehicles": {
+    "innova": "Toyota Innova (hingga 7 penumpang)",
+    "commuter": "Toyota Hiace Commuter (14 kursi)",
+    "premio": "Toyota Hiace Premio (14 kursi, premium)",
+    "commuterShort": "Commuter",
+    "premioShort": "Premio",
+    "vanLine": "Hiace 14 kursi: {prices}"
   }
 }

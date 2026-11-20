@@ -1,5 +1,5 @@
 /* Shared layout (header, menu, footer) and data-driven components. */
-import { BUSINESS, LANGUAGES, CURRENCIES, PRICING, AIRPORT_ZONES, GIVING, INCLUSIONS, DRIVER, COMMITMENTS, REVIEWS, REVIEWS_PROFILE_URL, REVIEWS_WRITE_URL } from './config.js';
+import { BUSINESS, LANGUAGES, CURRENCIES, PRICING, AIRPORT_ZONES, VEHICLES, GIVING, INCLUSIONS, DRIVER, COMMITMENTS, REVIEWS, REVIEWS_PROFILE_URL, REVIEWS_WRITE_URL } from './config.js';
 import { t, pick, getLang } from './i18n.js';
 import { getCurrency, formatIDR, formatConverted, ratesInfo } from './currency.js';
 import { waUrl, refreshWaLinks } from './whatsapp.js';
@@ -253,9 +253,9 @@ function priceHtml(amount, quote) {
 /* Exact airport-transfer price for one area, e.g. <span data-zone-price="ubud">. */
 function renderZonePrices() {
   document.querySelectorAll('[data-zone-price]').forEach(el => {
-    const amount = zonePrice(el.dataset.zonePrice);
+    const amount = zonePrice(el.dataset.zonePrice, el.dataset.vehicle || 'innova');
     const idr = formatIDR(amount);
-    if (!idr) { el.innerHTML = `<b>${esc(t('pricing.quoteOnRequest'))}</b>`; return; }
+    if (!idr) { el.innerHTML = `<span class="q-req">${esc(t('pricing.quoteOnRequest'))}</span>`; return; }
     const conv = formatConverted(amount);
     el.innerHTML = `<b>${esc(idr)}</b>${conv ? ` <span class="conv">≈ ${esc(conv)}</span>` : ''}`;
   });
@@ -288,6 +288,14 @@ function rateRow({ name, note, amount, quote, waAttrs, label }) {
     <a class="rc__ask" href="${waUrl()}" ${waAttrs} data-track-label="${label}" target="_blank" rel="noopener" aria-label="${esc(t('ratecard.ask'))}: ${esc(name)}">${icon('whatsapp')}</a>
   </li>`;
 }
+/* "14-seat Hiace: Rp 850,000 Commuter · Rp 900,000 Premio" for an area, or ''. */
+function vanLine(zoneKey) {
+  const parts = VEHICLES.slice(1).map(v => {
+    const idr = formatIDR(zonePrice(zoneKey, v.key));
+    return idr ? `${idr} ${t(`vehicles.${v.key}Short`)}` : null;
+  }).filter(Boolean);
+  return parts.length ? t('vehicles.vanLine', { prices: parts.join(' · ') }) : '';
+}
 export function renderRateCard() {
   const hire = document.querySelector('[data-ratecard="hire"]');
   if (hire) {
@@ -299,7 +307,7 @@ export function renderRateCard() {
   const air = document.querySelector('[data-ratecard="airport"]');
   if (air) {
     air.innerHTML = AIRPORT_ZONES.map(z => rateRow({
-      name: t(`zones.${z.key}`), amount: z.price_idr, quote: z.quoteOnRequest,
+      name: t(`zones.${z.key}`), note: vanLine(z.key), amount: z.price_idr, quote: z.quoteOnRequest,
       waAttrs: `data-wa="airport" data-wa-zone="${z.key}"`, label: `ratecard_airport_${z.key}`,
     })).join('');
   }
@@ -336,6 +344,8 @@ export function renderZoneCheck() {
   sel.innerHTML = `<option value="">${esc(t('airportZones.choose'))}</option>` +
     AIRPORT_ZONES.map(z => `<option value="${z.key}"${z.key === current ? ' selected' : ''}>${esc(t(`zones.${z.key}`))}</option>`).join('');
 
+  const vansEl = host.querySelector('[data-zone-vans]');
+  if (vansEl) vansEl.textContent = current ? vanLine(current) : '';
   const idrEl = host.querySelector('[data-zone-idr]');
   const convEl = host.querySelector('[data-zone-conv]');
   const wa = host.querySelector('[data-zone-wa]');

@@ -153,7 +153,9 @@
     },
     "title": "Send Aris an enquiry",
     "intro": "Fill in a few details and WhatsApp will open with your message ready to send.",
-    "zone": "Area you're staying in"
+    "zone": "Area you're staying in",
+    "vehicle": "Vehicle",
+    "vehicleNote": "Groups of 8 or more need a 14-seat Hiace."
   },
   "driver": {
     "photoPlaceholder": "Photo of Aris coming soon",
@@ -718,6 +720,10 @@
     "ubud": "Ubud",
     "amed": "Amed",
     "lovina": "Lovina",
+    "tanah_lot": "Tanah Lot",
+    "padang_bai": "Padang Bai",
+    "sidemen": "Sidemen",
+    "kintamani": "Kintamani",
     "other": "Somewhere else"
   },
   "giving": {
@@ -796,7 +802,7 @@
   "ratecard": {
     "hire": "Driver hire & tours",
     "airport": "Airport transfers by area",
-    "airportSub": "One way, per car, between Ngurah Rai Airport and your hotel or villa.",
+    "airportSub": "One way, between Ngurah Rai Airport and your hotel or villa. Prices are per vehicle: a Toyota Innova for up to 7 passengers, or a 14-seat Hiace van for groups.",
     "notes": {
       "half": "Up to 5 hours",
       "full": "Up to 10 hours",
@@ -1011,5 +1017,13 @@
       "step3": "Your review is already written out. Just press Send.",
       "notSent": "Nothing has been sent yet. Aris receives your review once you press Send in WhatsApp."
     }
+  },
+  "vehicles": {
+    "innova": "Toyota Innova (up to 7 passengers)",
+    "commuter": "Toyota Hiace Commuter (14 seats)",
+    "premio": "Toyota Hiace Premio (14 seats, premium)",
+    "commuterShort": "Commuter",
+    "premioShort": "Premio",
+    "vanLine": "14-seat Hiace: {prices}"
   }
 }

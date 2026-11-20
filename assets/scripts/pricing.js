@@ -1,10 +1,14 @@
 /* Price lookups shared by the pricing cards, area checker, form and WhatsApp. */
-import { PRICING, AIRPORT_ZONES } from './config.js';
+import { PRICING, AIRPORT_ZONES, VEHICLES } from './config.js';
 
 const valid = v => Number.isFinite(v) && v > 0;
 
 export const findZone = key => AIRPORT_ZONES.find(z => z.key === key) || null;
-export const zonePrice = key => { const z = findZone(key); return z && valid(z.price_idr) ? z.price_idr : null; };
+/** Price for an area and vehicle ('innova' by default, or 'commuter' / 'premio'). */
+export const zonePrice = (key, vehicle = 'innova') => {
+  const z = findZone(key); const v = VEHICLES.find(x => x.key === vehicle) || VEHICLES[0];
+  return z && valid(z[v.field]) ? z[v.field] : null;
+};
 
 /** Canonical IDR price for a pricing key. Airport transfers use the lowest area price. */
 export function basePrice(key) {

@@ -35,25 +35,38 @@ export const PRICING = {
   exp_local_eyes:   { price_idr: 1600000, from: true },
 };
 
-/* Airport transfer prices by area (IDR, one price per area).
-   Visitors pick where they're staying and see that area's price.
-   The "From" price on the pricing card is the lowest area price set.
-   e.g. Ubud ≈ A$60 → enter the Rupiah amount, such as 740000.
-   null = "Price to be confirmed". 'other' is always quoted.
+/* Airport transfer prices by area, one way, per vehicle (IDR).
+   Updated 20 Nov 2026 from Aris's price lists.
+     price_idr    Toyota Innova, up to 7 passengers (the main price)
+     commuter_idr Toyota Hiace Commuter, 14 seats (standard)
+     premio_idr   Toyota Hiace Premio, 14 seats (premium)
+   null = not on Aris's list yet, shown as "Quote on request".
+   Seminyak, Jimbaran and Denpasar use the nearest listed area
+   (Canggu, Kuta and Sanur), as agreed.
+   The "From" price on the pricing card is the lowest Innova price.
    To add an area: add a line here AND a "zones.<key>" name in each locales/*.json. */
+export const VEHICLES = [
+  { key: 'innova',   field: 'price_idr',    seats: 7 },
+  { key: 'commuter', field: 'commuter_idr', seats: 14 },
+  { key: 'premio',   field: 'premio_idr',   seats: 14 },
+];
 export const AIRPORT_ZONES = [
-  { key: 'kuta',     price_idr: 300000 },  // Kuta / Legian
-  { key: 'seminyak', price_idr: 350000 },
-  { key: 'canggu',   price_idr: 400000 },
-  { key: 'jimbaran', price_idr: 300000 },
-  { key: 'nusa_dua', price_idr: 300000 },  // Nusa Dua / Tanjung Benoa
-  { key: 'uluwatu',  price_idr: 400000 },  // Uluwatu / Bukit Peninsula
-  { key: 'sanur',    price_idr: 300000 },
-  { key: 'denpasar', price_idr: 300000 },
-  { key: 'ubud',     price_idr: 500000 },
-  { key: 'amed',     price_idr: 850000 },  // East Bali
-  { key: 'lovina',   price_idr: 900000 },  // North Bali
-  { key: 'other',    price_idr: null, quoteOnRequest: true },
+  { key: 'kuta',       price_idr: 500000,  commuter_idr: 850000,  premio_idr: 900000 },  // Kuta / Legian
+  { key: 'seminyak',   price_idr: 550000,  commuter_idr: 900000,  premio_idr: 950000 },  // = Canggu
+  { key: 'canggu',     price_idr: 550000,  commuter_idr: 900000,  premio_idr: 950000 },
+  { key: 'jimbaran',   price_idr: 500000,  commuter_idr: 850000,  premio_idr: 900000 },  // = Kuta
+  { key: 'nusa_dua',   price_idr: 600000,  commuter_idr: 950000,  premio_idr: 1000000 }, // Nusa Dua / Tanjung Benoa
+  { key: 'uluwatu',    price_idr: 650000,  commuter_idr: null,    premio_idr: null },    // Uluwatu / Bukit Peninsula
+  { key: 'sanur',      price_idr: 500000,  commuter_idr: 850000,  premio_idr: 900000 },
+  { key: 'denpasar',   price_idr: 500000,  commuter_idr: 850000,  premio_idr: 900000 },  // = Sanur
+  { key: 'ubud',       price_idr: 750000,  commuter_idr: 1100000, premio_idr: 1200000 },
+  { key: 'tanah_lot',  price_idr: 650000,  commuter_idr: null,    premio_idr: null },
+  { key: 'padang_bai', price_idr: 800000,  commuter_idr: null,    premio_idr: null },
+  { key: 'sidemen',    price_idr: 850000,  commuter_idr: null,    premio_idr: null },
+  { key: 'kintamani',  price_idr: 900000,  commuter_idr: null,    premio_idr: null },
+  { key: 'amed',       price_idr: 1100000, commuter_idr: null,    premio_idr: null },    // East Bali
+  { key: 'lovina',     price_idr: 1200000, commuter_idr: 1700000, premio_idr: 1800000 }, // North Bali
+  { key: 'other',      price_idr: null, quoteOnRequest: true },
 ];
 
 /* What is / isn't included. Each value is one of:
