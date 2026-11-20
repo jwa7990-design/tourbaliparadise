@@ -110,7 +110,9 @@
       "interest": "Tertarik dengan",
       "notes": "Sedikit tentang kami",
       "closing": "Boleh minta info pilihan yang tersedia beserta perkiraan harganya, Pak? Terima kasih.",
-      "area": "Area"
+      "area": "Area",
+      "bigGroup": "Kami rombongan {n} orang, jadi butuh kendaraan yang lebih besar dari Innova.",
+      "twoVehicles": "Kami rombongan {n} orang, jadi butuh lebih dari satu kendaraan."
     },
     "scooter": "Halo Pak Aris, saya liburan sendirian dan ingin tanya soal tur skuter 1:1.",
     "airportZone": "Halo Pak Aris, saya ingin tanya soal antar jemput bandara untuk area {area}."
@@ -155,7 +157,9 @@
     "intro": "Isi beberapa data singkat, lalu WhatsApp akan terbuka dengan pesan yang siap dikirim.",
     "zone": "Area tempat menginap",
     "vehicle": "Kendaraan",
-    "vehicleNote": "Rombongan 8 orang atau lebih perlu Hiace 14 kursi."
+    "vehicleNote": "Rombongan 8 orang atau lebih perlu Hiace 14 kursi.",
+    "vehicleBig": "{n} penumpang terlalu banyak untuk Innova, jadi Hiace {seats} kursi dipilih.",
+    "vehicleTwo": "Lebih dari {max} penumpang membutuhkan dua kendaraan. Aris akan mengirimkan penawaran harga."
   },
   "driver": {
     "photoPlaceholder": "Foto Aris segera hadir",

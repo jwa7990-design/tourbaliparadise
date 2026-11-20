@@ -8,6 +8,8 @@ import { icon } from './ui.js';
 import { AIRPORT_ZONES, VEHICLES } from './config.js';
 import { basePrice, zonePrice, getZone } from './pricing.js';
 
+const MAX_SEATS = Math.max(...VEHICLES.map(v => v.seats));
+
 const SERVICES = [
   ['airport', 'airport_transfer'],
   ['half_day', 'half_day_driver'],
@@ -74,6 +76,25 @@ export function renderForms() {
     const toggleZone = () => { const air = form.elements.service.value !== 'airport'; zoneField.hidden = air; vehicleField.hidden = air; };
     toggleZone();
     form.elements.service.addEventListener('change', toggleZone);
+
+    // Match the vehicle to the group size: cars too small for the group are
+    // greyed out, and if the chosen one no longer fits the next size up is picked.
+    const vehicleSel = form.elements.vehicle;
+    const vehicleNote = form.querySelector(`#${id('vehicle')}-note`);
+    const setNote = (key, vars) => { if (vars) delete vehicleNote.dataset.i18n; else vehicleNote.dataset.i18n = key; vehicleNote.textContent = t(key, vars); };
+    const syncVehicle = () => {
+      const pax = Number(form.elements.passengers.value) || 0;
+      const fits = VEHICLES.filter(v => pax <= v.seats);
+      [...vehicleSel.options].forEach(o => { o.disabled = fits.length > 0 && !fits.some(v => v.key === o.value); });
+      if (!fits.length) setNote('form.vehicleTwo', { max: MAX_SEATS });
+      else if (pax > VEHICLES[0].seats) {
+        if (vehicleSel.selectedOptions[0]?.disabled) vehicleSel.value = fits[0].key;
+        setNote('form.vehicleBig', { n: pax, seats: fits[0].seats });
+      } else setNote('form.vehicleNote');
+    };
+    syncVehicle();
+    form.elements.passengers.addEventListener('input', syncVehicle);
+    document.addEventListener('bp:langchange', syncVehicle); // the note has numbers in it
     const setError = (name, key) => {
       const input = form.elements[name];
       const err = form.querySelector(`#${input.id}-err`);
@@ -119,6 +140,17 @@ export function renderForms() {
 
       const [, priceKey] = SERVICES.find(([s]) => s === v.service);
       const isAirport = v.service === 'airport' && v.zone;
+      const pax = Number(v.passengers);
+      const tooBig = pax > MAX_SEATS;                    // needs more than one vehicle
+      const bigGroup = pax > VEHICLES[0].seats;          // bigger than the Innova
+      const vehicle = isAirport ? (VEHICLES.find(x => x.key === v.vehicle && pax <= x.seats) || VEHICLES.find(x => pax <= x.seats) || VEHICLES[VEHICLES.length - 1]).key : null;
+      // Day prices on the site are for the Innova, so a bigger group gets a quote instead.
+      let priceIdr = null;
+      if (isAirport) priceIdr = tooBig ? null : zonePrice(v.zone, vehicle);
+      else if (priceKey && !(bigGroup && v.service !== 'scooter')) priceIdr = basePrice(priceKey);
+      let groupNote = '';
+      if (tooBig) groupNote = t('wa.enquiry.twoVehicles', { n: pax });
+      else if (bigGroup && !isAirport && v.service !== 'scooter') groupNote = t('wa.enquiry.bigGroup', { n: pax });
       const dateText = new Intl.DateTimeFormat(getLang() === 'zh-CN' ? 'zh-CN' : getLang(), { weekday: 'short', day: 'numeric', month: 'long', year: 'numeric' })
         .format(new Date(`${v.date}T00:00:00`));
       const link = enquiryLink({
@@ -129,12 +161,13 @@ export function renderForms() {
         service: t(`form.options.${v.service}`),
         notes: (v.notes || '').trim(),
         area: isAirport ? t(`zones.${v.zone}`) : '',
-        vehicle: isAirport ? t(`vehicles.${v.vehicle || 'innova'}`) : '',
-        priceIdr: isAirport ? zonePrice(v.zone, v.vehicle || 'innova') : (priceKey ? basePrice(priceKey) : null),
+        vehicle: isAirport ? t(`vehicles.${vehicle}`) : '',
+        groupNote,
+        priceIdr,
       });
       const direct = opensWhatsAppDirectly();
 
-      track('generate_lead', { form_location: location, service: v.service, zone: isAirport ? v.zone : undefined, vehicle: isAirport ? (v.vehicle || 'innova') : undefined, passengers: Number(v.passengers), method: 'whatsapp', handoff: direct ? 'direct' : 'qr' });
+      track('generate_lead', { form_location: location, service: v.service, zone: isAirport ? v.zone : undefined, vehicle: vehicle || undefined, passengers: Number(v.passengers), method: 'whatsapp', handoff: direct ? 'direct' : 'qr' });
 
       if (!direct) { showHandoff(form, link, location); return; }
       const w = window.open(link.url, '_blank');

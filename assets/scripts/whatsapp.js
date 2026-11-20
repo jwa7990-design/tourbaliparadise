@@ -53,6 +53,7 @@ export function enquiryMessage(d) {
     `${t('wa.enquiry.passengers')}: ${d.passengers}`,
     `${t('wa.enquiry.accommodation')}: ${d.accommodation}`,
   ];
+  if (d.groupNote) lines.push('', d.groupNote);
   if (d.notes) lines.push('', `${t('wa.enquiry.notes')}:`, d.notes);
   const pl = priceLineFor(d.priceIdr);
   if (pl) lines.push('', pl);

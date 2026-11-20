@@ -110,7 +110,9 @@
       "interest": "感兴趣的项目",
       "notes": "关于我们",
       "closing": "麻烦告诉我有哪些可选方案，并给我一个参考价格，谢谢！",
-      "area": "区域"
+      "area": "区域",
+      "bigGroup": "我们一行 {n} 人，需要比 Innova 更大的车。",
+      "twoVehicles": "我们一行 {n} 人，需要不止一辆车。"
     },
     "scooter": "Aris 你好，我一个人旅行，想咨询一下一对一摩托车游。",
     "airportZone": "Aris 你好，我想咨询{area}的接送机服务。"
@@ -155,7 +157,9 @@
     "intro": "填写几项简单信息，WhatsApp 就会打开，消息已经帮你写好，直接发送即可。",
     "zone": "入住区域",
     "vehicle": "车型",
-    "vehicleNote": "8 人及以上需选 14 座 Hiace。"
+    "vehicleNote": "8 人及以上需选 14 座 Hiace。",
+    "vehicleBig": "{n} 位乘客超出 Innova 的座位数，已为您选择 {seats} 座 Hiace。",
+    "vehicleTwo": "超过 {max} 位乘客需要两辆车，Aris 会为您报价。"
   },
   "driver": {
     "photoPlaceholder": "Aris 的照片即将上线",

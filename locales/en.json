@@ -110,7 +110,9 @@
       "interest": "Interested in",
       "notes": "A little about us",
       "closing": "Could you please let me know what options are available and provide an indicative price?",
-      "area": "Area"
+      "area": "Area",
+      "bigGroup": "We're a group of {n}, so we'll need a bigger vehicle than the Innova.",
+      "twoVehicles": "We're a group of {n}, so we'll need more than one vehicle."
     },
     "scooter": "Hi Aris, I'm travelling solo and I'd like to ask about a 1:1 scooter tour.",
     "airportZone": "Hi Aris, I'd like to enquire about an airport transfer for {area}."
@@ -155,7 +157,9 @@
     "intro": "Fill in a few details and WhatsApp will open with your message ready to send.",
     "zone": "Area you're staying in",
     "vehicle": "Vehicle",
-    "vehicleNote": "Groups of 8 or more need a 14-seat Hiace."
+    "vehicleNote": "Groups of 8 or more need a 14-seat Hiace.",
+    "vehicleBig": "{n} passengers is too many for the Innova, so a {seats}-seat Hiace is selected.",
+    "vehicleTwo": "More than {max} passengers needs two vehicles. Aris will send you a quote."
   },
   "driver": {
     "photoPlaceholder": "Photo of Aris coming soon",
